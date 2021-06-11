@@ -1,12 +1,13 @@
 Package: TT3
-Title: What the Package Does (One Line, Title Case)
+Title: The Pleistocene-Holocene Transition in Tagua-Tagua Archeological Complex
 Version: 0.0.0.9000
 Authors@R:
-    person(given = "First",
-           family = "Last",
+    person(given = "Matías",
+           family = "Frugone-Álvarez",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
+           email = "matutefrugone@gmail.com")
+Description: This repository contains the research compendium of the manuscript titled: "The Pleistocene-Holocene Transition in Tagua-Tagua Archeological Complex" submitted to Quaternary Science Reviews - Journal - Elsevier in 2021. 
+The compendium contains all data, code, analysis and text associated with this manuscript.
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
