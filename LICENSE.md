@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2021 mat1506
+Copyright (c) 2021 TT3 authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
