@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "matutefrugone@gmail.com")
 Description: This repository contains the research compendium of the manuscript titled: "The Pleistocene-Holocene Transition in Tagua-Tagua Archeological Complex" submitted to Quaternary Science Reviews - Journal - Elsevier in 2021. 
-The compendium contains all data, code, analysis and text associated with this manuscript.
+  The compendium contains all data, code, analysis and text associated with this manuscript.
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
@@ -18,3 +18,5 @@ Imports: bookdown,
     here
 Suggests: devtools,
     git2r
+URL: https://github.com/mat1506/TT3
+BugReports: https://github.com/mat1506/TT3/issues
