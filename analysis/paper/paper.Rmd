@@ -1,119 +1,109 @@
 ---
-title: "Title Goes Here"
+title: Short Paper
 author:
-  - Myfirstname Mylastname:
-      email: fl@oneplace.edu
-      institute: [UofO]
-      correspondence: true
-  - Yourfirstname Yourlastname:
-      email: fl@another.edu
-      institute: [UofA]
-      correspondence: false
-institute:
-  - UofO: University of One Place
-  - UofA: University of Another Place
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: 
-    bookdown::word_document2:
-      fig_caption: yes
-      reference_docx: "../templates/template.docx" # Insert path for the DOCX file
-      pandoc_args:
-      - --lua-filter=../templates/scholarly-metadata.lua
-      - --lua-filter=../templates/author-info-blocks.lua
-      - --lua-filter=../templates/pagebreak.lua
-bibliography: references.bib
-csl: "../templates/journal-of-archaeological-science.csl" # Insert path for the bib-style
+  - name: Alice Anonymous
+    email: alice@example.com
+    affiliation: Some Institute of Technology
+    footnote: 1
+  - name: Bob Security
+    email: bob@example.com
+    affiliation: Another University
+  - name: Cat Memes
+    email: cat@example.com
+    affiliation: Another University
+    footnote: 2
+  - name: Derek Zoolander
+    email: derek@example.com
+    affiliation: Some Institute of Technology
+    footnote: 2
+address:
+  - code: Some Institute of Technology
+    address: Department, Street, City, State, Zip
+  - code: Another University
+    address: Department, Street, City, State, Zip
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+  - code: 2
+    text: "Equal contribution"
 abstract: |
-  Text of abstract
-keywords: |
-  keyword 1; keyword 2; keyword 3
-highlights: |
-  These are the highlights. 
+  This is the abstract.
+
+  It consists of two paragraphs.
+
+journal: "An awesome journal"
+date: "`r Sys.Date()`"
+bibliography: mybibfile.bib
+#linenumbers: true
+#numbersections: true
+csl: elsevier-harvard.csl
+output: rticles::elsevier_article
 ---
 
-<!-- This is the format for text comments that will be ignored during renderings. Do not put R code in these comments because it will not be ignored. -->
+_Text based on elsarticle sample manuscript, see [http://www.elsevier.com/author-schemas/latex-instructions#elsarticle](http://www.elsevier.com/author-schemas/latex-instructions#elsarticle)_
 
-<!-- With the following code you can access and display values from the yml header above. -->
 
-Keywords: `r rmarkdown::metadata$keywords`
+The Elsevier article class
+==========================
 
-Highlights: `r rmarkdown::metadata$highlights`
+#### Installation
 
-<!-- The following code chunk defines some general settings how code chunks should behave. -->
+If the document class *elsarticle* is not available on your computer,
+you can download and install the system package *texlive-publishers*
+(Linux) or install the LaTeX package *elsarticle* using the package
+manager of your TeX installation, which is typically TeX Live or MikTeX.
 
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  warning = FALSE,
-  message = FALSE,
-  echo = FALSE,
-  comment = "#>",
-  fig.path = "../figures/",
-  dpi = 300
-)
-```
+#### Usage
 
-<!-- The actual document text starts here: -->
+Once the package is properly installed, you can use the document class
+*elsarticle* to create a manuscript. Please make sure that your
+manuscript follows the guidelines in the Guide for Authors of the
+relevant journal. It is not necessary to typeset your manuscript in
+exactly the same way as an article, unless you are submitting to a
+camera-ready copy (CRC) journal.
 
-# Introduction
+#### Functionality
 
-Here is a citation [@Marwick2017]
+The Elsevier article class is based on the standard article class and
+supports almost all of the functionality of that class. In addition, it
+features commands and options to format the
 
-# Background
+-   document style
 
-# Methods
+-   baselineskip
 
-# Results
+-   front matter
 
-<!-- Here's some example analysis code: -->
+-   keywords and MSC codes
 
-```{r get-data, eval = FALSE}
-# Note the path that we need to use to access our data files when rendering this document
-my_data <- read.csv(here::here('analysis/data/raw_data/my_csv_file.csv'))
-```
+-   theorems, definitions and proofs
 
-```{r demo-plot, fig.cap="A plot of random numbers"}
-plot(rnorm(10))
-```
+-   lables of enumerations
 
-Figure \@ref(fig:demo-plot) shows how we can have a caption and cross-reference for a plot
+-   citation style and labeling.
 
-```{r demo-inline-code}
-x <- round(pi, 2)
-```
+Front matter
+============
 
-Here is an example of inline code `r x` in the middle of a sentence. 
+The author names and affiliations could be formatted in two ways:
 
-# Discussion
+(1) Group the authors per affiliation.
 
-# Conclusion
+(2) Use footnotes to indicate the affiliations.
 
-# Acknowledgements
+See the front matter of this document for examples. You are recommended
+to conform your choice to the journal you are submitting to.
 
-<!-- The following line inserts a page break  -->
+Bibliography styles
+===================
 
-\newpage
+There are various bibliography styles available. You can select the
+style of your choice in the preamble of this document. These styles are
+Elsevier styles based on standard styles like Harvard and Vancouver.
+Please use BibTeX to generate your bibliography and include DOIs
+whenever available.
 
-# References 
+Here are two sample references: @Feynman1963118 [@Dirac1953888].
 
-<!-- The following line ensures the references appear here for the MS Word or HTML output files, rather than right at the end of the document (this will not work for PDF files):  -->
-
-<div id="refs"></div>
-
-\newpage
-
-### Colophon
-
-This report was generated on `r Sys.time()` using the following computational environment and dependencies: 
-
-```{r colophon, cache = FALSE}
-# which R packages and versions?
-if ("devtools" %in% installed.packages()) devtools::session_info()
-```
-
-The current Git commit details are:
-
-```{r}
-# what commit is this file at? 
-if ("git2r" %in% installed.packages() & git2r::in_repository(path = ".")) git2r::repository(here::here())  
-```
+References {#references .unnumbered}
+==========

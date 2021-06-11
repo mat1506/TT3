@@ -16,7 +16,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: bookdown,
     here
-Suggests: devtools,
+Suggests: 
+    testthat (>= 3.0.0),
+    devtools,
     git2r
 URL: https://github.com/mat1506/TT3
 BugReports: https://github.com/mat1506/TT3/issues
+Config/testthat/edition: 3
