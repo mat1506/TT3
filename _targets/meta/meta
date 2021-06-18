@@ -1,0 +1,7 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+tt|object|1a1af8258ba7b1bb||||||||||||||
+mymodel|function|734427f739e4aae4||||||||||||||
+.Random.seed|object|29d0f067a7b5f961||||||||||||||
+data_setup|function|c8070fc8bc7938f7||||||||||||||
+mydescriptive|function|f5a8fcf952eff43b||||||||||||||
+proc_data|stem|de6bdd1f037cd8bb|d1c8539e65348f87|04027f0644a537d1|-1214640124||t18795.0713503069s|518641cace56398a|5489|rds|vector|||0.054||

@@ -1,0 +1,338 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+
+  \journal{Quaternary Science Reviews} % Sets Journal name
+
+
+\usepackage{lineno} % add
+  \linenumbers % turns line numbering on
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{graphicx}
+\usepackage{booktabs} % book-quality tables
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\bibliographystyle{elsarticle-harv}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={The Pleistocene-Holocene Transition in Tagua-Tagua, central Chile},
+            colorlinks=false,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+
+% Pandoc citation processing
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc} % for calculating minipage widths
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% Pandoc header
+
+
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{The Pleistocene-Holocene Transition in Tagua-Tagua, central
+Chile}
+    \author[puc]{Matías Frugone-Álvarez\corref{1}}
+   \ead{matutefrugone@gmail.com} 
+    \author[uccs,ciba,geup]{Erwin Gonzáles Huerta}
+  
+    \author[ipe]{Blas Valero-Garcés}
+  
+    \author[uccs,ciba,geup]{Carolina Godoy}
+  
+    \author[uccs,ciba,geup]{Josu Aranbarri}
+  
+    \author[iact]{Penélope Gonzáles}
+  
+    \author[uccs,ciba,geup]{Antonio Delgado-Huerta}
+  
+    \author[deuc]{Claudio Latorre}
+  
+    \author[uccs,ciba,geup]{Rafael Labarca Encina}
+  
+      \address[puc]{Pontificia Universidad Católica de Chile,
+Departamento de Ecología-Centro UC Desierto de Atacama, Av. Libertador
+Bernardo O'Higgins 340, Santiago, Chile.}
+    \address[ieb]{Instituto de Ecología y Biodiversidady (IEB),
+Santiago, Chile}
+    \address[uccs]{Instituto Pirenaico de Ecología (IPE-CSIC), Zaragoza,
+Spain.}
+    \address[ipe]{Centro de Investigación en Biodiversidad y Ambientes
+Sustentables (CIBAS), Chile}
+    \address[geup]{Department of Geology and Environmental Science,
+University of Pittsburgh, Pittsburgh, USA}
+    \address[iact]{Instituto Andaluz de Ciencias de la Tierra
+(CSIC-UGR), Granada, Spain}
+      \cortext[1]{Corresponding Author}
+  
+  \begin{abstract}
+  Paleohydrological reconstructions from the Chilean Altiplano document
+  abrupt moisture fluctuations during the last millennia. Although the
+  end of the mid Holocene aridity and the onset of more humid conditions
+  between 6--4 ka has been identified in numerous regional marine and
+  terrestrial sites, the timing of late Holocene dry and humid phases
+  shows large regional variability. Laguna Miscanti and Laguna Miñiques
+  (23\(^\circ\) 43'S -- 67\(^\circ\) 46'W, 4140 m asl) are
+  topographically closed, but connected by surface outflow from
+  Miscanti. Sedimentological and geochemical indicators from two new
+  cores show large facies changes, i.e.~higher carbonate and evaporite
+  deposition during more arid periods and increased organic productivity
+  (both algal and macrophyte) during more humid phases. As in most
+  Andean lakes located in volcanic settings, large 14C reservoir effects
+  occur complicating 14C dating, so the age models include 210Pb and
+  U/Th dating. In spite of dating uncertainties, both lakes show similar
+  patterns during the last millennium. A humid phase in Laguna Miscanti
+  prior to ca 1200 CE is coherent with rodent middens and
+  geomorphological features indicative of a major pluvial/recharge event
+  at lower altitudes (Atacama Desert) during the Medieval Climate
+  Anomaly (ca 800 - 1300 CE). The LIA (1300 -- 1850 CE) is characterized
+  by several arid/humid cycles and the last century by a productivity
+  increase. The hydrological changes observed during the last millennium
+  illustrate the complex dynamics of recent climate evolution over the
+  high altitude Andean plateau. Discrepancies between the northern and
+  southern Altiplano records and with intermediate latitudes (Central
+  Chile) records may reflect contrasting responses to external forcing
+  (Westerlies versus South American Monsoon dynamics) along different
+  climatic zones.
+  \end{abstract}
+   \begin{keyword} keywords\end{keyword}
+ \end{frontmatter}
+
+\emph{Text based on elsarticle sample manuscript, see
+\url{http://www.elsevier.com/author-schemas/latex-instructions\#elsarticle}}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\hypertarget{study-site-and-regional-setting}{%
+\section{Study site and regional
+setting}\label{study-site-and-regional-setting}}
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and methods}\label{materials-and-methods}}
+
+\hypertarget{sedimentary-and-geochemical-analysis}{%
+\subsection{Sedimentary and geochemical
+analysis}\label{sedimentary-and-geochemical-analysis}}
+
+In Dicembre 2013, we recovered 5 cores sediment at several sites around
+to Tagua Tagua 3 site using sing a hammer-modified UWITEC gravity corer
+and a UWITEC platform (Fig. 1 and Table S1). The cores were transported
+to the IACT-CSIC (Granada) and IPE-CSIC (Zaragoza-Jaca) laboratories in
+Spain for image acquisition and measurement of sediment physical
+properties, density and Magnetic Susceptibility (MS {[}x10\(^{-8}\)
+\((m^3/kg)\){]})
+
+at 1 cm resolution, with a Geotek Multi-Sensor Core Logger (MSCL).
+Elemental geochemical analyses were performed every 1 cm for total
+carbon (TC), total inorganic carbon (TIC), total organic carbon
+(TOC=TC-TIC) and total sulfur (TS) in a LECO SC 144 DR furnace
+(IPE-CSIC). Total nitrogen (TN) was measured in a VARIO MAX CN elemental
+analyzer (IPE-CSIC). Biogenic opal (BioSi) was measured using a
+continuous flow analyzer AutoAnalyser Technicon II at the Instituto de
+Investigaciones Marinas (IIM-CSIC, Spain) (Bernárdez et al., 2005). An
+AVAATECH X-Ray Fluorescence II core scanner with an Rh x-ray tube from
+the University of Barcelona was used to obtain x-ray fluorescence (XRF)
+logs from the composite sequence at 4 mm resolution. Thus, differents
+ratios have been calculated here to describe changes in the carbonate
+productivity (Ca/K and Ca/Ti in Miscanti and Miñique, respectively),
+local runoff (Rb/Sr), grain size (Zr/Rb), evaporative concentration of
+gypsum (Ca/{[}Rb/Sr{]} and Ca/Ti in Miscanti and Miñique, respectively)
+and organic productivity (Br/K and Br/Ti in Miscanti and Miñique,
+respectively) (Carrevedo et al., 2015; Frugone-'Alvarez et al., 2020;
+Frugone-Álvarez et al., 2017; Moreno et al., 2007; Naeher et al., 2013;
+Wersin et al., 1991). Sedimentary facies were described based on
+criteria formulated by (Schnurrenberger et al., 2003) and lacustrine
+units have been classified according to the sedimentary structure,MSCL
+data, elemental composition (TOC, TIC, TN, TS, TOC/TN, BioSi), XRF data
+and waxes composition.
+
+\hypertarget{chronology}{%
+\subsection{Chronology}\label{chronology}}
+
+The chronology for the Miscanti (MIS13-2A) and Miñique (MIN13-1F)
+sequence was obtained using \({^{210}{Pb}}\) and \({^{137}{Cs}}\) dating
+techniques, eight U/Th dates and, nine \({^{14}{C}}\) AMS dates (see
+Table 1). Core MIN13-1F-1G was sampled in the field every 0.5 and 1 cm
+for \({^{210}{Pb}}\) and \({^{137}{Cs}}\). The MIS13-2A-1G sequence was
+correlated with the \({^{210}{Pb}}\) and \({^{137}{Cs}}\) data from the
+sequence obtained by Valero-Garcés et al., 1996. The radiocarbon ages
+were determined in MIS13-2A-1G and MIN13-1F-1G cores by AMS at Poznan
+Radiocarbon Laboratory, Poland and the DirectAMS laboratories, USA.
+Waters from the hypolimnion has also sampled to assess modern
+\({^{14}{C}}\) reservoir effects (Table 1). The U/Th dating was done at
+the Massachusetts Institute of Technology (MIT, McGee Lab). For U/Th
+samples, the cores were visually assessed for material to dating
+criteria and methods described in (Chen et al., 2020; Lawrence Edwards
+et al., 1987; Shen et al., 2002). A VG PQ2+ quadrupole ICP-MS and an
+Agilent 7900 ICP-MS at MIT was using to determined uranium and thorium
+concentration. Samples with higher U/Th ratios were then identified as
+materials worth further processing as they are more likely to yield
+``clean'' samples with high \({^{230}{Th}}\)/\({^{232}{Th}}\) ratios.
+The isotopic compositions of the resulting uranium and thorium fractions
+were then measured on a Nu Plasma II-ES multi-collector ICP-MS at MIT.
+
+\hypertarget{data-analysis}{%
+\subsection{Data analysis}\label{data-analysis}}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{cores-correlations-and-sedimentary-proxies}{%
+\subsection{Cores correlations and sedimentary
+proxies}\label{cores-correlations-and-sedimentary-proxies}}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-bernardezOpalContentRia2005}{}%
+Bernárdez, P., Prego, R., Franc'es, G., Gonz'alez-'Alvarez, R., 2005.
+Opal content in the {Ría} de {Vigo} and {Galician} continental shelf:
+Biogenic silica in the muddy fraction as an accurate paleoproductivity
+proxy. Continental Shelf Research 25, 1249--1264.
+doi:\href{https://doi.org/10.1016/j.csr.2004.12.009}{10.1016/j.csr.2004.12.009}
+
+\leavevmode\hypertarget{ref-carrevedo700yearRecordClimate2015}{}%
+Carrevedo, M.L., Frugone, M., Latorre, C., Maldonado, A., Bern'ardez,
+P., Prego, R., C'ardenas, D., Valero-Garc'es, B., 2015. A 700-year
+record of climate and environmental change from a high {Andean} lake:
+{Laguna} del {Maule}, central {Chile} (\(36^{\circ}S\)). The Holocene
+0959683615574584.
+doi:\href{https://doi.org/10.1177/0959683615574584}{10.1177/0959683615574584}
+
+\leavevmode\hypertarget{ref-chenUThDatingLake2020}{}%
+Chen, C.Y., McGee, D., Woods, A., P'erez, L., Hatfield, R.G., Edwards,
+R.L., Cheng, H., Valero-Garc'es, B.L., Lehmann, S.B., Stoner, J.S.,
+Schwalb, A., Tal, I., Seltzer, G.O., Tapia, P.M., Abbott, M.B., Rodbell,
+D.T., 2020. U-{Th} dating of lake sediments: {Lessons} from the 700 ka
+sediment record of {Lake Junín}, {Peru}. Quaternary Science Reviews 244,
+106422.
+doi:\href{https://doi.org/10.1016/j.quascirev.2020.106422}{10.1016/j.quascirev.2020.106422}
+
+\leavevmode\hypertarget{ref-frugone-alvarezVolcan2020}{}%
+Frugone-'Alvarez, M., Latorre, C., Barreiro-Lostres, F., Giralt, S.,
+Moreno, A., Polanco-Martínez, J., Maldonado, A., Carrevedo, M.L.,
+Bern'ardez, P., Prego, R., Delgado Huertas, A., Fuentealba, M.,
+Valero-Garc'es, B., 2020. Volcanism and {Climate Change} as drivers in
+holocene depositional dynamic of {Laguna Del Maule} ({Andes} of central
+{Chile} \(36^{\circ}S\)). Climate of the Past 16, 1097--1125.
+doi:\href{https://doi.org/10.5194/cp-16-1097-2020}{10.5194/cp-16-1097-2020}
+
+\leavevmode\hypertarget{ref-frugone-alvarez7000Lake2017}{}%
+Frugone-Álvarez, M., Latorre, C., Giralt, S., Polanco-Martínez, J.,
+Bernárdez, P., Oliva-Urcia, B., Maldonado, A., Carrevedo, M.L., Moreno,
+A., Huertas, A.D., Prego, R., Barreiro-Lostres, F., Valero-Garcés, B.,
+2017. A 7000-year high-resolution lake sediment record from coastal
+central {Chile} ({Lago} {Vichuquén}, \(34^{\circ}S\)): Implications for
+past sea level and environmental variability. Journal of Quaternary
+Science 32, 830--844.
+doi:\href{https://doi.org/10.1002/jqs.2936}{10.1002/jqs.2936}
+
+\leavevmode\hypertarget{ref-lawrenceedwards238U234U230Th232ThSystematicsPrecise1987}{}%
+Lawrence Edwards, R., Chen, J.H., Wasserburg, G.J., 1987.
+{238U234U230Th232Th} systematics and the precise measurement of time
+over the past 500,000 years. Earth and Planetary Science Letters 81,
+175--192.
+doi:\href{https://doi.org/10.1016/0012-821X(87)90154-3}{10.1016/0012-821X(87)90154-3}
+
+\leavevmode\hypertarget{ref-moreno14KyrRecord2007}{}%
+Moreno, A., Giralt, S., Valero-Garc'es, B., S'aez, A., Bao, R., Prego,
+R., Pueyo, J.J., Gonz'alez-Samp'eriz, P., Taberner, C., 2007. A 14 kyr
+record of the tropical {Andes}: {The Lago Chungará} sequence
+(\(18^{\circ}S\), northern {Chilean Altiplano}). Quaternary
+International, Lacustrine and marine archives of environmental
+variability across {South America} 161, 4--21.
+doi:\href{https://doi.org/10.1016/j.quaint.2006.10.020}{10.1016/j.quaint.2006.10.020}
+
+\leavevmode\hypertarget{ref-naeherTracingBottomWater2013}{}%
+Naeher, S., Gilli, A., North, R.P., Hamann, Y., Schubert, C.J., 2013.
+Tracing bottom water oxygenation with sedimentary {Mn}/{Fe} ratios in
+{Lake Zurich}, {Switzerland}. Chemical Geology 352, 125--133.
+doi:\href{https://doi.org/10.1016/j.chemgeo.2013.06.006}{10.1016/j.chemgeo.2013.06.006}
+
+\leavevmode\hypertarget{ref-schnurrenbergerClassificationLacustrineSediments2003}{}%
+Schnurrenberger, D., Russell, J., Kelts, K., 2003. Classification of
+lacustrine sediments based on sedimentary components. Journal of
+Paleolimnology 29, 141--154.
+doi:\href{https://doi.org/10.1023/A:1023270324800}{10.1023/A:1023270324800}
+
+\leavevmode\hypertarget{ref-shenUraniumThoriumIsotopic2002}{}%
+Shen, C.-C., Lawrence Edwards, R., Cheng, H., Dorale, J.A., Thomas,
+R.B., Bradley Moran, S., Weinstein, S.E., Edmonds, H.N., 2002. Uranium
+and thorium isotopic and concentration measurements by magnetic sector
+inductively coupled plasma mass spectrometry. Chemical Geology 185,
+165--178.
+doi:\href{https://doi.org/10.1016/S0009-2541(01)00404-1}{10.1016/S0009-2541(01)00404-1}
+
+\leavevmode\hypertarget{ref-wersinEarlyDiageneticInfluences1991}{}%
+Wersin, P., Höhener, P., Giovanoli, R., Stumm, W., 1991. Early
+diagenetic influences on iron transformations in a freshwater lake
+sediment. Chemical Geology 90, 233--252.
+doi:\href{https://doi.org/10.1016/0009-2541(91)90102-W}{10.1016/0009-2541(91)90102-W}
+
+\end{CSLReferences}
+
+
+\end{document}
+
