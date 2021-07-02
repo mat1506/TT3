@@ -1,7 +1,9 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
-tt|object|1a1af8258ba7b1bb||||||||||||||
+tt|object|2f56a210476bdc68||||||||||||||
+X_setup|function|b237fab546844d7c||||||||||||||
 mymodel|function|734427f739e4aae4||||||||||||||
-.Random.seed|object|29d0f067a7b5f961||||||||||||||
-data_setup|function|c8070fc8bc7938f7||||||||||||||
+.Random.seed|object|a1b4779f04656486||||||||||||||
+ttg|object|841ca59e29b35a11||||||||||||||
+data_setup|function|0fb04ef77c37d1a5||||||||||||||
 mydescriptive|function|f5a8fcf952eff43b||||||||||||||
-proc_data|stem|de6bdd1f037cd8bb|d1c8539e65348f87|04027f0644a537d1|-1214640124||t18795.0713503069s|518641cace56398a|5489|rds|vector|||0.054||
+proc_data|stem|3f7bc9a000706cd2|fd51edcf6ea4e0c0|4db2dfd2694a8db0|-1214640124||t18802.9512581509s|bfcbc5f940dfb67b|29606|rds|vector|||0.052||

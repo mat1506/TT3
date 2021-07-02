@@ -7,6 +7,13 @@ data_setup <- function(tt){
 
 }
 
+# 1. setup data
+
+X_setup <- function(ttg){
+  X <-as.matrix(ttg)
+
+}
+
 
 # 2. functions targets descriptive
 
