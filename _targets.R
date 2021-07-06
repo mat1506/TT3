@@ -7,7 +7,7 @@ source("R/Functions.R")
 
 # Set target-specific options such as packages.
 tar_option_set(packages = c("tidyverse", "ggplot2", "patchwork",
-                            "tidypaleo", "here"))
+                            "tidypaleo", "here","RColorBrewer"))
 
 tt <- read_csv(here::here("analysis/data/raw_data/2021-06-16_TT3_data_H01.csv"))
 ttg <- read_csv(here::here("analysis/data/raw_data/TTG.csv"),col_names=T) %>%
