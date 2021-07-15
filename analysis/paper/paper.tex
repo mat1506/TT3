@@ -34,6 +34,46 @@
 % use microtype if available
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
 \bibliographystyle{elsarticle-harv}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -55,16 +95,16 @@
 % Pandoc toggle for numbering sections (defaults to be off)
 
 % Pandoc citation processing
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
 % for Pandoc 2.8 to 2.10.1
 \newenvironment{cslreferences}%
   {}%
   {\par}
 % For Pandoc 2.11+
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
  {% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
@@ -75,10 +115,10 @@
   \fi
  }%
  {}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{calc}
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 % Pandoc header
@@ -159,6 +199,13 @@ University of Pittsburgh, Pittsburgh, USA}
 \emph{Text based on elsarticle sample manuscript, see
 \url{http://www.elsevier.com/author-schemas/latex-instructions\#elsarticle}}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(targets)}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
@@ -181,29 +228,17 @@ Spain for image acquisition and measurement of sediment physical
 properties, density and Magnetic Susceptibility (MS {[}x10\(^{-8}\)
 \((m^3/kg)\){]})
 
-at 1 cm resolution, with a Geotek Multi-Sensor Core Logger (MSCL).
 Elemental geochemical analyses were performed every 1 cm for total
 carbon (TC), total inorganic carbon (TIC), total organic carbon
-(TOC=TC-TIC) and total sulfur (TS) in a LECO SC 144 DR furnace
-(IPE-CSIC). Total nitrogen (TN) was measured in a VARIO MAX CN elemental
-analyzer (IPE-CSIC). Biogenic opal (BioSi) was measured using a
-continuous flow analyzer AutoAnalyser Technicon II at the Instituto de
-Investigaciones Marinas (IIM-CSIC, Spain) (Bernárdez et al., 2005). An
-AVAATECH X-Ray Fluorescence II core scanner with an Rh x-ray tube from
-the University of Barcelona was used to obtain x-ray fluorescence (XRF)
-logs from the composite sequence at 4 mm resolution. Thus, differents
-ratios have been calculated here to describe changes in the carbonate
-productivity (Ca/K and Ca/Ti in Miscanti and Miñique, respectively),
-local runoff (Rb/Sr), grain size (Zr/Rb), evaporative concentration of
-gypsum (Ca/{[}Rb/Sr{]} and Ca/Ti in Miscanti and Miñique, respectively)
-and organic productivity (Br/K and Br/Ti in Miscanti and Miñique,
-respectively) (Carrevedo et al., 2015; Frugone-'Alvarez et al., 2020;
-Frugone-Álvarez et al., 2017; Moreno et al., 2007; Naeher et al., 2013;
-Wersin et al., 1991). Sedimentary facies were described based on
-criteria formulated by (Schnurrenberger et al., 2003) and lacustrine
-units have been classified according to the sedimentary structure,MSCL
-data, elemental composition (TOC, TIC, TN, TS, TOC/TN, BioSi), XRF data
-and waxes composition.
+(\(TOC = T-TIC\)) and total sulfur (TS) in a LECO SC 144 DR furnace
+(IPE--CSIC). Total nitrogen (TN) was measured in a VARIO MAX CN
+elemental analyzer (IPE--CSIC). Grain--size distributions between 0.02
+um and 2000 um were measured using a Malvern Mastersizer 2000 APA2000
+grain-size analyzer with Hydro 2000G AWA2000. Sedimentary facies were
+described based on criteria formulated by (Schnurrenberger et al., 2003)
+and lacustrine units have been classified according to the sedimentary
+structure, MSCL data, elemental composition (TOC, TIC, TN, TS, TOC/TN,
+BioSi), XRF data and waxes composition.
 
 \hypertarget{chronology}{%
 \subsection{Chronology}\label{chronology}}
@@ -218,20 +253,22 @@ sequence obtained by Valero-Garcés et al., 1996. The radiocarbon ages
 were determined in MIS13-2A-1G and MIN13-1F-1G cores by AMS at Poznan
 Radiocarbon Laboratory, Poland and the DirectAMS laboratories, USA.
 Waters from the hypolimnion has also sampled to assess modern
-\({^{14}{C}}\) reservoir effects (Table 1). The U/Th dating was done at
+\({^{14}{C}}\) reservoir effects (Table 1).The U/Th dating was done at
 the Massachusetts Institute of Technology (MIT, McGee Lab). For U/Th
 samples, the cores were visually assessed for material to dating
 criteria and methods described in (Chen et al., 2020; Lawrence Edwards
-et al., 1987; Shen et al., 2002). A VG PQ2+ quadrupole ICP-MS and an
-Agilent 7900 ICP-MS at MIT was using to determined uranium and thorium
+et al., 1987; Shen et al., 2002). A VG PQ2+ quadrupole ICP--MS and an
+Agilent 7900 ICP--MS at MIT was using to determined uranium and thorium
 concentration. Samples with higher U/Th ratios were then identified as
 materials worth further processing as they are more likely to yield
 ``clean'' samples with high \({^{230}{Th}}\)/\({^{232}{Th}}\) ratios.
 The isotopic compositions of the resulting uranium and thorium fractions
-were then measured on a Nu Plasma II-ES multi-collector ICP-MS at MIT.
+were then measured on a Nu Plasma II--ES multicollector ICP--MS at MIT.
 
 \hypertarget{data-analysis}{%
 \subsection{Data analysis}\label{data-analysis}}
+
+\begin{center}\includegraphics[width=1\linewidth]{paper_files/figure-latex/unnamed-chunk-2-1} \end{center}
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -246,48 +283,14 @@ proxies}\label{cores-correlations-and-sedimentary-proxies}}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-bernardezOpalContentRia2005}{}%
-Bernárdez, P., Prego, R., Franc'es, G., Gonz'alez-'Alvarez, R., 2005.
-Opal content in the {Ría} de {Vigo} and {Galician} continental shelf:
-Biogenic silica in the muddy fraction as an accurate paleoproductivity
-proxy. Continental Shelf Research 25, 1249--1264.
-doi:\href{https://doi.org/10.1016/j.csr.2004.12.009}{10.1016/j.csr.2004.12.009}
-
-\leavevmode\hypertarget{ref-carrevedo700yearRecordClimate2015}{}%
-Carrevedo, M.L., Frugone, M., Latorre, C., Maldonado, A., Bern'ardez,
-P., Prego, R., C'ardenas, D., Valero-Garc'es, B., 2015. A 700-year
-record of climate and environmental change from a high {Andean} lake:
-{Laguna} del {Maule}, central {Chile} (\(36^{\circ}S\)). The Holocene
-0959683615574584.
-doi:\href{https://doi.org/10.1177/0959683615574584}{10.1177/0959683615574584}
-
 \leavevmode\hypertarget{ref-chenUThDatingLake2020}{}%
-Chen, C.Y., McGee, D., Woods, A., P'erez, L., Hatfield, R.G., Edwards,
-R.L., Cheng, H., Valero-Garc'es, B.L., Lehmann, S.B., Stoner, J.S.,
+Chen, C.Y., McGee, D., Woods, A., Páerez, L., Hatfield, R.G., Edwards,
+R.L., Cheng, H., Valero-Garcés, B.L., Lehmann, S.B., Stoner, J.S.,
 Schwalb, A., Tal, I., Seltzer, G.O., Tapia, P.M., Abbott, M.B., Rodbell,
-D.T., 2020. U-{Th} dating of lake sediments: {Lessons} from the 700 ka
+D.T., 2020. U-th dating of lake sediments: {Lessons} from the 700 ka
 sediment record of {Lake Junín}, {Peru}. Quaternary Science Reviews 244,
 106422.
 doi:\href{https://doi.org/10.1016/j.quascirev.2020.106422}{10.1016/j.quascirev.2020.106422}
-
-\leavevmode\hypertarget{ref-frugone-alvarezVolcan2020}{}%
-Frugone-'Alvarez, M., Latorre, C., Barreiro-Lostres, F., Giralt, S.,
-Moreno, A., Polanco-Martínez, J., Maldonado, A., Carrevedo, M.L.,
-Bern'ardez, P., Prego, R., Delgado Huertas, A., Fuentealba, M.,
-Valero-Garc'es, B., 2020. Volcanism and {Climate Change} as drivers in
-holocene depositional dynamic of {Laguna Del Maule} ({Andes} of central
-{Chile} \(36^{\circ}S\)). Climate of the Past 16, 1097--1125.
-doi:\href{https://doi.org/10.5194/cp-16-1097-2020}{10.5194/cp-16-1097-2020}
-
-\leavevmode\hypertarget{ref-frugone-alvarez7000Lake2017}{}%
-Frugone-Álvarez, M., Latorre, C., Giralt, S., Polanco-Martínez, J.,
-Bernárdez, P., Oliva-Urcia, B., Maldonado, A., Carrevedo, M.L., Moreno,
-A., Huertas, A.D., Prego, R., Barreiro-Lostres, F., Valero-Garcés, B.,
-2017. A 7000-year high-resolution lake sediment record from coastal
-central {Chile} ({Lago} {Vichuquén}, \(34^{\circ}S\)): Implications for
-past sea level and environmental variability. Journal of Quaternary
-Science 32, 830--844.
-doi:\href{https://doi.org/10.1002/jqs.2936}{10.1002/jqs.2936}
 
 \leavevmode\hypertarget{ref-lawrenceedwards238U234U230Th232ThSystematicsPrecise1987}{}%
 Lawrence Edwards, R., Chen, J.H., Wasserburg, G.J., 1987.
@@ -295,21 +298,6 @@ Lawrence Edwards, R., Chen, J.H., Wasserburg, G.J., 1987.
 over the past 500,000 years. Earth and Planetary Science Letters 81,
 175--192.
 doi:\href{https://doi.org/10.1016/0012-821X(87)90154-3}{10.1016/0012-821X(87)90154-3}
-
-\leavevmode\hypertarget{ref-moreno14KyrRecord2007}{}%
-Moreno, A., Giralt, S., Valero-Garc'es, B., S'aez, A., Bao, R., Prego,
-R., Pueyo, J.J., Gonz'alez-Samp'eriz, P., Taberner, C., 2007. A 14 kyr
-record of the tropical {Andes}: {The Lago Chungará} sequence
-(\(18^{\circ}S\), northern {Chilean Altiplano}). Quaternary
-International, Lacustrine and marine archives of environmental
-variability across {South America} 161, 4--21.
-doi:\href{https://doi.org/10.1016/j.quaint.2006.10.020}{10.1016/j.quaint.2006.10.020}
-
-\leavevmode\hypertarget{ref-naeherTracingBottomWater2013}{}%
-Naeher, S., Gilli, A., North, R.P., Hamann, Y., Schubert, C.J., 2013.
-Tracing bottom water oxygenation with sedimentary {Mn}/{Fe} ratios in
-{Lake Zurich}, {Switzerland}. Chemical Geology 352, 125--133.
-doi:\href{https://doi.org/10.1016/j.chemgeo.2013.06.006}{10.1016/j.chemgeo.2013.06.006}
 
 \leavevmode\hypertarget{ref-schnurrenbergerClassificationLacustrineSediments2003}{}%
 Schnurrenberger, D., Russell, J., Kelts, K., 2003. Classification of
@@ -325,14 +313,7 @@ inductively coupled plasma mass spectrometry. Chemical Geology 185,
 165--178.
 doi:\href{https://doi.org/10.1016/S0009-2541(01)00404-1}{10.1016/S0009-2541(01)00404-1}
 
-\leavevmode\hypertarget{ref-wersinEarlyDiageneticInfluences1991}{}%
-Wersin, P., Höhener, P., Giovanoli, R., Stumm, W., 1991. Early
-diagenetic influences on iron transformations in a freshwater lake
-sediment. Chemical Geology 90, 233--252.
-doi:\href{https://doi.org/10.1016/0009-2541(91)90102-W}{10.1016/0009-2541(91)90102-W}
-
 \end{CSLReferences}
 
 
 \end{document}
-

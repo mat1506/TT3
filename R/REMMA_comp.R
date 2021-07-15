@@ -1,3 +1,13 @@
+
+path_x0 <- here::here("analysis/data/raw_data/","2021-06-16_TT3_data_H01.csv")
+X0 <- read_csv(path_x0, col_types =cols())
+
+path_tte <- here::here("analysis/data/raw_data/","TTG.csv")
+X <- read_csv(path_tte, col_types =cols(),col_names=T) %>%
+  mutate_at(vars(depth), factor) %>%
+  column_to_rownames(var = "depth") %>%
+  as.matrix()
+
 ##phi <- convert.units(mu = mu)
 phi <- as.numeric(colnames(X))
 ## get l
@@ -20,27 +30,13 @@ em.rob <- robust.EM(em = em.pot,classunits = phi,limits = limits,
                     median = TRUE,
                     mc_n = 1000)
 
-#q <- nrow(em.rob$Vqn$mean)
-# Plot line-point graph with means and standard deviations
-#par(mfrow = c(1,5), oma = c(0, 0, 2, 0))
-#cols <- brewer.pal(q, "Set1")
+X1 <-as_tibble(em.rob$scores$mean) %>%
+  rename(EM1=V1, EM2=V2,EM3=V3, EM4=V4,EM5=V5)
+X2 <-as_tibble(em.rob$scores$sd) %>%
+  rename(EM1sd=V1, EM2sd=V2,EM3sd=V3, EM4sd=V4,EM5sd=V5)
 
-#for(i in 1:q) {
-#  sd.max <- ceiling(max(em.rob$scores$sd[,i]))
-#  sd.min <- ceiling(min(em.rob$scores$sd[,i]))
-#  plot(em.rob$scores$mean[,i],
-#       1:nrow(X),
-#       col = cols[i],
-#       lwd = 2,
-#       type = 'l',
-#       ylab = 'sampel no.',
-#       xlab = 'scores',
-#       ylim = rev(c(1, nrow(X))),
-#       xlim = c(-0.2, 1.2),
-#       main = paste("EM ", i))
-#  lines(em.rob$scores$mean[,i] - em.rob$scores$sd[,i], 1:nrow(X), col = cols[i], lty = 2)
-#  lines(em.rob$scores$mean[,i], 1:nrow(X), col = cols[i], lwd = 2)
-#  points(em.rob$scores$mean[,i], 1:nrow(X), col = cols[i])
-#  lines(em.rob$scores$mean[,i] + em.rob$scores$sd[,i], 1:nrow(X), col = cols[i], lty = 2)
-#}
-#mtext('Mean end-member scores with uncertainty', outer = TRUE, cex = 1.3)
+datageo <- bind_cols(X1, X2)
+  path_out <- here::here("analysis/data/derived_data/","datageo.csv")
+  write_csv(datageo,path_out)
+
+rm(list = ls())

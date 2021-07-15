@@ -1,4 +1,5 @@
 
+tar_manifest()
 
 tar_make()
 
