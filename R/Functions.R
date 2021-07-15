@@ -70,19 +70,19 @@ plot_stratplot <- function(path) {
   # lengthens data --------------------------------------------------------
 
   geodata_longer <- geodata %>%
-    dplyr::select(depth,clay,silt_fine,silt_coarse,sand,
+    mutate(silt= silt_coarse + silt_fine) %>%
+    dplyr::select(depth,clay,silt,sand,
                   TOC,TIC,TC,TN,
                   d13C, d18O) %>%
     rename(Depth = depth,`Clay`=clay,
-           `Silt fine`=silt_fine,
-           `Silt coarse`=silt_coarse,
+           `Silt`=silt,
            `Sand`=sand,
            `d13C`=d13C,
            `d18O`=d18O) %>%
     pivot_longer(cols =Clay:d18O,names_to = "values", values_to = "count") %>%
-    filter(values %in% c("Sand", "Silt fine", "Silt coarse","Clay",
+    filter(values %in% c("Sand", "Silt","Clay",
                          "TOC","TIC","TC","TN","d13C", "d18O")) %>%
-    mutate(values = fct_relevel(values,"Sand", "Silt fine","Silt coarse",
+    mutate(values = fct_relevel(values,"Sand", "Silt",
                                 "Clay","TC","TIC","TOC","TN","d13C", "d18O"))
 
 
@@ -117,7 +117,7 @@ plot_stratplot <- function(path) {
     scale_x_continuous(breaks = scales::breaks_extended(n = 3)) +
     theme_set(theme_paleo(8)) +
     theme(
-      text = element_text(size=8),
+      text = element_text(size=20),
       axis.ticks = element_line(colour = "grey70", size = 0.3),
       panel.grid.major =element_blank(),
       panel.grid.minor = element_blank(),
@@ -133,7 +133,7 @@ plot_stratplot <- function(path) {
       scale_x_continuous(breaks = scales::breaks_extended(n = 3)) +
       theme(axis.text.y.left = element_blank(),
             axis.ticks.y.left = element_blank(),
-            text = element_text(size=8),
+            text = element_text(size=16),
             panel.background = element_rect(fill = "white", colour = "grey50"))+
       labs(x = "coniss", y = NULL),
     nrow = 1,

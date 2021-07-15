@@ -40,7 +40,7 @@ alta_plot <- ggplot(geodata_longer,aes(x = count, y = Depth)) +
   scale_x_continuous(breaks = scales::breaks_extended(n = 3)) +
   theme_set(theme_paleo(8)) +
   theme(
-    text = element_text(size=10),
+    text = element_text(size=12),
     axis.ticks = element_line(colour = "grey70", size = 0.2),
     panel.grid.major =element_blank(),
     panel.grid.minor = element_blank()

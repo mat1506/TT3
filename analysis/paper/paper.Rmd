@@ -53,16 +53,12 @@ editor_options:
     wrap: 72
 ---
 
-*Text based on elsarticle sample manuscript, see
-<http://www.elsevier.com/author-schemas/latex-instructions#elsarticle>*
-
-```{r}
+```{r include = FALSE}
 
 library(tidyverse)
 library(targets)
 
 ```
-
 
 # Introduction
 
@@ -72,9 +68,9 @@ library(targets)
 
 ## Sedimentary and geochemical analysis
 
-In Dicembre 2013, we recovered 5 cores sediment at several sites around
-to Tagua Tagua 3 site using sing a hammer-modified UWITEC gravity corer
-and a UWITEC platform (Fig. 1 and Table S1). The cores were transported
+In November 2019, we recovered a sedimentary sequence (\~2.8 m) of the
+profile exponsed on the western wall from the new geoarchaeological
+excavation Tagua-Tagua 3 (Figure 1a and 1b). The cores were transported
 to the IACT-CSIC (Granada) and IPE-CSIC (Zaragoza-Jaca) laboratories in
 Spain for image acquisition and measurement of sediment physical
 properties, density and Magnetic Susceptibility (MS [x10$^{-8}$
@@ -85,9 +81,9 @@ carbon (TC), total inorganic carbon (TIC), total organic carbon
 ($TOC = T-TIC$) and total sulfur (TS) in a LECO SC 144 DR furnace
 (IPE--CSIC). Total nitrogen (TN) was measured in a VARIO MAX CN
 elemental analyzer (IPE--CSIC). Grain--size distributions between 0.02
-um and 2000 um were measured using a Malvern Mastersizer 2000
-APA2000 grain-size analyzer with Hydro 2000G AWA2000. Sedimentary facies
-were described based on criteria formulated by
+um and 2000 um were measured using a Malvern Mastersizer 2000 APA2000
+grain-size analyzer with Hydro 2000G AWA2000. Sedimentary facies were
+described based on criteria formulated by
 [@schnurrenbergerClassificationLacustrineSediments2003] and lacustrine
 units have been classified according to the sedimentary structure, MSCL
 data, elemental composition (TOC, TIC, TN, TS, TOC/TN, BioSi), XRF data
@@ -105,8 +101,8 @@ sequence obtained by Valero-Garcés et al., 1996. The radiocarbon ages
 were determined in MIS13-2A-1G and MIN13-1F-1G cores by AMS at Poznan
 Radiocarbon Laboratory, Poland and the DirectAMS laboratories, USA.
 Waters from the hypolimnion has also sampled to assess modern
-${^{14}{C}}$ reservoir effects (Table 1).The U/Th dating was done at
-the Massachusetts Institute of Technology (MIT, McGee Lab). For U/Th
+${^{14}{C}}$ reservoir effects (Table 1).The U/Th dating was done at the
+Massachusetts Institute of Technology (MIT, McGee Lab). For U/Th
 samples, the cores were visually assessed for material to dating
 criteria and methods described in [@chenUThDatingLake2020;
 @lawrenceedwards238U234U230Th232ThSystematicsPrecise1987;
@@ -116,11 +112,11 @@ concentration. Samples with higher U/Th ratios were then identified as
 materials worth further processing as they are more likely to yield
 "clean" samples with high ${^{230}{Th}}$/${^{232}{Th}}$ ratios. The
 isotopic compositions of the resulting uranium and thorium fractions
-were then measured on a Nu Plasma II--ES multicollector ICP--MS at MIT. 
+were then measured on a Nu Plasma II--ES multicollector ICP--MS at MIT.
 
 ## Data analysis
 
-```{r fig.width=9, fig.height=6, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
+```{r fig.width=14, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
 
 tar_read(strat_plot)
 
