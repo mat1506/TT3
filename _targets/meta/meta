@@ -21,4 +21,4 @@ raw_data|stem|aacc4c6dcab98640|c9c4de96c5ca784a|ef46db3751d8e999|-979620141|anal
 raw_geodata|stem|6c9cee7e4fffc2cb|e893f5380e4cbb76|ef46db3751d8e999|-1266545136|analysis/data/derived_data/datageo.csv|t18818.0516977873s|fbd35e9b14dbe035|17499|file|vector|||0.885||
 raw_data2|stem|6f3f77923fdc517f|27ace90b26ba98ae|ef46db3751d8e999|-1708885868|analysis/data/raw_data/2021-06-16_TT3_data_H01.csv|t18814.9516451383s|ecbe2c3678c08971|8331|file|vector|||0.001||
 target_data|stem|e6340eb99c034232|d6aa589439c80a16|a33832195e2eb714|-1214511767||t18822.9151518052s|44e327d1ee1978d7|43|rds|vector|||54.455||
-paper|stem|2b77d76e1026ab92|acf1cd6e15ca28e3|728651020cfce257|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18824.9391644436s|2c2e24c5d5a625bd|334141|file|vector|||3.244||
+paper|stem|cba578cc2ef2cd69|acf1cd6e15ca28e3|728651020cfce257|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18828.1422930162s|9a44ebdf18d94f30|342167|file|vector|||3.806||
