@@ -66,55 +66,66 @@ library(targets)
 
 # Materials and methods
 
-## Sedimentary and geochemical analysis
+## Sedimentological facies and elemental geochemistry
 
-In November 2019, we recovered a sedimentary sequence (\~2.8 m) of the
-profile exponsed on the western wall from the new geoarchaeological
-excavation Tagua-Tagua 3 (Figure 1a and 1b). The cores were transported
-to the IACT-CSIC (Granada) and IPE-CSIC (Zaragoza-Jaca) laboratories in
-Spain for image acquisition and measurement of sediment physical
-properties, density and Magnetic Susceptibility (MS [x10$^{-8}$
-$(m^3/kg)$])
+In November 2019, we recovered a sedimentary sequence (\~2.8 m deep) in
+an area of 15 x 10 cm following the archaeological strata of the profile
+exposed on the western wall of a 1x2 m excavation in the ALTT
+(Tagua-Tagua 3, Figure 1). Sedimentary facies were defined and
+characterized based on macroscopic description (color, bedding features,
+grain size, lithology and sedimentary textures). Sediment samples
+---between 5 to 10 g of material--- were obtained at 1-cm intervals.
+Samples were sent to the laboratories of Pyrenees Ecology Institute
+(IPE-CSIC) and the Andalusian Institute Earth Sciences Institute
+(IACT-CSIC) in Spain for geochemical, pollen and isotopic analysis.
+Other samples group were sent to the Archaeobotany and Palaeoecology
+Laboratory of the University of Exeter for the processing and extraction
+of diatom and phytolith.
 
-Elemental geochemical analyses were performed every 1 cm for total
-carbon (TC), total inorganic carbon (TIC), total organic carbon
-($TOC = T-TIC$) and total sulfur (TS) in a LECO SC 144 DR furnace
-(IPE--CSIC). Total nitrogen (TN) was measured in a VARIO MAX CN
-elemental analyzer (IPE--CSIC). Grain--size distributions between 0.02
-um and 2000 um were measured using a Malvern Mastersizer 2000 APA2000
-grain-size analyzer with Hydro 2000G AWA2000. Sedimentary facies were
-described based on criteria formulated by
-[@schnurrenbergerClassificationLacustrineSediments2003] and lacustrine
-units have been classified according to the sedimentary structure, MSCL
-data, elemental composition (TOC, TIC, TN, TS, TOC/TN, BioSi), XRF data
-and waxes composition.
+Subsamples were taken every 2 cm for analysed of total carbon (TC),
+total inorganic carbon (TIC), total organic carbon ($TOC = T-TIC$),
+total nitrogen (TN) and total sulfur (TS) in a LECO SCN furnace
+(IPE--CSIC). The grain-size frequency distributions (between 0.02 um and
+2000 um) were measured in triplicate using a Malvern Mastersizer 2000
+APA2000 grain-size analyzer with Hydro 2000G AWA2000. To determine the
+grain--size, the samples were pre-treated with 10% H2O2 and 10% HCl to
+remove organic matter and carbonates, respectively. Robust End-member
+mixing analysis (EMMA) was performed using the generic deterministic
+EMMA protocol slightly modified (R package EMMAgeo, version: 0.9.8.
+Dietze et al 2012; Dietze and Dietze 2019) to infer the sediment
+sources, transport and depositional processes.
+
+## Diatoms analysis
+
+Approximately 1 g of dry sediment every 2 cm were processed followingthe
+Queen's University methods. Clastic sediments were removed using a
+sodium polytungstate treatment. Permanent slides were prepared with
+Naphrax (Battarbee et al., 2002). Diatoms were identified and quantified
+under a trinocula Carl Zeiss microscope, AxioLab A1, with an oil
+immersion objective 1000x. Quantitative analyses were done by
+calculating relative abundances by counting approximately 200 valves (up
+to 900 valves were counted in some levels down to 30 when diatoms were
+scarce) in continuous transects encompassing the whole slide. Diatoms
+were classified to species or variety level. Optical microscopy images (1000x) were taken using a digital SLR camera (Canon EOS Rebel) attached to microscope. The nomenclature status of species or variety was verified using the Catalogue of Diatom Names (California Academy of Sciences). Diatoms were
+grouped according to life forms and ecological characteristics. Data
+were analyzed and plotted using ‘tidypaleo’ version 0.1.1 packets in R 4.1.0
+software.
+
+## Pollen Analysis and Macrocarbon analysis
+
+Eleven pollen samples were obtained from short core VIC11-2A-1G and processed following Faegri and Iversen (1989) methods to extract pollen grains. Lycopodium tablets were added for calculating pollen concentration (grains/cm3; Stockmarr(1971)) and accumulation rates (grains/cm2/yr). Pollen grains were mounted on glass slides and identified and quantified under an Axiostar Carl Zeiss microscope (400x and 1000x) using published pollen atlas Heusser (1971) and the reference pollen collection of the Paleoecology Laboratory at CEAZA. Pollen counts include 300 terrestrial pollen grains excluding paludal taxa. Data were analyzed and plotted using Tilia software.
+
+## Phytoliths
+
+Phytoliths were obtained from samples of approximately 2 gr of sediment, spaced every 30 cm on the 8 long sediment cores. We followed the standard procedures for phytoliths extraction (Piperno, 1988, 1994, 2006) using 36% HCl and 70% HNO3 to remove carbonates and organic matter respectively. Phytoliths were separated by heavy liquid flotation using ZnBr2 prepared to a density of 2.3 g/cm3 (Dickau et al., 2013). Finally, phytoliths were counted until obtaining a total of 200 per sample and they were classified according to the International Code for Phytolith Nomenclature (Madella et al. 2005). The presence of maize leaf phytoliths was studied using the discriminant function of cross-shaped phytoliths (cross variants 1 and 5/6) (Piperno et al., 2006). The percentage of each family or subfamily was plotted and the zones were built through the CONISS method carried out with the Rioja package in the R software (Juggins, 2012). Additionally, a change point analysis was carried out in the sequence of arboreal phytoliths to identify possible significant increases or decreases of this vegetation cover in the studied basin (Bai and Perron, 2003; Killick and Eckley, 2014). 
 
 ## Chronology
 
-The chronology for the Miscanti (MIS13-2A) and Miñique (MIN13-1F)
-sequence was obtained using ${^{210}{Pb}}$ and ${^{137}{Cs}}$ dating
-techniques, eight U/Th dates and, nine ${^{14}{C}}$ AMS dates (see Table
-1). Core MIN13-1F-1G was sampled in the field every 0.5 and 1 cm for
-${^{210}{Pb}}$ and ${^{137}{Cs}}$. The MIS13-2A-1G sequence was
-correlated with the ${^{210}{Pb}}$ and ${^{137}{Cs}}$ data from the
-sequence obtained by Valero-Garcés et al., 1996. The radiocarbon ages
-were determined in MIS13-2A-1G and MIN13-1F-1G cores by AMS at Poznan
-Radiocarbon Laboratory, Poland and the DirectAMS laboratories, USA.
-Waters from the hypolimnion has also sampled to assess modern
-${^{14}{C}}$ reservoir effects (Table 1).The U/Th dating was done at the
-Massachusetts Institute of Technology (MIT, McGee Lab). For U/Th
-samples, the cores were visually assessed for material to dating
-criteria and methods described in [@chenUThDatingLake2020;
-@lawrenceedwards238U234U230Th232ThSystematicsPrecise1987;
-@shenUraniumThoriumIsotopic2002]. A VG PQ2+ quadrupole ICP--MS and an
-Agilent 7900 ICP--MS at MIT was using to determined uranium and thorium
-concentration. Samples with higher U/Th ratios were then identified as
-materials worth further processing as they are more likely to yield
-"clean" samples with high ${^{230}{Th}}$/${^{232}{Th}}$ ratios. The
-isotopic compositions of the resulting uranium and thorium fractions
-were then measured on a Nu Plasma II--ES multicollector ICP--MS at MIT.
-
-## Data analysis
+The radiocarbon sample on carbon and bulk sediment were obtained of the
+profile exposed sampled at 1 cm resolution (Table 1) . The radiocarbon
+ages were determined by AMS at DirectAMS laboratories, USA. Results are
+presented in units of percent modern carbon (pMC) and the uncalibrated
+radiocarbon age before present (BP).
 
 ```{r fig.width=14, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
 
