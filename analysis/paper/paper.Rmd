@@ -60,81 +60,95 @@ library(targets)
 
 ```
 
-# Introduction
+# 1. Introduction
 
-# Study site and regional setting
+# 2. Study site and regional setting
 
-# Materials and methods
+# 3. Materials and methods
 
-## Sedimentological facies and elemental geochemistry
+In November 2019, we recovered a sedimentary sequence of 15 cm length,
+10 cm width and 280 cm depth of the profile exposed on the western wall
+of a 1x2 m excavation in the ALTT (Tagua-Tagua 3, Figure 1). Sediment
+samples (5 to 10 g of material) were obtained at 1-cm intervals.
+Sixty-six samples were sent to the laboratories of Pyrenees Ecology
+Institute (IPE-CSIC) and the Andalusian Institute Earth Sciences
+Institute (IACT-CSIC) in Spain for geochemical, pollen and isotopic
+analysis. Another set of samples were sent to the Archaeobotany and
+Palaeoecology Laboratory of the University of Exeter for the processing
+and extraction of diatom and phytolith. Sedimentary facies were defined
+and characterized based on macroscopic description (color, bedding
+features, grain size, lithology and sedimentary textures) and a machine
+learning workflow using the scikit-learn library (cita) in Python.
+Sedimentary facies were defined using a dimensionality reduction
+(Exploratory Factor Analysis) and unsupervised machine learning (K-Means
+algorithm cluster) with three different dataset (elemental geochemistry,
+grain size and diatoms)(Hall., 2016).
 
-In November 2019, we recovered a sedimentary sequence (\~2.8 m deep) in
-an area of 15 x 10 cm following the archaeological strata of the profile
-exposed on the western wall of a 1x2 m excavation in the ALTT
-(Tagua-Tagua 3, Figure 1). Sedimentary facies were defined and
-characterized based on macroscopic description (color, bedding features,
-grain size, lithology and sedimentary textures). Sediment samples
----between 5 to 10 g of material--- were obtained at 1-cm intervals.
-Samples were sent to the laboratories of Pyrenees Ecology Institute
-(IPE-CSIC) and the Andalusian Institute Earth Sciences Institute
-(IACT-CSIC) in Spain for geochemical, pollen and isotopic analysis.
-Other samples group were sent to the Archaeobotany and Palaeoecology
-Laboratory of the University of Exeter for the processing and extraction
-of diatom and phytolith.
-
-Subsamples were taken every 2 cm for analysed of total carbon (TC),
-total inorganic carbon (TIC), total organic carbon ($TOC = T-TIC$),
-total nitrogen (TN) and total sulfur (TS) in a LECO SCN furnace
-(IPE--CSIC). The grain-size frequency distributions (between 0.02 um and
-2000 um) were measured in triplicate using a Malvern Mastersizer 2000
-APA2000 grain-size analyzer with Hydro 2000G AWA2000. To determine the
+Samples were taken every 2 cm for analysed of total carbon (TC), total
+inorganic carbon (TIC), total organic carbon ($TOC = T-TIC$), total
+nitrogen (TN) and total sulfur (TS) in a LECO SCN furnace (IPE--CSIC).
+The grain-size frequency distributions (between 0.02 um and 2000 um)
+were measured in triplicate using a Malvern Mastersizer 2000 APA2000
+grain-size analyzer with Hydro 2000G AWA2000. To determine the
 grain--size, the samples were pre-treated with 10% H2O2 and 10% HCl to
 remove organic matter and carbonates, respectively. Robust End-member
 mixing analysis (EMMA) was performed using the generic deterministic
-EMMA protocol slightly modified (R package EMMAgeo, version: 0.9.8.
-Dietze et al 2012; Dietze and Dietze 2019) to infer the sediment
-sources, transport and depositional processes.
+EMMA protocol with the R package EMMAgeo v0.9.8. (Dietze et al 2012;
+Dietze and Dietze 2019) to infer the sediment sources, transport and
+depositional processes. Stable carbon and oxygen isotope analyses on
+calcite were carried out every 2 cm by mass spectrometry in bulk
+sediment samples following standard procedures and using an IRMS
+Finnigan MAT 251. The isotopic values are reported in the conventional
+delta notation relative to the PDB standard.
 
-## Diatoms analysis
+Eleven pollen samples were processed following Faegri and Iversen (1989)
+methods to extract pollen grains. Lycopodium tablets were added for
+calculating pollen concentration (grains/cm3; Stockmarr(1971)) and
+accumulation rates (grains/cm2/yr). Pollen grains were mounted on glass
+slides and identified and quantified under an Axiostar Carl Zeiss
+microscope (400x and 1000x) using published pollen atlas Heusser (1971)
+and the reference pollen collection of the Paleoecology Laboratory at
+IPE-CSIC. Pollen counts include 300 terrestrial pollen grains excluding
+paludal taxa. Phytoliths were obtained from twenty four samples of
+approximately 2 gr of sediment. We followed the standard procedures for
+phytoliths extraction (Piperno, 1988, 1994, 2006) using 36% HCl and 70%
+HNO3 to remove carbonates and organic matter respectively. Phytoliths
+were separated by heavy liquid flotation using ZnBr2 prepared to a
+density of 2.3 g/cm3 (Dickau et al., 2013). Finally, phytoliths were
+counted until obtaining a total of 200 per sample and they were
+classified according to the International Code for Phytolith
+Nomenclature (Madella et al. 2005). Diatoms were extracted
+simultaneously with phytoliths. Digested aliquotes were mounted onto
+permanent slides with Naphrax. Diatom valves were visualized under a
+XXXXX microscope, with an oil immersion objective of 1000x. A minimum of
+400 valves were counted for each level, with the exception of the base
+levels X, Y, Z, where valves were scarce. Diatoms were identified to
+species level with the LM images (1000x) taken using a digital SLR
+camera (Canon EOS Rebel) attached to microscope AND SEM???. The
+following literature was used for taxonomy and autoecology of the
+encountered valves.
 
-Approximately 1 g of dry sediment every 2 cm were processed followingthe
-Queen's University methods. Clastic sediments were removed using a
-sodium polytungstate treatment. Permanent slides were prepared with
-Naphrax (Battarbee et al., 2002). Diatoms were identified and quantified
-under a trinocula Carl Zeiss microscope, AxioLab A1, with an oil
-immersion objective 1000x. Quantitative analyses were done by
-calculating relative abundances by counting approximately 200 valves (up
-to 900 valves were counted in some levels down to 30 when diatoms were
-scarce) in continuous transects encompassing the whole slide. Diatoms
-were classified to species or variety level. Optical microscopy images (1000x) were taken using a digital SLR camera (Canon EOS Rebel) attached to microscope. The nomenclature status of species or variety was verified using the Catalogue of Diatom Names (California Academy of Sciences). Diatoms were
-grouped according to life forms and ecological characteristics. Data
-were analyzed and plotted using ‘tidypaleo’ version 0.1.1 packets in R 4.1.0
-software.
+The TT3 chronology was reconstructed with thirteen AMS-radiocarbon dates
+on charcoal and bulk sediment determined at DirectAMS laboratories, USA.
+Results are presented in units of percent modern carbon (pMC) and the
+uncalibrated radiocarbon age before present (relative to 1950 CE).
+Radiocarbon ages were calibrated using the Southern Hemisphere
+calibration curve (SHCal20, Hogg et al 2020). We used the package rbacon
+v2.2 (Blaauw and Christen, 2011) for age--depth modeling and to
+establish the deposition rates along the sequence. A change point
+analysis was carried out to identify significant breaks in the time
+series (Bai and Perron, 2003; Killick and Eckley, 2014). Stratigraphic
+diagrams were analyzed and plotted using 'tidypaleo' v0.1.1, 'ggplot'
+v3.3.5 and 'rioja' v0.9-26 packets in R 4.1.0 software.
 
-## Pollen Analysis and Macrocarbon analysis
+# Results
 
-Eleven pollen samples were obtained from short core VIC11-2A-1G and processed following Faegri and Iversen (1989) methods to extract pollen grains. Lycopodium tablets were added for calculating pollen concentration (grains/cm3; Stockmarr(1971)) and accumulation rates (grains/cm2/yr). Pollen grains were mounted on glass slides and identified and quantified under an Axiostar Carl Zeiss microscope (400x and 1000x) using published pollen atlas Heusser (1971) and the reference pollen collection of the Paleoecology Laboratory at CEAZA. Pollen counts include 300 terrestrial pollen grains excluding paludal taxa. Data were analyzed and plotted using Tilia software.
-
-## Phytoliths
-
-Phytoliths were obtained from samples of approximately 2 gr of sediment, spaced every 30 cm on the 8 long sediment cores. We followed the standard procedures for phytoliths extraction (Piperno, 1988, 1994, 2006) using 36% HCl and 70% HNO3 to remove carbonates and organic matter respectively. Phytoliths were separated by heavy liquid flotation using ZnBr2 prepared to a density of 2.3 g/cm3 (Dickau et al., 2013). Finally, phytoliths were counted until obtaining a total of 200 per sample and they were classified according to the International Code for Phytolith Nomenclature (Madella et al. 2005). The presence of maize leaf phytoliths was studied using the discriminant function of cross-shaped phytoliths (cross variants 1 and 5/6) (Piperno et al., 2006). The percentage of each family or subfamily was plotted and the zones were built through the CONISS method carried out with the Rioja package in the R software (Juggins, 2012). Additionally, a change point analysis was carried out in the sequence of arboreal phytoliths to identify possible significant increases or decreases of this vegetation cover in the studied basin (Bai and Perron, 2003; Killick and Eckley, 2014). 
-
-## Chronology
-
-The radiocarbon sample on carbon and bulk sediment were obtained of the
-profile exposed sampled at 1 cm resolution (Table 1) . The radiocarbon
-ages were determined by AMS at DirectAMS laboratories, USA. Results are
-presented in units of percent modern carbon (pMC) and the uncalibrated
-radiocarbon age before present (BP).
+## Cores correlations and sedimentary proxies
 
 ```{r fig.width=14, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
 
 tar_read(strat_plot)
 
 ```
-
-# Results
-
-## Cores correlations and sedimentary proxies
 
 # References {#references .unnumbered}
