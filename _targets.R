@@ -11,7 +11,9 @@ tar_option_set(packages = c(
   "tidypaleo",
   "here",
   "RColorBrewer",
-  "EMMAgeo"
+  "EMMAgeo",
+  "kableExtra",
+  "dplyr"
   ))
 
 # path_x0 <- here::here("analysis/data/raw_data/","2021-06-16_TT3_data_H01.csv")
