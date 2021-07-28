@@ -13,7 +13,8 @@ tar_option_set(packages = c(
   "RColorBrewer",
   "EMMAgeo",
   "kableExtra",
-  "dplyr"
+  "dplyr",
+  "rbacon"
   ))
 
 # path_x0 <- here::here("analysis/data/raw_data/","2021-06-16_TT3_data_H01.csv")
@@ -38,6 +39,12 @@ list(
   tar_target(
     strat_plot,
     plot_stratplot(raw_geodata)),
+  tar_target(
+    chrono_table,
+    table_age()),
+  tar_target(
+    chrono_plot,
+    agemodel_bacon()),
   tar_render(
     paper,
     "analysis/paper/paper.Rmd") #from tarchetype

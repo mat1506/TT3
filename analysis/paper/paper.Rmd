@@ -57,8 +57,7 @@ editor_options:
 
 library(tidyverse)
 library(targets)
-library(kableExtra)
-library(dplyr)
+
 ```
 
 ```{r include = FALSE}
@@ -67,11 +66,11 @@ options(tinytex.verbose = TRUE)
 
 ```
 
-# 1. Introduction
+# Introduction
 
-# 2. Study site and regional setting
+# Study site and regional setting
 
-# 3. Materials and methods
+# Materials and methods
 
 In November 2019, we recovered a sedimentary sequence of 15 cm length,
 10 cm width and 280 cm depth of the profile exposed on the western wall
@@ -150,31 +149,35 @@ v3.3.5 and 'rioja' v0.9-26 packets in R 4.1.0 software.
 
 # Results
 
-### Tagua Tagua 3 sediment sequence
+## Sedimentary facie, geochemical and end-member mixing analysis 
 
-```{r echo = FALSE}
-dt <- tibble(
-Items = c("D-AMS 039542", "D-AMS 039543", "D-AMS 039544", "D-AMS 039545","D-AMS 039546", "D-AMS 039547","D-AMS 039548","D-AMS 039549","D-AMS 039550","D-AMS 039551","D-AMS 039552","D-AMS 039553","D-AMS 039554"),
-Text_1 = c("39", "44", "67","106", "150","161","162","162","168","199","223","254","266"),
- Text_2 = c("5345", "5806", "7259","8657","9736","10211","10936","10747","10590","11117","9977","17353","16558"),
- Text_3 = c("28", "33", "28", "33","28", "33","28", "33","28", "33","28", "33","28"),
-Text_4 = c("Lorem ipsum ", "consectetur", "Proin","Proin "),
-Text_5 = c("Lorem ipsum ", "consectetur", "Proin","Proin "),
-Text_6 = c("Lorem ipsum ", "consectetur", "Proin","Proin "),
-Text_7 = c("charcoal ", "consectetur", "Proin","Proin ")
-)
-kbl(dt, align = "c",format = "latex", booktabs = T, row.names = FALSE, linesep = "", escape = F,
-    col.names = c("Lab code","Depth","$^{14}$C Age","$1\\sigma$","Median a cal BP","Lower a","Upper a","Material")) %>%
-  kable_classic(full_width = F) %>% 
-  kable_styling(position = "left",font_size = 7)
-  
+## Phytoliths and Pollen analysis
 
-```
+## Diatom analysis
 
-```{r fig.width=14, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
+## Radiocarbon chronology
+
+```{r fig.width=17, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
 
 tar_read(strat_plot)
 
 ```
+
+
+
+```{r echo = FALSE}
+
+tar_read(chrono_table)
+
+```
+
+```{r echo = FALSE}
+
+tar_read(chrono_plot)
+
+```
+
+
+# Discutions
 
 # References {#references .unnumbered}

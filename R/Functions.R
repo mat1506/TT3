@@ -70,20 +70,22 @@ plot_stratplot <- function(path) {
   # lengthens data --------------------------------------------------------
 
   geodata_longer <- geodata %>%
-    mutate(silt= silt_coarse + silt_fine) %>%
+    mutate(silt= silt_coarse + silt_fine,
+           TOC.TN = (TOC/12)/(TN/14)) %>%
     dplyr::select(depth,clay,silt,sand,
-                  TOC,TIC,TC,TN,
+                  TOC,TIC,TC,TN,TOC.TN,
                   d13C, d18O) %>%
     rename(Depth = depth,`Clay`=clay,
            `Silt`=silt,
            `Sand`=sand,
+           `TOC/TN`=TOC.TN,
            `d13C`=d13C,
            `d18O`=d18O) %>%
     pivot_longer(cols =Clay:d18O,names_to = "values", values_to = "count") %>%
     filter(values %in% c("Sand", "Silt","Clay",
-                         "TOC","TIC","TC","TN","d13C", "d18O")) %>%
+                         "TOC","TIC","TC","TN","TOC/TN","d13C", "d18O")) %>%
     mutate(values = fct_relevel(values,"Sand", "Silt",
-                                "Clay","TC","TIC","TOC","TN","d13C", "d18O"))
+                                "Clay","TC","TIC","TOC","TN","TOC/TN","d13C", "d18O"))
 
 
   # get zone  ---------------------------------------------------------------
@@ -133,7 +135,7 @@ plot_stratplot <- function(path) {
       scale_x_continuous(breaks = scales::breaks_extended(n = 3)) +
       theme(axis.text.y.left = element_blank(),
             axis.ticks.y.left = element_blank(),
-            text = element_text(size=16),
+            text = element_text(size=15),
             panel.background = element_rect(fill = "white", colour = "grey50"))+
       labs(x = "coniss", y = NULL),
     nrow = 1,
@@ -149,4 +151,43 @@ plot_stratplot <- function(path) {
   #  ggsave(pdf_out, width = 25,height = 12, units = 'cm',device = cairo_pdf)
   #  ggsave(png_out,  width = 25,height = 12, units = 'cm',device = "png")
 
+}
+
+
+# Table age ---------------------------------------------------------------
+
+table_age <- function(path) {
+
+  dt <- tibble(
+    Items = c("D-AMS 039542", "D-AMS 039543", "D-AMS 039544", "D-AMS 039545","D-AMS 039546", "D-AMS 039547","D-AMS 039548","D-AMS 039549","D-AMS 039550","D-AMS 039551","D-AMS 039552","D-AMS 039553","D-AMS 039554"),
+    Text_1 = c("39", "44", "67","106", "150","161","162","162","168","199","223","254","266"),
+    Text_2 = c("5345", "5806", "7259","8657","9736","10211","10936","10747","10590","11117","9977","17353","16558"),
+    Text_3 = c("28", "33", "32", "45","35", "63","41", "49","39", "51","45", "84","69"),
+    Text_4 = c("51.41","48.54","40.51","34.04","29.76","28.05","25.63","26.24","26.76","25.06","28.88","11.53","12.73"),
+    Text_5 = c("0.18", "0.20", "0.16", "0.19","0.13", "0.22","0.13", "0.16","0.13", "0.16","0.16", "0.12","0.11"),
+    Text_6 = c("6086","6571","8021","9591","11134","11817","12813","12709","12549" ,"13015","11377", "20890","19959"),
+    Text_7 = c("69","56","62","57","111","144","46", "38","64" ,"61","122", "124","130"),
+    Text_8 = c("Charcoal ", "Charcoal", "Charcoal","Charcoal","Bulk sediment","Bulk sediment","Charcoal","Bulk sediment","Charcoal","Bulk sediment","Bulk sediment","Bulk sediment","Bulk sediment")
+  )
+  kbl(dt, caption = "mtcars Data Summary\n",align = c('l','c','c','c','c','c','c','c','r'),format = "latex", booktabs = T, row.names = FALSE, linesep = "", escape = F,
+      col.names = c("Lab code","Depth","$^{14}$C Age","$1\\sigma$ error","pMC","$1\\sigma$ error","Median yr cal BP","$1\\sigma$ error","Material")) %>%
+    kable_classic(full_width = F) %>%
+    kable_styling(position = "left",font_size = 7)
+
+
+}
+
+
+# age model ---------------------------------------------------------------
+
+agemodel_bacon <- function(path) {
+
+  rbacon::Bacon(core = "TT3", coredir = "cores_bacon",
+        ask = FALSE, plot.pdf = T,
+        thick = 2,ssize=8000,
+        hiatus.depths=c(176),
+        acc.mean=c(50,80),
+        acc.shape=c(1.4,1),
+        slump=c(176,180)
+        )
 }

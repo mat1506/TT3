@@ -1,0 +1,24 @@
+## Ran on Tue Jul 27 18:23:13 2021 
+
+Cal 0 : ConstCal;
+Cal 1 : IntCal20, 0;
+Cal 2 : Marine20;
+Cal 3 : SHCal20, 0;
+
+##   id.   age    std   depth  delta.R  delta.STD     t.a   t.b   cc
+Det 0 : D-AMS039542 ,  5345,  28,  39,  0,  0,  3,  4,  1;
+Det 1 : D-AMS039543 , 5806, 33, 44;
+Det 2 : D-AMS039544 , 7259, 32, 67;
+Det 3 : D-AMS039545 , 8657, 45, 106;
+Det 4 : D-AMS039546 , 9736, 35, 150;
+Det 5 : D-AMS039547 , 10211, 63, 161;
+Det 6 : D-AMS039548 , 10936, 41, 162;
+Det 7 : D-AMS039549 , 10747, 49, 162;
+Det 8 : D-AMS039550 , 10590, 39, 168;
+Det 9 : D-AMS039551 , 1117, 51, 199;
+Det 10 : D-AMS039552 , 9977, 45, 223;
+Det 11 : D-AMS039553 , 17353, 84, 254;
+Det 12 : D-AMS039554 , 16558, 69, 266;
+
+##		 K   MinAge   MaxAge   th0   th0p   w.a   w.b   alpha  beta  dmin  dmax seed
+Bacon 0: FixT, 58,  -71,  1e+06,  5344,  5335,  4.9,  2.1,  1.2,  0.06, 39, 271, 782233;
