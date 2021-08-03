@@ -27,4 +27,4 @@ read_write_geodata|function|533b334610c242a0||||||||||||||
 plot_stratplot|function|77f4c2eaed342e65||||||||||||||
 agemodel_bacon|function|dcaf12608acb1e34||||||||||||||
 table_facies|function|f08ed6ce028ee38e||||||||||||||
-paper|stem|cc42467564ef67c0|b00176a09919dd88|720540f14fee1b80|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18842.1259439067s|47b5a98df9dd4436|527468|file|vector|||3.149||
+paper|stem|39c4d999ed8890e5|b00176a09919dd88|720540f14fee1b80|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18842.1690012062s|0210b32a3883e6b6|532707|file|vector|||3.175||
