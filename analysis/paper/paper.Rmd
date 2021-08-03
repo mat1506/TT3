@@ -3,8 +3,8 @@ title: The Pleistocene-Holocene Transition in Tagua-Tagua, central Chile
 author:
   - name: Matías Frugone-Álvarez
     email: matutefrugone@gmail.com
-    affiliation: puc
     footnote: 1
+    affiliation: puc
   - name: Erwin Gonzáles Huerta
     affiliation: uccs,ciba,geup
   - name: Blas Valero-Garcés
@@ -48,9 +48,10 @@ linenumbers: true
 numbersections: true
 csl: elsevier-harvard.csl
 output: rticles::elsevier_article
-editor_options: 
-  markdown: 
-    wrap: 72
+header-includes:
+- \usepackage{caption}
+- \usepackage{multirow}
+- \usepackage{tabularx}
 ---
 
 ```{r include = FALSE}
@@ -171,6 +172,8 @@ tar_read(chrono_table)
 
 ```
 
+
+
 ```{r echo = FALSE}
 
 tar_read(chrono_plot)
@@ -178,6 +181,43 @@ tar_read(chrono_plot)
 ```
 
 
+
 # Discutions
 
 # References {#references .unnumbered}
+
+
+
+\clearpage
+
+\begin{table}[!hbtp]
+\caption{Sedimentological, compositional characteristics and depositional environment of LdM lacustrine facies.}
+\resizebox*{0.98\textwidth}{!}{
+\begin{tabular}{p{1cm}p{5.5cm}p{5.5cm}p{5.2cm}}
+\hline\hline
+\multicolumn{4}{l}{\textbf{Banded diatomaceous silts  (TOC $<$2$\%$; BioSi 18-19 $\%$)}}\\ [0.7ex] 
+\hline
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\hline
+\textbf{D1} & Dark to light brown, diatomaceous fine silt in cm- thick layers with gradational boundaries. & Low TOC (1.9 $\%$), TIC ($<$ 0.1 $\%$) and TS (0.24 $\%$) and moderately low BioSi (19.5 $\%$). High silicate-related elements (K, Ti, Rb, Sr and Zr); low Br/Ti, Ca/Ti, S/Ti and Fe/Mn.& Distal, profundal environments with intermediate clastic-volcanic input (ash fall processes and clastic run-off from the watershed after volcanic events).Higher clastic input in D2.\\ [0.5ex]
+\hline
+\textbf{D2} & Dark grey to brown, diatom-aceous, medium to coarse silt in cm-thick layers with gradational top and bottom boundaries. & Lower TOC (1.6 $\%$), TIC ($<$ 0.1), TS (0.22 $\%$) and BioSi (18.2 $\%$) than facies D1. High silicate-related elements (K, Ti, Rb, Sr and Zr); low Br/Ti, Ca/Ti, S/Ti and Fe/Mn.& Distal, profundal environments with higher clastic - volcanic input \\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{Banded, diatomaceous, organic-rich silts (TOC $>$3$\%$; BioSi $>$ 20$\%$)}}\\ [0.7ex] 
+\hline \hline
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\hline
+\textbf{D3} & Banded, dm-thick layers of dark brown diatomaceous, organic rich medium to coarse silts with variable macrophyte content. & High TOC (3.8 $\%$) and BioSi ($21.7$ $\%$), moderate TS ($0.6$ $\%$) and low TIC ($< $$0.1$ $\%$). Relatively high Si, Fe and Br and low Ti, Rb, Sr, Zr, Ti, Br/Ti, Ca/Ti, Fe/Mn.& \multirow{3}{5cm}{Littoral to relatively deep environments dominated by organic deposition with low clastic input. Sequences (D3/D5,D4), (D5/D3/D4) and alternation D3/D4 represent transition from littoral, macrophyte-dominated (D3 and D5) to deeper environments (D4).}\\ [0.5ex]
+\cline{1-3}
+\textbf{D4} & Massive to banded, $<$ dm-thick layers of lighter brown diatom and organic rich fine silt. & High TOC ($3.2$$\%$) and BioSi ($21.4$ $\%$), moderate TS ($0.7$ $\%$) and low TIC ($<$ $0.1$ $\%$). Relatively high Si, Fe and Br and low Ti, Rb, Sr, Zr.&\\ [0.5ex]
+\cline{1-3}
+\textbf{D5} &Massive to banded, mm- to cm - thick layers of brown, macrophyte-rich coarse silt.& TS (1.4 $\%$) and presence of calcite (TIC = $0.1$$\%$). Higher TOC/TN. Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr), high Br/Ti, Ca/Ti, and S/Ti. High Mn values, and low Fe/Mn ratios.&\\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{Laminated diatomaceous organic-rich silts(TOC 2-3.5$\%$; BioSi ca. 20 $\%$)}}\\ [0.7ex] 
+\hline \hline
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\hline
+\textbf{D6} &Laminated, dark brown, organic-rich silt composed of three main laminae type: a) greenish grey, diatomaceous medium to fine silt; b) dark brown, organic-rich fine silt with diffuse upper and lower boundaries and c) brown, macrophyte–rich, coarse silt, with sharp, erosional lower boundaries. Facies D6b contains more frequent endogenic calcite crystals.& High TOC (3.1$\%$), BioSi (19.7$\%$) and TS (1.4$\%$, peaks up to 6$\%$ in D6c) and common presence of calcite (TIC $>=$ 0.1). Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr); high Br/Ti, Ca/Ti, and S/Ti. High Mn values and low Fe/Mn ratios.& Distal, frequently oxic environments dominated by organic deposition and higher clastic input. Some periods with endogenic calcite formation\\ [0.5ex]
+\hline
+\end{tabular}}
+\end{table}

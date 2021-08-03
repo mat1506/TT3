@@ -169,14 +169,14 @@ table_age <- function(path) {
     Text_7 = c("69","56","62","57","111","144","46", "38","64" ,"61","122", "124","130"),
     Text_8 = c("Charcoal ", "Charcoal", "Charcoal","Charcoal","Bulk sediment","Bulk sediment","Charcoal","Bulk sediment","Charcoal","Bulk sediment","Bulk sediment","Bulk sediment","Bulk sediment")
   )
-  kbl(dt, caption = "mtcars Data Summary\n",align = c('l','c','c','c','c','c','c','c','r'),format = "latex", booktabs = T, row.names = FALSE, linesep = "", escape = F,
-      col.names = c("Lab code","Depth","$^{14}$C Age","$1\\sigma$ error","pMC","$1\\sigma$ error","Median yr cal BP","$1\\sigma$ error","Material")) %>%
+  kbl(dt, caption = "Radiocarbon dating of TT3 sequence. The table shows the ages in terms of years `before present' (BP), percent modern carbon (pMC) and their uncertainties (1 $1\\sigma$).
+      The median age calibration was conducted with Oxcal 4.4 and SHCal20 calibration curve (Hogg et al., 2020; Bronk Ramsey 2009a)",
+      align = c('l','c','c','c','c','c','c','c','r'),format = "latex", booktabs = T, row.names = FALSE, linesep = "", escape = F,
+      col.names = c("Lab code","Depth","$^{14}$C a BP","$1\\sigma$","pMC","$1\\sigma$","Median a cal BP","$1\\sigma$","Material")) %>%
     kable_classic(full_width = F) %>%
-    kable_styling(position = "left",font_size = 7)
-
+    kable_styling(position = "left",font_size = 7, latex_options ="hold_position")
 
 }
-
 
 # age model ---------------------------------------------------------------
 
@@ -191,3 +191,26 @@ agemodel_bacon <- function(path) {
         slump=c(176,180)
         )
 }
+
+
+# Table facies ------------------------------------------------------------
+
+table_facies <- function(path) {
+
+ dt <- tibble(
+  Items = c("Facies 1 (0-23 cm)", "Facies 2 (23-36 cm)", "Facies 3 (36-45 cm)", "Facies 4a (45-79 cm)","Facies 4b (79-118 cm)", "Facies 5 (118-133 cm)","Facies 6 (133-155 cm)",
+           "Facies 7 (155-178 cm)","Facies 8 (178-243 cm)","Facies 9 (243-261 cm)","Facies 10 (261-273 cm)"),
+  Text_1 = c("33",
+            "44", "67","106", "150","161","162","162","161","162","162"),
+  Text_2 = c("5345", "5806", "7259","8657","9736","10211","10936","10747","9736","10211","10936"),
+  Text_3 = c("28", "33", "32", "45","35", "63","41", "49","63","41", "49")
+)
+  kbl(dt, caption = "Sedimentological and compositional characteristics and depositional environment of LdM lacustrine facies.",align = c('l','c','c','c'),
+      format = "latex", booktabs = T, row.names = FALSE, linesep = "", escape = F,
+  col.names = c("Facies","Sedimentological properties","Composition and geochemistry","Depositional environment")) %>%
+   kable_classic(full_width = F) %>%
+   pack_rows(index = c("Unit 1 " = 2, "Unit 2" = 3, "Unit 3" = 3, "Unit 4" = 3)) %>%
+    kable_styling(position = "left",font_size = 7)
+}
+
+
