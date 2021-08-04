@@ -73,84 +73,17 @@ options(tinytex.verbose = TRUE)
 
 # Materials and methods
 
-In November 2019, we recovered a sedimentary sequence of 15 cm length,
-10 cm width and 280 cm depth of the profile exposed on the western wall
-of a 1x2 m excavation in the ALTT (Tagua-Tagua 3, Figure 1). Sediment
-samples (5 to 10 g of material) were obtained at 1-cm intervals.
-Sixty-six samples were sent to the laboratories of Pyrenees Ecology
-Institute (IPE-CSIC) and the Andalusian Institute Earth Sciences
-Institute (IACT-CSIC) in Spain for geochemical, pollen and isotopic
-analysis. Another set of samples were sent to the Archaeobotany and
-Palaeoecology Laboratory of the University of Exeter for the processing
-and extraction of diatom and phytolith. Sedimentary facies were defined
-and characterized based on macroscopic description (color, bedding
-features, grain size, lithology and sedimentary textures) and a machine
-learning workflow using the scikit-learn library (cita) in Python.
-Sedimentary facies were defined using a dimensionality reduction
-(Exploratory Factor Analysis) and unsupervised machine learning (K-Means
-algorithm cluster) with three different dataset (elemental geochemistry,
-grain size and diatoms)(Hall., 2016).
+In November 2019, we recovered a sedimentary sequence of 15 cm length, 10 cm width and 280 cm depth of the profile exposed on the western wall of a 1x2 m excavation in the ALTT (Tagua-Tagua 3, Figure 1). Sediment samples (5 to 10 g of material) were obtained at 1-cm intervals. Sixty-six samples were sent to the laboratories of Pyrenees Ecology Institute (IPE-CSIC) and the Andalusian Institute Earth Sciences Institute (IACT-CSIC) in Spain for geochemical, pollen and isotopic analysis. Another set of samples were sent to the Archaeobotany and Palaeoecology Laboratory of the University of Exeter for the processing and extraction of diatom and phytolith. Sedimentary facies were defined and characterized based on macroscopic description (color, bedding features, grain size, lithology and sedimentary textures) and a machine learning workflow using the scikit-learn library (cita) in Python. Sedimentary facies were defined using a dimensionality reduction (Exploratory Factor Analysis) and unsupervised machine learning (K-Means algorithm cluster) with three different dataset (elemental geochemistry, grain size and diatoms)(Hall., 2016).
 
-Samples were taken every 2 cm for analysed of total carbon (TC), total
-inorganic carbon (TIC), total organic carbon ($TOC = T-TIC$), total
-nitrogen (TN) and total sulfur (TS) in a LECO SCN furnace (IPE--CSIC).
-The grain-size frequency distributions (between 0.02 um and 2000 um)
-were measured in triplicate using a Malvern Mastersizer 2000 APA2000
-grain-size analyzer with Hydro 2000G AWA2000. To determine the
-grain--size, the samples were pre-treated with 10% H2O2 and 10% HCl to
-remove organic matter and carbonates, respectively. Robust End-member
-mixing analysis (EMMA) was performed using the generic deterministic
-EMMA protocol with the R package EMMAgeo v0.9.8. (Dietze et al 2012;
-Dietze and Dietze 2019) to infer the sediment sources, transport and
-depositional processes. Stable carbon and oxygen isotope analyses on
-calcite were carried out every 2 cm by mass spectrometry in bulk
-sediment samples following standard procedures and using an IRMS
-Finnigan MAT 251. The isotopic values are reported in the conventional
-delta notation relative to the PDB standard.
+Samples were taken every 2 cm for analysed of total carbon (TC), total inorganic carbon (TIC), total organic carbon ($TOC = T-TIC$), total nitrogen (TN) and total sulfur (TS) in a LECO SCN furnace (IPE--CSIC). The grain-size frequency distributions (between 0.02 um and 2000 um) were measured in triplicate using a Malvern Mastersizer 2000 APA2000 grain-size analyzer with Hydro 2000G AWA2000. To determine the grain--size, the samples were pre-treated with 10% H2O2 and 10% HCl to remove organic matter and carbonates, respectively. Robust End-member mixing analysis (EMMA) was performed using the generic deterministic EMMA protocol with the R package EMMAgeo v0.9.8. (Dietze et al 2012; Dietze and Dietze 2019) to infer the sediment sources, transport and depositional processes. Stable carbon and oxygen isotope analyses on calcite were carried out every 2 cm by mass spectrometry in bulk sediment samples following standard procedures and using an IRMS Finnigan MAT 251. The isotopic values are reported in the conventional delta notation relative to the PDB standard.
 
-Eleven pollen samples were processed following Faegri and Iversen (1989)
-methods to extract pollen grains. Lycopodium tablets were added for
-calculating pollen concentration (grains/cm3; Stockmarr(1971)) and
-accumulation rates (grains/cm2/yr). Pollen grains were mounted on glass
-slides and identified and quantified under an Axiostar Carl Zeiss
-microscope (400x and 1000x) using published pollen atlas Heusser (1971)
-and the reference pollen collection of the Paleoecology Laboratory at
-IPE-CSIC. Pollen counts include 300 terrestrial pollen grains excluding
-paludal taxa. Phytoliths were obtained from twenty four samples of
-approximately 2 gr of sediment. We followed the standard procedures for
-phytoliths extraction (Piperno, 1988, 1994, 2006) using 36% HCl and 70%
-HNO3 to remove carbonates and organic matter respectively. Phytoliths
-were separated by heavy liquid flotation using ZnBr2 prepared to a
-density of 2.3 g/cm3 (Dickau et al., 2013). Finally, phytoliths were
-counted until obtaining a total of 200 per sample and they were
-classified according to the International Code for Phytolith
-Nomenclature (Madella et al. 2005). Diatoms were extracted
-simultaneously with phytoliths. Digested aliquotes were mounted onto
-permanent slides with Naphrax. Diatom valves were visualized under a
-XXXXX microscope, with an oil immersion objective of 1000x. A minimum of
-400 valves were counted for each level, with the exception of the base
-levels X, Y, Z, where valves were scarce. Diatoms were identified to
-species level with the LM images (1000x) taken using a digital SLR
-camera (Canon EOS Rebel) attached to microscope AND SEM???. The
-following literature was used for taxonomy and autoecology of the
-encountered valves.
+Eleven pollen samples were processed following Faegri and Iversen (1989) methods to extract pollen grains. Lycopodium tablets were added for calculating pollen concentration (grains/cm3; Stockmarr(1971)) and accumulation rates (grains/cm2/yr). Pollen grains were mounted on glass slides and identified and quantified under an Axiostar Carl Zeiss microscope (400x and 1000x) using published pollen atlas Heusser (1971) and the reference pollen collection of the Paleoecology Laboratory at IPE-CSIC. Pollen counts include 300 terrestrial pollen grains excluding paludal taxa. Phytoliths were obtained from twenty four samples of approximately 2 gr of sediment. We followed the standard procedures for phytoliths extraction (Piperno, 1988, 1994, 2006) using 36% HCl and 70% HNO3 to remove carbonates and organic matter respectively. Phytoliths were separated by heavy liquid flotation using ZnBr2 prepared to a density of 2.3 g/cm3 (Dickau et al., 2013). Finally, phytoliths were counted until obtaining a total of 200 per sample and they were classified according to the International Code for Phytolith Nomenclature (Madella et al. 2005). Diatoms were extracted simultaneously with phytoliths. Digested aliquotes were mounted onto permanent slides with Naphrax. Diatom valves were visualized under a XXXXX microscope, with an oil immersion objective of 1000x. A minimum of 400 valves were counted for each level, with the exception of the base levels X, Y, Z, where valves were scarce. Diatoms were identified to species level with the LM images (1000x) taken using a digital SLR camera (Canon EOS Rebel) attached to microscope AND SEM???. The following literature was used for taxonomy and autoecology of the encountered valves.
 
-The TT3 chronology was reconstructed with thirteen AMS-radiocarbon dates
-on charcoal and bulk sediment determined at DirectAMS laboratories, USA.
-Results are presented in units of percent modern carbon (pMC) and the
-uncalibrated radiocarbon age before present (relative to 1950 CE).
-Radiocarbon ages were calibrated using the Southern Hemisphere
-calibration curve (SHCal20, Hogg et al 2020). We used the package rbacon
-v2.2 (Blaauw and Christen, 2011) for age--depth modeling and to
-establish the deposition rates along the sequence. A change point
-analysis was carried out to identify significant breaks in the time
-series (Bai and Perron, 2003; Killick and Eckley, 2014). Stratigraphic
-diagrams were analyzed and plotted using 'tidypaleo' v0.1.1, 'ggplot'
-v3.3.5 and 'rioja' v0.9-26 packets in R 4.1.0 software.
+The TT3 chronology was reconstructed with thirteen AMS-radiocarbon dates on charcoal and bulk sediment determined at DirectAMS laboratories, USA. Results are presented in units of percent modern carbon (pMC) and the uncalibrated radiocarbon age before present (relative to 1950 CE). Radiocarbon ages were calibrated using the Southern Hemisphere calibration curve (SHCal20, Hogg et al 2020). We used the package rbacon v2.2 (Blaauw and Christen, 2011) for age--depth modeling and to establish the deposition rates along the sequence. A change point analysis was carried out to identify significant breaks in the time series (Bai and Perron, 2003; Killick and Eckley, 2014). Stratigraphic diagrams were analyzed and plotted using 'tidypaleo' v0.1.1, 'ggplot' v3.3.5 and 'rioja' v0.9-26 packets in R 4.1.0 software.
 
 # Results
 
-## Sedimentary facie, geochemical and end-member mixing analysis 
+## Sedimentary facie, geochemical and end-member mixing analysis
 
 ## Phytoliths and Pollen analysis
 
@@ -164,15 +97,11 @@ tar_read(strat_plot)
 
 ```
 
-
-
 ```{r echo = FALSE}
 
 tar_read(chrono_table)
 
 ```
-
-
 
 ```{r echo = FALSE}
 
@@ -180,38 +109,33 @@ tar_read(chrono_plot)
 
 ```
 
-
-
 # Discutions
 
 # References {#references .unnumbered}
 
-
-
 \clearpage
 
+```{=tex}
 \begin{table}[!hbtp]
 \caption{Sedimentological, compositional characteristics and depositional environment of Tagua-Tagua lacustrine facies.}
 \resizebox*{0.98\textwidth}{!}{
-\begin{tabular}{p{1cm}p{5.5cm}p{5.5cm}p{5.2cm}}
-\hline\hline
-\multicolumn{4}{l}{\textbf{Banded diatomaceous silts  (TOC $<$2$\%$; BioSi 18-19 $\%$)}}\\ [0.7ex] 
+\begin{tabular}{p{2.5cm} p{5.5cm} p{5.5cm} p{5.2cm}}
 \hline
-\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\multicolumn{4}{l}{\textbf{1. Reworked diatomaceous mud soils}} \\
+\hline \\
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
 \hline
-\textbf{S1} & Brown, fine sand (25 $\%$) to fine silts (40 $\%$) with interbedded gravel clasts and modern edaphic features & High TOC (3.1 $\%$) and TN (0.5 $\%$) and low TIC (0.01 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-21 \textperthousand}$ and $\textrm{-11 \textperthousand}$, respectively) & Modern soil\\ [0.5ex]
+\textbf{S1 (0-23 cm)} & Massive brown soil of fine silt (40 $\%$) to coarse clay (10 $\%$) with interbedded gravel clasts & High TOC (3.1 $\%$) and TN (0.5 $\%$) and low TIC (0.01 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-21 \textperthousand}$ and $\textrm{-11 \textperthousand}$, respectively) & Soil with modern edaphic features soil with\\ [0.9ex]
 \hline
-\textbf{D2} & Dark grey to brown, diatom-aceous, medium to coarse silt in cm-thick layers with gradational top and bottom boundaries. & Lower TOC (1.6 $\%$), TIC ($<$ 0.1), TS (0.22 $\%$) and BioSi (18.2 $\%$) than facies D1. High silicate-related elements (K, Ti, Rb, Sr and Zr); low Br/Ti, Ca/Ti, S/Ti and Fe/Mn.& Distal, profundal environments with higher clastic - volcanic input \\ [0.5ex]
+\textbf{S2 (23-38 cm)} & Massive gray-brown to whitish-brown soil of coarse clay (25 $\%$) to coarse silt (40 $\%$). Presence of stratified (fissile) diatomaceous mud with charcoal fragments. & High TOC (2.3 $\%$) and TN (0.5 $\%$) and low TIC (0.04 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-15 \textperthousand}$ and $\textrm{-7.8 \textperthousand}$, respectively) & Reworked fluvio-lacustrine sediment with modern edaphic features \\ [0.5ex]
 \hline
-\multicolumn{4}{l}{\textbf{Banded, diatomaceous, organic-rich silts (TOC $>$3$\%$; BioSi $>$ 20$\%$)}}\\ [0.7ex] 
-\hline \hline
-\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\multicolumn{4}{l}{\textbf{2. Banded, diatomaceous, organic-poor silts}}\\  
+\hline \\ 
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
 \hline
-\textbf{D3} & Banded, dm-thick layers of dark brown diatomaceous, organic rich medium to coarse silts with variable macrophyte content. & High TOC (3.8 $\%$) and BioSi ($21.7$ $\%$), moderate TS ($0.6$ $\%$) and low TIC ($< $$0.1$ $\%$). Relatively high Si, Fe and Br and low Ti, Rb, Sr, Zr, Ti, Br/Ti, Ca/Ti, Fe/Mn.& \multirow{3}{5cm}{Littoral to relatively deep environments dominated by organic deposition with low clastic input. Sequences (D3/D5,D4), (D5/D3/D4) and alternation D3/D4 represent transition from littoral, macrophyte-dominated (D3 and D5) to deeper environments (D4).}\\ [0.5ex]
-\cline{1-3}
-\textbf{D4} & Massive to banded, $<$ dm-thick layers of lighter brown diatom and organic rich fine silt. & High TOC ($3.2$$\%$) and BioSi ($21.4$ $\%$), moderate TS ($0.7$ $\%$) and low TIC ($<$ $0.1$ $\%$). Relatively high Si, Fe and Br and low Ti, Rb, Sr, Zr.&\\ [0.5ex]
-\cline{1-3}
-\textbf{D5} &Massive to banded, mm- to cm - thick layers of brown, macrophyte-rich coarse silt.& TS (1.4 $\%$) and presence of calcite (TIC = $0.1$$\%$). Higher TOC/TN. Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr), high Br/Ti, Ca/Ti, and S/Ti. High Mn values, and low Fe/Mn ratios.&\\ [0.5ex]
+\textbf{L3 (38-79 cm)} & Coarse silt (30-40 $\%$) to fine sand (30 $\%$), with shell fragments of gastropods and bivalve arranged at random. Diatomaceous mud well consolidated fragments of between 0.1 to 0.5 cm and charcoal fragments little abundant & Lower TOC (1.2 $\%$), TN ($0.1$ $\%$) and TS ($0.1$ $\%$) and hight TIC ($> $$4$ $\%$). Lower $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-1.15 \textperthousand}$ and $\textrm{-1.17 \textperthousand}$, respectively) & Littoral environments dominated by inorganic deposition, represent alternation from littoral to deeper environments\\ [0.5ex]
+\hline
+\textbf{D5} & Massive to banded, mm- to cm - thick layers of brown, macrophyte-rich coarse silt.& TS (1.4 $\%$) and presence of calcite (TIC = $0.1$$\%$). Higher TOC/TN. Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr), high Br/Ti, Ca/Ti, and S/Ti. High Mn values, and low Fe/Mn ratios.& \\ [0.5ex]
 \hline
 \multicolumn{4}{l}{\textbf{Laminated diatomaceous organic-rich silts(TOC 2-3.5$\%$; BioSi ca. 20 $\%$)}}\\ [0.7ex] 
 \hline \hline
@@ -221,3 +145,4 @@ tar_read(chrono_plot)
 \hline
 \end{tabular}}
 \end{table}
+```

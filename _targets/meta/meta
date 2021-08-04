@@ -19,12 +19,12 @@ raw_geodata|stem|6c9cee7e4fffc2cb|e893f5380e4cbb76|ef46db3751d8e999|-1266545136|
 raw_data2|stem|6f3f77923fdc517f|27ace90b26ba98ae|ef46db3751d8e999|-1708885868|analysis/data/raw_data/2021-06-16_TT3_data_H01.csv|t18814.9516451383s|ecbe2c3678c08971|8331|file|vector|||0.001||
 target_data|stem|e6340eb99c034232|d6aa589439c80a16|a33832195e2eb714|-1214511767||t18822.9151518052s|44e327d1ee1978d7|43|rds|vector|||54.455||
 strat_plot|stem|3e93129e7a1c6d14|84c4d61e9c5a5779|d0522c009a4e0ef3|-804553364||t18835.7911603141s|5d492af381b8c33e|324247|rds|vector|||2.236||
-chrono_plot|stem|e6340eb99c034232|31f42797376a760d|ca20d10f04475866|391367508||t18836.0918813058s|44e327d1ee1978d7|43|rds|vector|||974.967||
 facies_table|stem|5e3840a3e6a3556e|c99fb045fe628f13|e55d41946ef2f254|-520771583||t18839.660039918s|874710a5361eb4a7|1040|rds|vector|||0.944||
 chrono_table|stem|7e298ab82ddff725|3cec2ed1704d5df2|c2f325b896d7c7bf|1990747171||t18841.8256124925s|9f7294824c19bb3f|1255|rds|vector|||1.373||
+chrono_plot|stem|e6340eb99c034232|31f42797376a760d|1d7124672d16f7ca|391367508||t18842.9171885756s|44e327d1ee1978d7|43|rds|vector|||996.288||
 table_age|function|936a01c9ef7ed18b||||||||||||||
 read_write_geodata|function|533b334610c242a0||||||||||||||
 plot_stratplot|function|77f4c2eaed342e65||||||||||||||
-agemodel_bacon|function|dcaf12608acb1e34||||||||||||||
+agemodel_bacon|function|4af2a353f19ece56||||||||||||||
 table_facies|function|f08ed6ce028ee38e||||||||||||||
-paper|stem|39c4d999ed8890e5|b00176a09919dd88|720540f14fee1b80|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18842.1690012062s|0210b32a3883e6b6|532707|file|vector|||3.175||
+paper|stem|c1d651cfcce786ae|b00176a09919dd88|720540f14fee1b80|-1335449298|analysis/paper/paper.pdf*analysis/paper/paper.Rmd*analysis/paper/paper_files|t18843.0841964759s|b86dbdbdf662b2f9|532963|file|vector|||3.134||

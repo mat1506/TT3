@@ -183,7 +183,7 @@ table_age <- function(path) {
 agemodel_bacon <- function(path) {
 
   rbacon::Bacon(core = "TT3", coredir = "cores_bacon",
-        ask = FALSE, plot.pdf = T,
+        ask = FALSE, plot.pdf = F,
         thick = 2,ssize=8000,
         hiatus.depths=c(176),
         acc.mean=c(50,80),
