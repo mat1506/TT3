@@ -7,21 +7,20 @@
 
 This repository contains the data and code for our paper:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of journal/book
+> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías Briceño, Leonardo A. Villacíse, Carolina Godoy-Aguirre, Antonio Delgado-Huertas, José Blanco, Claudio Latorre, Erwin González-Guardai, Natalia Villavicencio, Carlos Tornero, José Iriarte, Blas Valero-Garcés, (2025). *Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in central Chile*. Global and Planetary Change
 > <https://doi.org/xxx/xxx>
 
 Our pre-print is online here:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of
-> journal/book, Accessed 10 Jun 2021. Online at
+> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías Briceño, Leonardo A. Villacíse, Carolina Godoy-Aguirre, Antonio Delgado-Huertas, José Blanco, Claudio Latorre, Erwin González-Guardai, Natalia Villavicencio, Carlos Tornero, José Iriarte, Blas Valero-Garcés, (2025). *Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in central Chile*. Name of
+> journal/book, Accessed 06 may 2025. Online at
 > <https://doi.org/xxx/xxx>
 
 ### How to cite
 
 Please cite this compendium as:
 
-> Authors, (2021). *Compendium of R code and data for Title of your
-> paper goes here*. Accessed 10 Jun 2021. Online at
+> Matías Frugone-Álvarez, (2025). *Compendium of code and data for Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in central Chile*. Accessed 06 Jun 2025. Online at
 > <https://doi.org/xxx/xxx>
 
 ## Contents
