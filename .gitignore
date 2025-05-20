@@ -1,21 +1,25 @@
 # Ignorar artefactos de R / RStudio
 .Rhistory
 .RData
+.Ruserdata
 .Rproj.user/
+
+#— Proyecto de RStudio —#
+# Si quieres compartir tu .Rproj puedes NO ignorarlo.
+TT3.Rproj
+
+#— Configuración local —#
+.Rprofile
 
 # Ignorar carpeta de cache de renv y targets
 renv/library/
 _targets/
 
-# Ignorar resultados derivados / datos pesados
-analysis/data/derived_data/
 
 # Ignorar binarios de OxCal si los incluiste
 analysis/data/derived_data/OxCal/OxCal/bin/
 
 # Ignorar notebooks y papeles
-Notebook/
-paper/
 cores_bacon/
 
 # Ignorar sistemas

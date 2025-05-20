@@ -1,0 +1,450 @@
+---
+title: "Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile"
+author:
+  - name: "Matías Frugone-Álvarez"
+    email: "frugone.alvarez.m@gmail.com"
+    affiliation: "Instituto de Alta Investigación, Universidad de Tarapacá, Arica, Chile"
+    correspondingauthor: true
+    footnote: 1
+  - name: "Rafael Labarca"
+    affiliation: "Escuela de Antropología, Facultad de Ciencias Sociales, Pontificia Universidad Católica de Chile"
+  - name: "Josu Aranbarri"
+    affiliation: "Departamento de Geografía, Prehistoria y Arqueología, Universidad del País Vasco/Euskal Herriko Unibertsitatea, Vitoria-Gasteiz, Spain"
+  - name: "Matías Briceño"
+    affiliation: "Departamento de Geofísica, Universidad de Chile, Santiago, Chile"
+  - name: "Leonardo A. Villacís"
+    affiliation: "Climate Change Institute, University of Maine, Maine, USA; School of Biology and Ecology, University of Maine, Maine, USA"
+  - name: "Carolina Godoy-Aguirre"
+    affiliation: "Escuela de Antropología, Facultad de Ciencias Sociales, Pontificia Universidad Católica de Chile"
+  - name: "Antonio Delgado-Huertas"
+    affiliation: "Instituto Andaluz de Ciencias de la Tierra (CSIC), Armilla, Spain"
+  - name: "José Blanco"
+    affiliation: "Sociedad Chilena de Arqueología, Santiago, Chile"
+  - name: "Erwin González-Guarda"
+    affiliation: "Instituto de Ciencias de la Ingeniería, Universidad de O'Higgins, Rancagua, Chile"
+  - name: "Natalia Villavicencio"
+    affiliation: "Instituto de Ciencias de la Ingeniería, Universidad de O'Higgins, Rancagua, Chile"
+  - name: "Carlos Tornero"
+    affiliation: "Institut Català de Paleoecologia Humana i Evolució Social (IPHES-CERCA), Tarragona, Spain"
+  - name: "José Iriarte"
+    affiliation: "Department of Archaeology, University of Exeter, Exeter, UK"
+  - name: "Claudio Latorre"
+    affiliation: "Centro UC Desierto de Atacama & Facultad de Ciencias Biológicas, Pontificia Universidad Católica de Chile, Santiago, Chile; Institute of Ecology and Biodiversity (IEB)"
+  - name: "Blas Valero-Garcés"
+    affiliation: "Instituto Pirenaico de Ecología - Consejo Superior de Investigaciones Científicas (IPE-CSIC) Zaragoza, Spain"
+
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+
+abstract: |
+  Major environmental changes were occurring when the first modern humans arrived in South America during the Pleistocene-Holocene transition. How these changes shaped human-environmental interactions across this period remain unclear. We analyzed the stratigraphy, biogeochemistry, and paleoclimatic models from the Ancient TaguaTagua Lake (ATTL) in central Chile, one of the few continuous records of human and megafauna interactions with their environment in South America, to reconstruct its dynamics over the past 20,000 years. Results reveal that the ATTL transitioned from a shallow, cool lake with storm-driven alluvial deposition to a warmer, deeper, and more productive lake about 12,500 years ago, aligning with early humans' arrival. The ATTL became wetter but experienced severe droughts between 11,000 and 8,500 years ago, linked to shifts in Southern Westerly Winds and ENSO-like patterns. Fluctuating conditions drove humans and fauna to seek refuge in the basin, emphasizing local paleohydrology’s role in shaping early human-ecosystem interactions.
+  
+keywords: "Pleistocene-Holocene transition; Ancient Tagua Tagua Lake; Geoarchaeology; Central Chile paleoclimate; Sedimentary Facies Analysis; Anthropogenic Ecosystems; Biogeochemical Proxies"
+journal: "Science Advances"
+date: "`r Sys.Date()`"
+bibliography: mybibfile.bib
+linenumbers: true
+numbersections: true
+csl: elsevier-harvard.csl
+output:
+  pdf_document:
+    latex_engine: xelatex
+    number_sections: true
+    keep_tex: true
+
+header-includes:
+  - \usepackage{caption}
+  - \usepackage{multirow}
+  - \usepackage{tabularx}
+  - \usepackage{booktabs}
+---
+
+```{r include = FALSE}
+
+options(tinytex.verbose = TRUE)
+
+```
+
+
+
+```{r include = FALSE}
+
+library(tidyverse)
+library(targets)
+library(devtools)
+#devtools::install_github(repo = "coffeemuggler/EMMAgeo", ref = "dev_0.9.8")
+library(EMMAgeo)
+
+```
+
+# Introduction
+
+Modern humans settled the Americas at a time of profound ecological and hydroclimatic transformations (1–3). These Rapid Environmental Changes (REC)—including the extinction and redistribution of key ecosystem-structuring species, shifts in resource availability, and alterations in atmospheric and oceanic circulation—represented one of the last major continental-scale socio-ecological thresholds before modern global environmental changes (4–7). Such transformations reconfigured ecological landscapes and could have shaped how early human populations adapted and expanded across South America (8).
+
+Yet, how did these REC shape early human migration, settlement, and adaptation during the initial colonization of South America? A range of diverse sources of information, including palaeoecological, archaeological, and climatic data, are needed to adequately address this question (9). The role of climate teleconnections, including large-scale systems such as the Southeast Pacific Subtropical Anticyclone (SPSA) and the Southern Westerly Winds (SWW), have been identified as key factors influencing regional hydroclimates along the western slope of the subtropical Andes during the Last Glacial Termination (Fig. 1) (10-13). Presently, prolonged positive anomalies in the SPSA block storm fronts from reaching the subtropical Andes (Fig. 1a), frequently resulting in winter drought which impacts water resources, regional livestock, and agriculture (13). In contrast, the SWW has entrained storm systems that travel across the southern mid-latitudes, redistributing moisture and bringing heavy rainfall that support ecosystems but also cause flooding and economic losses (13). These climatic drivers are modulated by phenomena such as the El Niño–Southern Oscillation (ENSO) and the Southern Annular Mode (SAM), which influence regional and global climate dynamics, including the frequency and intensity of the upper-level Pacific Subtropical Jet Stream (PSJ) and atmospheric rivers (14–18). In mid-latitudes, anomalies in these climatic drivers are marked by extreme events, including droughts, pluvial floods, and severe storms. Early hunter-gatherers must have been well suited and adapted to such variability (13,19).
+
+Despite considerable research and progress in identifying global paleoclimatic drivers, discerning the impact of climate on human mobility and population density in past environments remains a significant challenge (20,21). The paucity of closely related high-resolution paleoenvironmental and archaeological records hinders comparisons of whether and how climate influenced human adaptation and resource use during this early stages of exploration and colonization, leaving uncertainties about the impact of REC (22–24). Paleoclimate records from southern mid-latitudes indicate an intensification of the SWW, modulated by the effects of ENSO/SAM and the Southern Ocean (controlling CO2 fluxes) during the last deglaciation (25–28). Alternative hypotheses suggest that the displacement of the SWW (29,30) was driven by shifts in the Intertropical Convergence Zone (ITCZ), in turn influenced by teleconnections with the Northern Hemisphere—particularly those associated with North Atlantic ice-rafting events and reductions in thermohaline circulation—as well as by orbital changes (31–33). In contrast, the interaction of the SPSA with climate dynamics that directly impact human activity—such as droughts, storms and floods associated with storm tracks—remains poorly studied (34). Past changes in the dynamics of the SPSA and SWW provide an opportunity to study the mechanisms that cause paleoenvironmental changes, and to assess the influence of mid-latitude climate variability and its interaction with human activities at an early stage (21).
+
+The Last Glacial Termination and the onset of the Holocene marked pronounced environmental shifts in South America, including early human colonization and fire use, the mass extinction of large continental mammals (\>100 kg), large temperature changes (e.g. Antarctic Cold Reversal; ∼14.5-12.9 cal ka BP or thousands of calibrated years before 1950), and major precipitation anomalies (e.g. Central Andes Pluvial Event, CAPE I and II, between 18-14 cal ka BP and 13-9 cal ka BP, respectively) (23,35–39). Furthermore, geological and archaeological records clearly indicate that population expansion and megafaunal extinctions occurred relatively synchronously with climate variations observed during Termination I (T1) in the Northern Hemisphere, such as the Heinrich Stadial 1 (HS1, \~ 18-15 cal ka BP), Oldest Dryas (17.5-14.5 cal ka BP), Bølling-Allerød (14.7-12.9 cal ka BP), and Younger Dryas Stadial (\~12.9-11.7 cal ka BP) (1,40–43). However, the magnitude and distribution of these possible teleconnections at the South American mid-latitudes remain are not well-constrained. Hence, the study of past environmental records, especially those linked to human activity, is of paramount importance for understanding coupled human-environment systems and the global, regional, and local mechanisms that drove ecosystem changes during the Last Glacial Termination.
+
+Here, we examine hydroclimatic and ecosystem shifts at the ATTL geoarchaeological sites in central Chile, highlighting their importance for understanding late Pleistocene/Early Holocene human–environment interactions. Our study features a comprehensive multi-proxy analysis of a newly obtained 2.8-meter stratigraphic profile from the TT19-3A sequence (Fig. 1b), offering key insights into the climatic conditions surrounding the arrival of the first hunter-gatherers in the region. This record integrates data from sedimentary facies, grain size distributions (GSDs), geochemical proxies (TOC, TIC, C/N, TS, δ13Ccar, and δ18Ocar), and biological indicators, including phytoliths, pollen, non-pollen palynomorphs (NPPs), and diatoms. In addition, we use an ensemble of simulations from the Paleoclimate Modeling Intercomparison Project phase 4 (PMIP4), integrated into the Coupled Model Intercomparison Project phase 6 (CMIP6), to analyze zonal wind and precipitation patterns during the Last Glacial Maximum (LGM) and the Middle Holocene, focusing on their variability under humid and dry conditions in central Chile. This approach provides a comparative baseline of atmospheric circulation conditions before and after the arrival of the first hunter-gatherers in central Chile, thus enabling a direct contrast between these large-scale patterns and our local sedimentary record. Overall, our results highlight the interplay between hydroclimatic variability and human activity during the Last Glacial Termination, shedding deeper insight into how early populations interacted with shifting environmental conditions.
+
+# Results
+
+## Stratigraphy and Facies: Depositional Variability and Geochemical Shifts
+
+The TT19-3A sequence comprises 15 sedimentary facies distributed in 8 stratigraphic units, and several sedimentary clusters (Figs. 1, 2 and supplementary material). At the base (Unit 8; 2.80 m - 2.30 m), brown to greenish sediments include clayey silty facies (*L8; 2.80 m - 2.61 m*) and sandy facies (*L7; 2.61 m - 2.33 m*), associated with clusters 4, 7, and 2 (Fig. 2). A coarsening-upward sequence (*L8b* \rightarrow L8a \rightarrow L7) with desiccation cracks lies above these sandy layers and may indicate subaerial exposure or subaquatic fracturing related to degassing.
+
+Units 7 and 6 consist of greenish-brown sandy and silty sediments (*facies L6; 2.33 m - 1.84 m; and L5; 1.84 m - 1.65 m*), linked to clusters 3 and 7 (Figs. 2 and S1). Unit 7 forms a fining-upward sequence with fine sands containing subrounded clasts and dispersed fish vertebrae (*L6b*), overlain by sandy silts (*L6a*). Unit 6 is composed of dark grayish-green sandy silts with reworked gastropod and bivalve shells.
+
+A marked erosive unconformity formed at the base of Unit 5 (1.65 m - 1.50 m), which is composed of massive light grayish green silt with millimeter to centimeter-sized carbon fragments, faunal remains and lithic artifacts, and abundant *Biomphalaria taguataguensis* (*Planorbidae*) shells (*L4b facies*). Facies *L4* corresponds to cluster 1. The top of Unit 5 (*L4a*) is a dark brown, fine-grained, carbonate-rich (6% TIC) silt layer (Figs. 2 and S1).
+
+Unit 4 (1.50 m - 0.80 m) contains carbonate (2-5% TIC) and diatom-rich coarse gray silts and fine sands, defined by four facies. Facies *L3d* (1.50 m - 1.30 m) consists of fine-grained light gray silts with some large volcanic clasts up to 3.5 cm. Facies *L3c* (1.30 m - 1.10 m) is characterized by massive to banded gray clay silts with some millimetric clasts, higher carbonate content (up to 4% TIC), and abundant shells of *B. taguataguensis*, randomly dispersed but more abundant towards the top. Facies *L3b* (1.10 m - 0.90 m) comprises massive to banded fine-to-medium gray clay silts with *B. taguataguensis* shells and millimeter- to centimeter-sized charcoal fragments. Facies *L3a* (0.90 m - 0.80 m) are massive medium-grained gray to dark gray sandy silts with sub-rounded clasts, higher carbonate content and shells of *B. taguataguensis*.
+
+Units 3 and 2 contain finer gray sediments with relatively high carbonate (Unit 3, 1-5% TIC) and organic (Unit 2, up to 2.5% TOC) contents. Unit 3 (0.80 m - 0.45 m) is composed of gray fine sandy silts with silty sand lenses or pockets, and in situ shells of *B. taguataguensis* and *Diplodon* sp. (*facies L2*). Unit 2 (0.45 m - 0.38 m) consists of dark gray fine sandy silts with charcoal fragments (up to 1 cm) and gastropod shells. Finally, Unit 1 (0.38 m - 0 m) consists of light brownish-gray clays with abundant diatoms, higher organic content and presence of charcoal (*facies L2*), as well as silty sands containing rounded gravel clasts (0.5–1 cm) and larger charcoal fragments (0.2–1.5 cm; *facies L1*). Abundant clasts, macrocharcoal, and elevated TOC and TN in Unit 1 suggest post-depositional reworking, soil formation, and anthropogenic influence.
+
+Overall, sediments are mostly silt (\~50%) and sand (\~40%), with 5–20% clay and \<5% fine gravels (Fig. 2). The TT19-3A sequence displays a multimodal grain size distribution (GSD). Using rEMMA, we identified five end-members [modes; *rEM1*: 8 ɸ, *rEM2*: 4.1 ɸ, *rEM3*: 2.7 ɸ, *rEM4*: 1.3 ɸ, and *rEM5*: 0.47 ɸ] that explain \~78% of the total variance (Figs. S2 and S3). The *rEM2* end-member (peak at \~60 µm) dominates the upper half of the record (\~40% variance), particularly in diatom-rich lacustrine facies (*L3a, L3b, L3c*). In contrast, *rEM1* (peak \~4 µm; \~18% variance) characterizes silty clay facies such as *L8* and *L6*, while *rEM3* (peak \~160 µm; \~15% variance) occurs in fine-grained, diatom-rich intervals (1.30 - 0.80 m). The *rEM4* end-member, with a bimodal distribution (\~420 µm and \~60 µm), and *rEM5*, with a dominant coarse sand peak (\~720 µm), each explain \~14% of the variance.
+
+Carbonate and TOC contents vary among units. Units 8 to 6 are essentially carbonate-free, with TC \<0.1%. Facies *L8a* and *L8b* exhibit relatively high TS (0.1-1%) and low TC (\~0.1%), alongside δ\^18O_car and δ\^13C_car values near -5‰ and -10‰, respectively. Facies *L7* shows a gradual decrease in the δ\^18O_car values (cluster 2, Fig. S1), reaching the lowest values of the sequence. Unit 7 (*L6 facies*) is characterized by two sedimentary clusters: the cluster 7, with increasing δ\^18O_car and δ\^13C_car values and cluster 3, with low *rEM1* and *rEM2* values and the absence of *rEM5*. In Unit 6 (*L5 facies*), *rEM5* increases while δ\^18O_car, *rEM1*, and *rEM2* values decrease. In Unit 5 (*L4 facies*), TC, TIC, δ\^18O_car, δ\^13C_car, and *rEM2* values increase, whereas *rEM1*, *rEM4*, and *rEM5* values diminish. *L4a facies* records the highest TIC (\>7%), δ\^18O_car (\>-1 ‰), δ\^13C_car (\>1 ‰), and *rEM2* values, along with minimal *rEM1*, *rEM3*, *rEM4*, and *rEM5*.
+
+In Unit 4 (*L3 facies*), there is a gradual increase in the TOC/TN ratio (\>5), δ\^18O_car (\>-1 ‰), and δ\^13C_car values, along with variable GSD percentages. In Unit 3 (*L2 facies*), geochemical values show reduced variability, with high TC, TIC, TOC/TN, and *rEM2* values. Finally, in Unit 2 (*facies 2*), TC values reach their highest levels, primarily due to the increase in TOC.
+
+## Aquatic–terrestrial ecosystem proxies and community shifts
+
+The diatom record in the TT19-3A sequence (Figs. 3 and S4) is dominated by benthic taxa with high specific conductance optima—such as *Anomoeoneis sculpta* (Ehrenberg) Cleve, *Nitzschia amphibia* Grunow, *Epithemia turgida* (Ehrenberg) Kützing, *Cymbella cymbiformis* Bahls, and *Gomphonema affine* Kützing. This overall dominance is interrupted by an interval of increased tychoplanktonic small fragilarioids between 1.50 and 1.20 m (*L3d*, *L3c*).
+
+At the base of the sequence (*Unit 8, L8b*), diatom valves are absent. Moving upward (*L8a*, Units 7 and 6), we observe the presence of *Anomoeoneis sculpta* (most abundant), *N. amphibia*, *E. turgida*, *G. affine*, and *Ulnaria* sp. In Unit 5 (*L4b*), *A. sculpta* remains the dominant taxon (\~84% abundance), and diatom valves are ubiquitous, allowing for the estimation of relative abundances.
+
+A notable assemblage shift occurs in *L4a* (Unit 5), *L3d*, and *L3c* (Unit 4), where *A. sculpta* nearly disappears and diatom diversity increases substantially. Here, small fragilarioids, *N. amphibia*, *E. turgida*, *C. cymbiformis*, and *G. affine* all become more common, accompanied by planktonic species such as *Stephanocyclus meneghinianus* (Kütz) Kulikovskiy, Genkal and Kociolek, *Aulacoseira granulata* (Ehrenberg) Simonsen, and *Ulnaria* sp.
+
+*L4a* and *L3d* differ from *L3c* in that small fragilarioids and *A. granulata* are more abundant, whereas *N. amphibia*, *S. meneghinianus*, and *A. sculpta* (\~5% abundance) are more common in *L3c*. Subsequently, *L3b* records a marked recovery of *A. sculpta* (\~77%), accompanied by a decrease in other taxa. In *L3a*, *A. sculpta* declines (\~22%) as *G. affine* and *N. amphibia* increase.
+
+In Unit 3 (*L2*) and Unit 2 (*L1*), *A. sculpta* partially recovers (\~36%) alongside slight increases in planktonic taxa *S. meneghinianus* and *A. granulata*.
+
+Pollen and NPPs data (Fig. 3, S5) reveal distinct assemblages of hygro-hydrophytes, ferns, freshwater algae, and spores of coprophilous fungi. Two well-defined sections are apparent:
+
+1.  **The first section (2.63 m - 1.50 m; Units 8, 7, 6, and 5):**\
+    This section is characterized by high abundances of freshwater algae *Botryococcus* and *Spirogyra*, along with occasional *Mougeotia* and *Pediastrum*.
+    -   In Units 8 and 7 (2.63 m - 1.85 m), *Typha*, ferns (*Pteris*), *Botryococcus*, and *Spirogyra* dominate.\
+    -   Towards the upper part of this section (2.38 m - 1.50 m), the abundance of *Botryococcus*, *Spirogyra*, and arbuscular mycorrhizal fungi (*Glomus*) remains elevated, but littoral and floating vegetation reach their lowest values.
+2.  **The second section (1.50 m - 0.38 m):**\
+    This section shows a progressive increase in water surface indicators and the colonization of littoral (*Cyperaceae*, *Juncaceae*, *Typha*) and floating vegetation (*Lemna*, *Nuphar*), especially pronounced between 0.55 m and 0.38 m. Freshwater algae remain present throughout this interval.
+
+Phytolith analysis (Figs. 3 and S6) identifies opal phytoliths from *Cyperaceae*, *Poaceae*, and *Arecaceae*. Within the *Poaceae*, the subfamilies *Bambusoideae*, *Chloridoideae*, and *Pooideae* were distinguished. We also identified *Jubaea chilensis* or Chilean palm (*Arecaceae*), as well as phytoliths from woody dicotyledons.
+
+Unit 8 exhibits very low phytolith concentrations compared to the rest of the record. Here, *Poaceae* phytoliths dominate (\~90%), with fewer *Bambusoideae* and *Chloridoideae* phytoliths (\~5%). Unit 7 (2.30 m - 1.75 m), *Bambusoideae* and *Chloridoideae* reach their highest percentages (46% and 26%, respectively), while *Cyperaceae* increases modestly (\~13%). Unit 6 (1.75 m - 1.65 m) shows the highest overall *Poaceae* content, though *Bambusoideae*, *Pooideae*, and *Chloridoid* percentages decrease.
+
+From Unit 5 to Unit 3 (1.65 m - 0.40 m), the total phytolith content rises, accompanied by the first appearance of woody and shrub morphotypes indicative of sclerophyll forests (woody dicotyledons and *J. chilensis*). During this interval, *Bambusoideae* and *Chloridoid* proportions slightly decline in Unit 3. Additionally, *Cyperaceae* levels increase again (to \~13%) between Units 5 and 4 (1.50-1.42 m) before stabilizing at lower values (\~2%) thereafter.
+
+## Cultural Signals, Megafauna, and Chronological Context
+
+Archaeological evidence from the ATTL indicates that human occupation at sites Taguatagua-1 (*TT-1*), Taguatagua-2 (*TT-2*), and Taguatagua-3 (*TT-3*) began around 12.6 - 11.6 ka cal BP during deposition of Unit 5 in the TT19-3A sequence (Fig. 1c) (10, 44, 45). These archaeological sites document direct human interactions with megafauna—such as gomphotheres, horses, and cervids—as well as the exploitation of smaller prey (birds, frogs) and the use of native plants.
+
+No archaeological radiocarbon dates have been identified between 11.6 and 9.0 ka cal BP at the ATTL; however, open-air residential camps and extensive lithic knapping areas appear at ca. 9.0 ka cal BP. Human burials within residential zones, forming mounds composed of dense domestic refuse and mixed stratigraphic deposits, occur from ca. 8.2 – 5.8 ka cal BP. At least seven such mounds were identified along the lakeshore, though only a few have been systematically excavated. Isolated radiocarbon dates after this period suggest reduced human presence until the onset of the Late Holocene (ca. 4.0 ka cal BP).
+
+In a broader regional context, the summed probability distributions (SPD) of archaeological radiocarbon dates for South America and central Chile (32°S – 37°S) (46), reveal a pronounced increase around 12.6 ka cal BP. This uptick aligns with the timing of initial human presence documented at the ATTL and the environmental shifts described earlier, underscoring a notable rise in human activity as climates warmed and landscapes transformed.
+
+Throughout the Early to Mid Holocene (ca. 11.7 - 6 ka cal BP), the SPD remains generally elevated, albeit with periods of fluctuation. These patterns, when considered alongside the localized archaeological evidence, suggest sustained human presence and periodic fluctuations in occupation intensity in central Chile. The chronological framework for the TT19-3A sequence provided by the age-depth models (*Bacon* and *Bchron*; Fig. 4) supports these interpretations, offering a robust temporal backdrop for correlating cultural and environmental shifts. The models excluded two outlier ages. Bulk sediment and charcoal samples taken at the same depths showed no significant differences, ruling out a reservoir effect. According to the ensemble age-depth model, the TT19-3A sequence covers the last 20.5 cal ka BP (Table S1 and Fig. 4), with a higher model robustness in the upper four units. **Unit 8 (2.66 m – 2.30 m):** spans from \~20.5 to 16 cal ka BP with an accumulation rate of \~200 a cm⁻¹. **Unit 7 (2.30 m - 1.84 m):** was deposited between \~16 and 12.5 cal ka BP with an accumulation rate of \~100 a cm⁻¹. **Unit 6 (1.84 m - 1.65 m):** was deposited between 13 and 12.6 cal ka BP with an accumulation rate of \~20 a cm⁻¹. **Unit 5 (1.65 m - 1.50 m):** encompassing the Pleistocene-Holocene transition (12.6 - 11.3 cal ka BP), has an accumulation rate of \~100 a cm⁻¹. **Unit 4 (1.50 m - 0.80 m):** extends from 11.3 to 8.6 cal ka BP, characterized by \~50 a cm⁻¹. **Unit 3 (0.80 m - 0.45 m):** spans between 8.6 and 6.5 cal ka BP with a median rate of \~60 a cm⁻¹. **Unit 2 (0.45 - 0.38 m):** covers between 6.5 and 6.0 cal ka BP with an accumulation rate of \~80 a cm⁻¹.
+
+Taken together, the localized archaeological evidence from the ATTL, the broader SPD patterns for central Chile and South America, and the robust ensemble age-depth models yield a coherent narrative of increasing human presence and activity beginning around the Pleistocene-Holocene transition.
+
+```{r fig.width=17, fig.height=11, echo=FALSE, dev="cairo_pdf",fig.align = "center",out.width = '100%'}
+
+tar_read(strat_plot, store = "/home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets")
+
+```
+
+```{r echo = FALSE}
+
+tar_read(chrono_table, store = "/home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets")
+
+```
+
+```{r echo = FALSE}
+
+tar_read(chrono_plot, store = "/home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets")
+
+```
+
+# Discussion
+
+## Depositional dynamics and associated hydroclimatic changes during the Last Glacial Termination (20.5–12.8 cal ka BP)
+
+The ATTL record highlights the climatic shifts at mid-latitude South America during the Last Glacial Termination (*T1*; ca. 20.5 - 12.5 cal ka BP), showing shallow littoral lacustrine conditions and high-energy sediment input prior to the first human settlements in central Chile (Figs. 5 and 7). Drier conditions prevailed between 20.5 and 18.5 cal ka BP as indicated by fine-grained deposition consistent with greater meltwater drainage and dust input (47–51), whereas low δ¹³C_car and δ¹⁸O_car values reflect reduced evaporation and increased freshwater input from snowmelt (52–54) (Fig. 5F-H).
+
+During the final stage of the LGM, the ATTL basin was characterized by the deposition of fine *L8 facies*, with high silt and clay contents (\>80%), very low TC (\<0.1%), and relatively elevated TS percentages (Figs. 2, 3, and 4). The unimodal grain size distribution (\~4 μm mode) and low sorting suggest gradual, year-round sediment input, either via long-distance aeolian transport (53) or meltwater flows from glaciated areas (48). As in other glaciated settings, the fine-grained material deposited during glacial times was likely related to glacier dynamics, aeolian dust (47–51), and local clays derived from weathered soils in the catchment (49).
+
+Stratigraphic correlations show that the *L8 facies* can be correlated with Unit 5 (10) and Member 5 (45, 55) from previously described Tagua Tagua profiles, dated to ca. 21.5 ± 0.65 and 20.4 ± 1.3 cal ka BP, respectively (Fig. 1c). Researchers originally interpreted these deposits as a massive clay layer rich in *Nothofagus dombeyi/obliqua* type pollen, suggesting cold and wet conditions or shallow lacustrine environments. However, the limited presence of planktonic diatoms, aquatic pollen, and phytoliths, along with only minor benthic diatoms and freshwater algae, points instead to a shallow littoral lake setting under persistent, fine detrital input influenced by a glaciated watershed.
+
+A brief high-energy alluvial event at \~19.5 cal ka BP did not significantly elevate lake levels or bioproductivity (Figs. 3 and 5F-H). Varela (45) describes subvertical cracks filled with authigenic magnesium oxide and iron minerals in Member 5, consistent with those in the *L8* and *L7 facies* (Unit 8). Subvertical cracks filled with authigenic minerals can be interpreted as desiccation cracks, sub-aquatic sedimentary fractures, or fragipan features (56–59). These cracks, lacking mud curls and filled with magnesium oxide, iron, and sulfur minerals, suggest salinity fluctuations or anoxic conditions promoted shrinkage through deflocculation or intracrystalline dewatering (56,57).
+
+The high sulfur content of these facies suggests methane emissions and anaerobic sulfate or metal reduction by methanotrophic archaea (57), reinforcing the notion of a littoral depositional environment strongly shaped by watershed inputs.
+
+Our interpretation contrasts with earlier suggestions of cold and wet conditions at the end of the LGM (10, 44, 45, 65). *Heusser* (44) proposed the presence of a closed-canopy *Nothofagus* forest between 28 and 11 ka BP, suggesting cool and wet conditions potentially driven by a northward shift of the SWW. Recalibrated pollen chronologies, however, suggest that the percentages of the *Nothofagus antarctica/dombeyi* type declined earlier than previously reported (Fig. S6), occurring between approximately 19–16 cal ka BP (initially dated at 14.5 ± 0.35 cal ka BP; Unit 2a, Figs. 7h and S6) in *Heusser* (1983) and between 14.9–12.7 cal ka BP (initially dated at 11.71 ± 0.43 cal ka BP; Unit 3, Fig. 1) in *Valero-Garcés et al.* (2005). 
+
+In the central Chile valley, *Nothofagus dombeyi/obliqua* exhibits a more restricted distribution compared to other members of the genus and subgenus *Lophozonia* (66). Germination studies reveal that these species are not strictly dependent on high moisture levels, challenging the assumption that their expansion was moisture-driven (67, 68). *León-Lobos* and *Ellis* (2007) found that the germination of *Nothofagus* species (*N. alpina*, *N. dombeyi*, *N. leonii*, *N. glauca*, and *N. obliqua*) varies more significantly with temperature, suggesting that moisture was important but not critical for their expansion into central Chile.
+
+Intensified alluvial activity, associated with more frequent and severe storms at ATTL, is practically coeval with the HS1 (37, 69), CAPE I (23, 70–72), and the ACR/Bölling–Alleröd (36) (Fig. 7), during a period characterized by increasing winter insolation and decreasing summer insolation (Figs. 7D, 7E, 7O, and 7P). These changes have been linked to shifts in global temperature gradients driven by residual Milankovitch effects (precession and obliquity; Figs. 7A and 7B). Some authors have posited that these shifts may have triggered a southward migration of the ITCZ and SWW, a weakening of the American Monsoon System, and modifications to the PSJ (33, 73–75). 
+
+This atmospheric configuration, coupled with the reactivation of ENSO-like conditions ca. 16 cal ka BP (Figs. 7J and 7Q), likely amplified the frequency and intensity of alluvial events, displaying atmospheric patterns similar to those observed in simulations for the LGM (Fig. 6G). Marine sediment cores off the Chilean coast date *T1* to between 19.2 and 18.5 cal ka BP, indicating arid conditions (73). Similarly, Andean glaciers (33°S - 36°S) retreated between 28.0 and 18.0 ka BP (Fig. 7I) without subsequent re-advances during *T1* (11, 76, 77). Changes in leaf wax δD and δ¹³C isotopes from marine sediment cores suggest hydrological changes influenced by precessional cycles, with SWW retreating during *T1* (Figs. 7N and 7G), reaching a minimum at 11 cal ka BP and again between 5–6 cal ka BP (33). Marine records also show a 6°C–7°C rise in SST between 19 and 12.5 cal ka BP, interrupted by cooling around 14.8–13.3 cal ka BP, corresponding to the ACR (33, 73, 78, 79). 
+
+The decline in high-energy processes after ca. 14.8 cal ka BP was accompanied by fluvial and fine-grained sediment deposition (Fig. 7J-K-L). Orbital changes alone cannot fully explain these phenomena. Instead, multiple high-magnitude events associated with rapid coupled oceanic–atmospheric changes likely interacted with gradual orbital processes to produce the alluvial and fluvial deposits in TT19-3A between ~18.5 and 14.5 cal ka BP. Further studies are required to better understand the interplay among these factors and their implications for regional paleoecology.
+
+# Changing lake environments, emerging habitats, and first human settlement (12.9–8.6 cal ka BP)
+
+Between ca. 12.8 and 12.4 cal ka BP (*Unit 5*), coarser *L5b* and *L5a facies* (with a grain size mode at ~700 µm; *rEM5*) indicate high-energy conditions and stronger alluvial influence in the lake shoreline (Figs. 2, 4, and 5). The increasing ubiquity of the diatom species *Anomoeoneis sculpta* (Figs. 3 and S4) —known for inhabiting alkaline (1350 mg/L CaCO₃), shallow freshwater environments with elevated pH (9.3) and conductivity (5760 µmS/cm) (80, 81)— and the rise of planktonic diatoms (e.g., small fragilarioids) suggest a permanent, alkaline lake established in the basin (Fig. S4). The presence of *Sporormiella* spores, megaherbivore remains, and evidence of early human occupation around 12.5 cal ka BP coincides with this transitory alkaline lake phase (22). 
+
+From 12.5 to 11.2 cal ka BP (*Unit 5*), a significant depositional and biogeochemical shift occurred. Greenish to gray sandy silts with coarser GSDs (*rEM2; L4b facies*) had abundant gastropods and charcoal spicules, higher carbonate (TIC) content, more positive δ¹³C_car and δ¹⁸O_car, increased diatom abundance (especially *A. sculpta*), and a rise in woody, shrub, and *Jubaea chilensis* phytoliths (Figs. 2, 3, 4, and 5). This suggests a moderately alkaline, shallow lake environment characterized by higher bioproductivity, more stable water levels, and warmer, more humid conditions. In general, freshwater lakes with high conductivity and salinity levels exhibit a negative correlation with diatom diversity (81). The presence of *J. chilensis* corresponds to the endemic Chilean palm, currently distributed between ~30°S and 35°S (82). Their occurrence near the 1.65 m depth (ca. 12.4 cal ka BP; see Fig. 4) may indicate increased humidity, reduced megafaunal pressure, or human transport for food, temporary habitation, or other uses (83, 84). Alternatively, other taphonomic and sedimentary transport processes associated with a rising lake level could also explain its presence. 
+
+A brief interval between ~11.4 and 11.2 cal ka BP (*L4a facies*) shows even higher TIC, δ¹³C_car, δ¹⁸O_car, and *rEM2* values, as well as a shift in diatom assemblages toward tychoplanktonic small fragilarioids and *Aulacoseira granulata*. These changes suggest a decrease in salinity and an increase in lake turbulence (Figs. 2, 3, and 4). During this period, freshwater algae dominate the palynomorph assemblage, and woody and shrub taxa appear alongside *Poaceae*, *Bambusoideae*, and *Chloridoid* phytoliths (Fig. 3).
+
+Isotope signatures support warmer conditions and higher lake levels at the onset of the Holocene. In ATTL sediments, calcite is the principal carbonate phase. Elevated δ¹³C_car (~1‰) and δ¹⁸O_car (~-0.2‰) values in authigenic calcite indicate evaporation-driven isotopic enrichment of dissolved inorganic carbon (DIC). This enrichment, facilitated by isotopic equilibrium exchange with CO₂, is regulated by temperature, the isotopic composition of inflows, pH, and lacustrine bioproductivity (10, 85–87). Currently, there is no data to validate the isotopic enrichment model for meteoric precipitation proposed by *Valero-Garcés et al.* (2005) for ATTL. However, *McCormack et al.* (2019) suggest that δ¹⁸O_car and δ¹³C_car values are closer to freshwater runoff compared to other carbonates like aragonite or dolomite. The isoscape from Chilean lakes serves as an analogue for time-averaged local precipitation isotopes where direct data are lacking (88). In central Chile, meteoric water δ¹⁸O averages from -4‰ to -2‰ in summer and -7.6‰ to -5.9‰ in winter (88, 89). Data from the *HOLOCHILL* project show notable isotopic variability in lakes by altitude (Fig. 10S). Coastal areas, such as Lago Vichuquén, exhibit δ¹⁸O values ranging from -2‰ to 0‰, while Laguna Matanzas shows values between 7‰ to 8‰. In contrast, mountain lakes like Laguna del Maule and Laguna Lo Encañado have δ¹⁸O values of ~-11‰ to -12‰. 
+
+Altogether, these data suggest a rise in lake levels under warm and humid conditions at the onset of the Holocene, consistent with an environment transitioning toward a new ecological state (22). From 11.2 to 8.6 cal ka BP (*Unit 4*), a series of fluctuations in water levels, detrital input, and carbonate isotopic signals are documented by several proxies (Figs. 2 and 3). 
+
+*L3a-d facies* show alternating clayey silty sands and sandy silts with variable TIC, δ¹³C_car and δ¹⁸O_car values, as well as shifts in diatom communities and phytolith assemblages (Fig. 3). *L3d facies* (ca. 11.2 and 10.4 cal ka BP) show a shift in the isotopic signal of authigenic calcite, accompanied by an abrupt increase in *rEM5* percentages. Episodes of high-energy alluvial transport, variations in the presence of *A. sculpta* and small fragilarioids, and frequent planktonic diatoms reflect changing littoral environments and variable lake levels (Figs. 3 and S4). Small fragilarioids —facultative planktonic organisms from lentic and deltaic environments— and *A. granulata* indicate a rise in lake levels, reduced light availability, and increased wind or tidal turbulence, consistent with high *rEM5* values (90, 91). Woody and shrub phytoliths, along with *Poaceae* and *Bambusoideae*, reflect nearby vegetation responses to these hydrological and climatic oscillations (Figs. 3).
+
+The *L3c facies* (10.4 and 9.8 cal ka BP) show variable percentages of *rEM2* and *rEM3*, accompanied by elevated *rEM4* values, which highlight high variability of alternating sedimentary processes (littoral, fluvial, aeolian). During deposition of *L3b facies* (between ca. 9.8 and 9.0 cal ka BP), changes in the fluvial sediment delivery (*rEM3*) suggest some hydroclimatic instability. *A. sculpta* increases rapidly in this facies, while small fragilarioids practically disappear, indicating a shallow to ephemeral and subaerial depositional environment. 
+
+The phytolith assemblage remains virtually unchanged. Finally, deposition of *L3a facies* (9.0 - 8.6 cal ka BP), characterized by a high content of fine sand (*rEM4*), and a decrease in planktonic diatom species, culminated in the Early Holocene. Stable lake levels, finer sediments (*rEM2* and a minority of *rEM1*), a dominance of hygro-hydrophilous communities, and elevated organic productivity (*Units 3* and *2*, ca. 8.6 - 6.0 cal ka BP) fostered greater diatom diversity and more mesotrophic, alkaline conditions. Finer sedimentation and sustained presence of planktonic diatoms (*Stephanodiscus meneghinianus*) suggest relatively higher lake levels compared to *Unit 4*, and less sediment input from the watershed.  At the time of deposition of *Unit 3* (8.6 - 6.5 cal ka BP), the later occupation of the archaeological site TT-3 occurred.
+
+# Early human-ecosystem interactions in ATTL during the late Pleistocene/Holocene transition
+
+The progressive environmental transformation toward the end of the Pleistocene and the onset of the Holocene —evidenced by rising lake levels and the diversification of available resources (22)— represented a turning point for human occupation in the ATTL. These changes broadened subsistence possibilities for the earliest hunter-gatherers, marking the onset of a distinct ecological stage in South America (Fig. 7F). 
+
+In the ATTL, the transition from the Pleistocene to the Holocene (14.5 to 11.7 cal ka BP) is characterized by a gradual rise in lake levels (Figs. 5D and 7L). An alluvial event between ca. 12.8 and 12.5 cal ka BP and the development of beach-like depositional environments in littoral areas indicate a return to drier conditions (Figs. 5 and 7). The end of this event coincided with the discovery of a combustion feature along with megafaunal remains, dated to 12.5–12.4 cal ka BP (22). 
+
+Archaeological evidence indicates that human occupation of the ATTL began during the Fishtail point horizon (92). The archaeological sites in the ATTL (*TT-1*, *TT-2*, and *TT-3*), dated to ca. 12.6–11.6 cal ka BP, provide unequivocal evidence of direct human–megafauna interactions, including gomphotheres, horses, and cervids (22, 93–96). These sites also document the consistent exploitation of small game (primarily birds and frogs) and the use of local plant resources (22, 93–96). Interpreted as logistic or ephemeral camps, these settlements were part of a broader and more complex mobility system that included at least the Andean range (22, 94). Regionally, however, late Pleistocene settlements are conspicuously absent, whereas Early Holocene archaeological sites are common in the Andes, along the coastal range, and the coastline (42).
+
+Amid these regional cultural developments, paleoclimatic data suggest increasing water availability and temperatures, coupled with a reduced influence of the SWW near 30°S at the end of the Late Pleistocene (Figs. 2, 3, 7L-M-N). This was followed by a northward shift of the SWW at the beginning of the Holocene, along with large-amplitude REC associated with YD and ENSO-like phenomena (33, 40, 97). These processes—partially driven by obliquity-induced orbital changes—likely governed the variability of both the SWW and the SPSA in central Chile between 12.5 and 11 cal ka BP, forming a complex interplay not fully captured by other records at this latitude (12, 33, 73, 75). 
+
+Against this dynamic environmental backdrop, the earliest human groups present at ATTL adopted logistical settlement patterns under increasingly favorable conditions, taking advantage of a wide range of lacustrine resources. This strategy persisted until around 11–9 cal ka BP (22, 95). The intertwined development of climate, megafauna, and human strategies underscores the profound impact that shifting environmental regimes had on the cultural trajectories of early hunter-gatherer communities.
+
+# Early-Middle Holocene: increased environmental variability and emerging human settlement patterns
+
+Early and Middle Holocene environmental reconstructions in central Chile suggest a dynamic interplay among regional teleconnections, climate-driven erosive processes, tectonics, volcanism, and the evolving impacts of early hunter-gatherers on the ecosystem (10, 44, 98–101). The TT19-3A record indicates higher lake levels, enhanced evaporative regimes, and the emergence of diverse ecological assemblages during the Early Holocene compared to the Late Pleistocene (Figs. 5 and 7). The higher abundance of woody dicotyledon phytoliths indicates the prevalence of sclerophyll forests, whereas the occurrence of *Jubaea chilensis* highlights the abundance of palm trees, likely more prevalent due to the absence of megaherbivores, humid climatic conditions, and/or human use (84). Phytoliths from *Poaceae* and *Pooideae* groups indicate the coexistence of grassland and sclerophyll shrubs. An increase in *Bambusoideae* morphotypes suggests the expansion of *Chusquea* sp., while the presence of *Chloridoid* phytoliths—commonly found in arid or semi-arid regions—points to possible drought periods. 
+
+Between 11.5 and 11 cal ka BP, the proportion of fluvial deposits reached its highest levels (Figs. 5D and 7L), possibly triggered by a northward shift of the SWW (33) and weakening of the SPSA (Figs. 7N and 7G). After this peak fluvial input, the record indicates shifts in high-energy sedimentary transport and an increase in diatoms (small fragilarioids) associated with turbulent lacustrine environments between 11 and 8.5 cal ka BP (Figs. 7J-L). It is possible that high ENSO-like activity along the Peruvian coast (Fig. 7R) aligns with the changes recorded in the ATTL and drought periods at Laguna Aculeo (98, 99). Such large-scale events might have triggered a scaling break effect, potentially strengthening STJ conditions and contributing to drought events (19, 102). Variability in STJ intensity, influenced by ENSO-like phenomena and possibly combined with residual effects of glacial-interglacial orbital changes (Milankovitch cycles), may have contributed to the formation of alluvial and fluvial deposits observed during this period in central Chile (15, 17, 103).
+
+During the first half of the Mid Holocene (8.5–6 cal ka BP), central Chile experienced a gradual shift toward increased aridity—though less extreme than events recorded between 11 and 8.5 cal ka BP (Figs. 5, 7H-J). This is supported by PMIP4-CMIP6 multi-model ensemble outputs (Figs. 6, 11S-13S; Table S2), which indicate a slight increase in zonal winds in central Chile under wet conditions compared to pre-industrial levels (Fig. 6F). At lower latitudes, negative zonal wind anomalies suggest La Niña-like or ENSO-neutral conditions, linked to drier periods in central Chile (13, 103). Wet conditions, however, show a slight increase in precipitation relative to the pre-industrial period, while dry conditions exhibit precipitation and zonal wind patterns similar to pre-industrial levels (Figs. 6D and 6H). Although no evidence suggests a northward displacement of the SWW during the Mid Holocene, the TT19-3A record indicates higher fluvial inputs and elevated lake levels compared to other central Chilean lacustrine records from the same period (98, 104).
+
+The Early Holocene begins with an important change in the hunter-gatherer settlement pattern at the ATTL but also in the surrounding areas. Late Pleistocene logistical and/or ephemeral bases are replaced by more intensive residential camps at ca. 9.0 cal ka BP (105, 106). This shift coincided with the second phase of human occupation identified at *TT-3* (22) in the lower portion of the *L2 facies* (ca. 8.5 cal ka BP). Nevertheless, considering the available radiocarbon dates, the Mid Holocene (between ca. 7.2–6.0 ka cal BP) was possibly the most intensive period of human occupation of the ATTL (22, 105). 
+
+Human burials were added into residential areas, forming complex mounds characterized by intensive domestic refuse and mixed stratigraphic deposits. Some isolated dates suggest that these sites were probably occupied less recurrently until the beginning of the Late Holocene (ca. 4.0 cal ka BP). At least seven of these structures were documented at the lake’s shore, but only a few were systematically excavated. Thus, their synchronicity, anthropological, artefactual, and ecofactual particularities, and their possible relations are not yet fully understood. The systematic presence of human burials in these sites stresses the pivotal role that ATTL played for the hunter-gatherers during climatic oscillations, and allows us to hypothesize mobility reduction and, possibly, incipient territorialism. 
+
+On a regional scale, human concentration in particularly productive locations such as the ATTL could explain the scarce record of Mid Holocene archaeological sites elsewhere in central Chile. In this scenario, the lake acts as a refuge by concentrating abundant resources such as water, food, and raw materials, especially during periods of prolonged drought (106, 107).
+
+# Implications and Limitations
+
+The ATTL basin in central Chile offers a detailed record of climatic and human dynamics during the Late Pleistocene and early Holocene. The integration of stratigraphic, geochemical, and paleoecological data highlights the role of local hydroclimatic changes in guiding early human mobility, resource use, and settlement choices. As lake levels fluctuated and resource availability shifted, hunters and gatherers appear to have adapted by altering subsistence strategies and occupation intensity.
+
+Coupling local lacustrine evidence with large-scale climate models (PMIP4-CMIP6) reveals that regional drivers (SWW, SPSA, STJ, ENSO-like phenomena) manifested in highly localized ways. This underscores the importance of linking local data sets to global circulation patterns to avoid oversimplification of paleoclimate scenarios. During the Late Pleistocene, high-energy fluvial inflows driven by atmospheric shifts (STJ intensity, ITCZ, and SWW displacement) occurred, but these changes did not significantly impact the lake's water balance, indicating a complex hydrological regime needing further study. These shifts coincide with global climate phenomena such as the HS1, B/A, and the CAPE and ACR events in South America.
+
+The Pleistocene-Holocene transition brought warmer, wetter conditions, driving rapid environmental changes and the development of new habitats in the lake and its watershed. The clear association of human presence with megafaunal remains and Sporormiella spores indicates that shifting shoreline habitats, prey distribution, and hunter-gatherer activities converged at ATTL. This study provides valuable insights into how climate and humans jointly influenced late Pleistocene megafauna extinctions and dispersals. Rapid lake-level fluctuations and episodes of high-energy deposition during the Pleistocene and Holocene serve as analogs for modern climate variability. Historical ecology, including the use of refugia and settlement reorganization, offers valuable insights into resilience strategies for current and future water resource planning.
+
+Evidence from the ATTL basin indicates that, after a humid Early Holocene phase, increased depositional variability and shoreline habitat changes were driven by ENSO-like shifts. However, during the Mid Holocene, the ATTL shows relatively stable lake levels—contrasting with other central Chilean sites—thereby providing favorable conditions for humans and fauna. This hydrological stability, coupled with abundant resources, suggests that the ATTL basin functioned as an ecological refuge during drought periods. The intensification of occupation, formation of mounds, and emergence of more complex social practices (e.g., burials) reflect how favorable local conditions could catalyze socio-cultural development.
+
+The TT19-3A sequence underscores the strong interplay between climate and human history in central Chile, showing how early hunter-gatherers adapted to periods of both abundance and stress. While the “ecorefugio” model derived from this study provides valuable insights, caution is warranted when applying it to other South American contexts, where variations in geology, topography, and climate may yield distinct sedimentological and ecological outcomes. Although robust age-depth models have been used, certain stratigraphic units—particularly those from the late Pleistocene—remain less densely dated, potentially obscuring abrupt environmental fluctuations and complicating the correlation of short-lived events with archaeological contexts.
+
+Further analyses—such as SEM-based quartz grain microtexture studies, multi-element isotopes, or modern data (e.g., clumped isotope (Δ^47^) carbonate, aDNA, or GDGTs/δD in organic biomarkers)—would strengthen hydroclimate interpretations and help validate assumed isotope enrichments (δ^13^C and δ^18^O). Additionally, global climate models, while providing important large-scale insights, often lack sufficient temporal resolution and fail to capture localized phenomena (e.g., convective storms, orographic precipitation) at mid-latitudes, making it difficult to align their outputs with high-resolution sedimentary records.
+
+Finally, lake-level changes, erosional reworking, and post-depositional processes can skew the archaeological record in shoreline contexts, causing certain intervals (e.g., the early Holocene) to appear less populated due to sedimentary discontinuities rather than true occupational gaps. Broader field surveys and correlating multiple cores would help confirm and refine interpretations of human settlement intensity throughout the region.
+
+A high-energy depositional phase occurred between 18.5 and 16.5 cal ka BP, marked by sandy *L7 facies* (about 70% - 80% sand) with low TC values, and the lowest δ¹³C_car and δ¹⁸O_car values in the record (Figs. 2 and 4). The coarse, bimodal grain size distribution (*rEM4*; main peak \~420 µm, secondary \~60 µm, see Fig. S3) suggests heavy rainfall/intense storms, or rapid melt-driven discharge that delivered coarse sediments into the lake’s littoral zone (45, 47, 59). The lowest δ¹⁸O_car values likely reflect colder waters, an increase in the amount effect, or a different moisture source (51), whereas lower δ¹³C_car values possibly reflect increased CO₂ input from terrestrial respiration or lower aquatic productivity.
+
+Later, from 16.5 to 14.5 cal ka BP, a shift to coarser sediments and stormier conditions occurred again without increasing lake levels (Figs. 5a, b, e). This interval corresponds to a period of intense hydrological and depositional variability, linking local sedimentary patterns to the broader regional climate context.
+
+To understand the atmospheric patterns during this period, we analyzed precipitation and zonal wind outputs from the PMIP4-CMIP6 multimodel ensemble simulations for the LGM (Figs. 6, 7S–9S; Table S2). The multimodel ensemble indicates that during the LGM, dry conditions were associated with intensified zonal wind speeds at low and mid-latitudes, accompanied by negative anomalies at subtropical and high latitudes (Figs. 6a, 6c). In contrast, wet anomalies are linked to weakened tropical trade winds, akin to warm ENSO-like conditions, accompanied by positive anomalies along extratropical storm tracks (Figs. 6E, 6G). Zonal wind speeds at tropical and subtropical latitudes show positive anomalies over the southern Pacific, while negative anomalies prevail over the central-southern Andes. A similar atmospheric pattern to those of the glacial period likely contributed to extreme events between 18.5 and 14.5 cal ka BP (Figs. 5a, 5b). Sedimentological and limnological evidence, however, suggests this was insufficient to maintain elevated lake levels.
+
+Between 16.5 and 12.8 cal ka BP, sedimentation reverted to sandy silts (Unit 7, *L6a* and *L6b facies*), with varying clay percentages and low TS and TC values. Microfossils remained with low abundance, except for two samples showing a temporary increase in *Poaceae* phytoliths, benthic diatoms, and *Cyperaceae*, hinting at short-lived stabilization of littoral and riparian communities (Figs. 3 and S4). The presence of freshwater algae (*Botryococcus* and *Spirogyra*), littoral vegetation such as *Typha*, and sporadic fern spores (*Pteris*) indicates wetlands and riparian areas adjacent to the basin (Fig. S5). δ¹³C_car and δ¹⁸O_car values rose relative to Unit 8, indicating changes in hydrological balance (precipitation - evaporation balance), seasonality, or source area.
+
+From 16.5 to 14.5 cal ka BP (*L6b facies*), grain size distributions (*rEM5*) were bimodal (\~700 μm and \~65 μm), more consistent with fluvial or reworked fluvial/lacustrine-aeolian processes (47–51, 59). Such distributions occur where braided rivers and fluvial processes overlap, mixing coarse and fine sediments (49, 60). Proximal aeolian coarse-grained silt transport typically shows a unimodal grain-size distribution between 40 and 90 μm (49, 60). In contrast, GSDs exceeding a \~250 μm mode suggest high-energy fluvial processes. Moreover, in other environments and depositional process simulations, grain sizes ranging from 250 to 850 μm have been linked to intense runoff, alluvial fan formation, and are also observed in sandy coastal settings as well as wind-eroded sediments (61–64).
+
+After 14.5 cal ka BP (*L6a facies*), a shift toward finer particles (*rEM1*, \~3.8 µm; *rEM2*, \~60 µm) suggests improved hydrodynamic sorting, potentially linked to rising lake levels or greater availability of finer sediments. These conditions reflect a dynamic interplay between wind-driven, glacial-mediated, and fluvial processes influencing deposition at the ATTL site during glacial time. Further analysis of the quartz surface texture is necessary to differentiate between aeolian and fluvial processes.
+
+# Materials and Methods
+
+In November 2019, we recovered a sedimentary sequence measuring 15 cm in length, 10 cm in width, and 280 cm in depth from the exposed profile of the eastern wall of a 1×2m excavation, corresponding to *Unit 1* of the geoarchaeological test pits at TT-3 site (*TT19-3A-1E*, Fig. 1). Sediment samples, between 50 and 100g of material, were obtained at 1-cm intervals along the sequence (see Supplementary Methods for more details). The uppermost 8 samples (0 - 0.38 m) were discarded due to sediment alteration caused by modern agricultural practices. 
+
+Sixty-six samples taken every 2cm were analyzed for total carbon (*TC*), total inorganic carbon (*TIC*), total organic carbon (*TOC=TC−TIC*), total nitrogen (*TN*), and total sulfur (*TS*) using a LECO SCN furnace at the Pyrenean Institute of Ecology (*IPE-CSIC*) in Spain. Stable isotope compositions (δ¹³C_car and δ¹⁸O_car) of the carbonate fraction from these samples were determined using a Gas Bench system interfaced with a Delta XP mass spectrometer (Thermo Finnigan, Bremen, Germany) at the Andalusian Institute of Earth Science (*CSIC*) in Granada, Spain. 
+
+The GSDs (from 0.04µm to 2000µm) were measured in triplicate using a Malvern Mastersizer 2000 APA2000 with Hydro 2000G AWA2000 at *IPE-CSIC*. Bulk sediment samples were pre-treated to remove organic matter and carbonates. Forty sediment samples were prepared for palynomorph extraction following standard chemical procedures (65, 108). Due to taphonomic and preservation issues, terrestrial pollen is highly underrepresented; therefore, only pollen from hygro-hydrophytes, fern spores, and other NPPs have been analyzed (108–110). 
+
+The extraction of phytoliths and diatoms was conducted on twenty sediment samples, which were processed at the Archaeobotany and Palaeoecology Laboratory of the University of Exeter. A protocol based on standard procedures for phytolith extraction was employed, using approximately 5 g of sediment. We removed carbonates using 36% HCl and digested organic materials with 70% HNO₃. Phytoliths and diatoms were separated through flotation using ZnBr₂ prepared to a density of 2.3 g/cm³. We counted phytoliths, analyzing up to 200 specimens per sample, or the total number of specimens examined in cases where the slide contained fewer than 200. Finally, the phytoliths were classified according to the International Code for Phytolith Nomenclature (111–113). 
+
+Diatom valves on Naphrax-mounted slides were observed using a Zeiss Axioscope A1 stereomicroscope with an oil immersion objective of 1000x. A minimum of 400 valves were counted when possible, identifying to species level with the exception of small fragilarioids that require higher magnification (114). 
+
+We reconstructed the TT19-3A chronology using fourteenth AMS radiocarbon dates on charcoal and bulk sediments (Table S1).
+
+## Statistical Analysis
+
+Radiocarbon ages were calibrated using the Southern Hemisphere calibration curve (115), and age-at-depth assemblage was established using the *Bacon* and *Bchron* models implemented in the `geochronR` package (116–118). Robust End-member Mixing Analysis (*rEMMA*) was performed using the R package `EMMAgeo` v0.9.8 to infer sediment sources, transport, and depositional processes (117, 118). 
+
+Sedimentary facies were characterized based on macroscopic and microscopic descriptions (120), and artificial facies clusters were identified using machine learning techniques (121). The analysis employed an unsupervised classification algorithm, utilizing geochemical data (*TOC*, *TIC*, *TN*, *TS*, *GSDs*, and stable isotopes) implemented in the `scikit-learn` library (122) in Python v3.9. Stratigraphic diagrams and timeseries were analyzed and plotted using `tidypaleo` v0.1.1, `actR` v0.2.0, `ggplot` v3.3.5, and `rioja` v0.9-26 packages in R 4.2.2 software. 
+
+Circulation anomalies for the Mid Holocene and LGM periods were analyzed using PMIP4 ensemble simulations from the *MPI-ESM1-2-LR*, *MIROC-ES2L*, *CESM2-WACCM-FV2*, *AWI-ESM1-2-LR*, and *CESM2* models. These analyses focused on global changes in zonal wind at 500 hPa and total precipitation relative to the pre-industrial period (*piControl*). To define wet and dry events in central Chile (75°W–70°W, 32°S–40°S), a Regional Precipitation Index (*RPI*) was applied, defining wet events as *RPI>120%* and dry events as *RPI<80%* (see Supplementary Methods). 
+
+Using the `climlab` and `pyleoclim` libraries in Python v3.9, we analyzed past orbital parameters and paleoclimate data through wavelet and spectral analysis (Fig. 7Q-R) (123). Human activities were assessed at the local scale through the analysis of lithic components found at TT-3, and at the regional scale using the *p3k14c* database (46) of archaeological radiocarbon dates. 
+
+We calculated summed probability distributions (*SPD*) of archaeological radiocarbon dates using the `rcarbon` v1.5.1 package in R 4.2.2 for South America and central Chile (between 32° and 37°S). Environmental and orbital changes from paleoclimate records and models were summarized using available literature.
+
+# References
+
+1.  Barnosky, A. D., Koch, P. L., Feranec, R. S., Wing, S. L. & Shabel, A. B. Assessing the Causes of Late Pleistocene Extinctions on the Continents. Science 306, 70–75 (2004).
+2.  Mann, D. H., Groves, P., Gaglioti, B. V. & Shapiro, B. A. Climate-driven ecological stability as a globally shared cause of Late Quaternary megafaunal extinctions: the Plaids and Stripes Hypothesis. Biol. Rev. 94, 328–352 (2019).
+3.  Gutiérrez, E. G. & Stockli, D. F. Fluvial response to Late Pleistocene–Holocene climate change in the Colorado River drainage, central Texas, USA. Geology 51, 929–934 (2023).
+4.  Braje, T. J. & Erlandson, J. M. Human acceleration of animal and plant extinctions: A Late Pleistocene, Holocene, and Anthropocene continuum. Anthropocene 4, 14–23 (2013).
+5.  Mottl, O. et al. Global acceleration in rates of vegetation change over the past 18,000 years. Science 372, 860–864 (2021).
+6.  Andermann, T., Faurby, S., Turvey, S. T., Antonelli, A. & Silvestro, D. The past and future human impact on mammalian diversity. Sci. Adv. 6, eabb2313 (2020).
+7.  Malhi, Y. et al. Megafauna and ecosystem function from the Pleistocene to the Anthropocene. Proc. Natl. Acad. Sci. 113, 838–846 (2016).
+8.  Baumann, C. The paleo-synanthropic niche: a first attempt to define animal’s adaptation to a human-made micro-environment in the Late Pleistocene. Archaeol. Anthropol. Sci. 15, 63 (2023).
+9.  Mayle, F. E. & Iriarte, J. Integrated palaeoecology and archaeology – a powerful approach for understanding pre-Columbian Amazonia. J. Archaeol. Sci. 51, 54–64 (2014).
+10. Valero-Garcés, B. L. et al. Palaeohydrology of Laguna de Tagua Tagua (34° 30′ S) and moisture fluctuations in Central Chile for the last 46 000 yr. J. Quat. Sci. 20, 625–641 (2005).
+11. Herrera-Ossandón, M., Easton, G., Antinao, J. L. & Forman, S. L. Late Quaternary glacier advances in the Andes of Santiago, central Chile, and paleoclimatic implications. Front. Earth Sci. 11, (2023).
+12. Orellana, H., Latorre, C., García, J.-L. & Lambert, F. Spatial analysis of paleoclimate variations based on proxy records in the south-central Andes (18°- 35° S) from 32 to 4 ka. Quat. Sci. Rev. 313, 108174 (2023).
+13. Garreaud, R. D. et al. The 2010–2015 megadrought in central Chile: impacts on regional hydroclimate and vegetation. Hydrol. Earth Syst. Sci. 21, 6307–6327 (2017).
+14. Garreaud, R. D., Vuille, M., Compagnucci, R. & Marengo, J. Present-day South American climate. Palaeogeogr. Palaeoclimatol. Palaeoecol. 281, 180–195 (2009).
+15. Gillett, Z. E., Hendon, H. H., Arblaster, J. M. & Lim, E.-P. Tropical and Extratropical Influences on the Variability of the Southern Hemisphere Wintertime Subtropical Jet. J. Clim. 34, 4009–4022 (2021).
+16. Lu, J., Chen, G. & Frierson, D. M. W. Response of the Zonal Mean Atmospheric Circulation to El Niño versus Global Warming. J. Clim. 21, 5835–5851 (2008).
+17. Garreaud, R. Precipitation and Circulation Covariability in the Extratropics. J. Clim. 20, 4789–4797 (2007).
+18. Campos, D. & Rondanelli, R. ENSO-Related Precipitation Variability in Central Chile: The Role of Large Scale Moisture Transport. J. Geophys. Res. Atmospheres 128, e2023JD038671 (2023).
+19. Collazo, S., García-Herrera, R. & Barriopedro, D. Summer upper-level jets modulate the response of South American climate to ENSO. Clim. Dyn. 62, 1031–1054 (2024).
+20. Moreno, P. I. & León, A. L. Abrupt vegetation changes during the last glacial to Holocene transition in mid-latitude South America. J. Quat. Sci. 18, 787–800 (2003).
+21. Sandweiss, D. H. et al. Archaeological climate proxies and the complexities of reconstructing Holocene El Niño in coastal Peru. Proc. Natl. Acad. Sci. 117, 8271–8279 (2020).
+22. Labarca, R. et al. Taguatagua 3: A new late Pleistocene settlement in a highly suitable lacustrine habitat in central Chile (34°S). PLOS ONE 19, e0302465 (2024).
+23. Ugalde, P. C. et al. The first peoples of the Atacama Desert lived among the trees: A 11,600- to 11,200-year-old grove and congregation site. Proc. Natl. Acad. Sci. 121, e2320506121 (2024).
+24. Borrero, L. A. The Prehistoric Exploration and Colonization of Fuego-Patagonia. J. World Prehistory 13, 321–355 (1999).
+25. Moy, C. M., Seltzer, G. O., Rodbell, D. T. & Anderson, D. M. Variability of El Niño/Southern Oscillation activity at millennial timescales during the Holocene epoch. Nature 420, 162–165 (2002).
+26. Moreno, P. I., Francois, J. P., Moy, C. M. & Villa-Martínez, R. Covariability of the Southern Westerlies and atmospheric CO2 during the Holocene. Geology 38, 727–730 (2010).
+27. Soteres, R. L. et al. Glacier fluctuations in the northern Patagonian Andes (44°S) imply wind-modulated interhemispheric in-phase climate shifts during Termination 1. Sci. Rep. 12, 10842 (2022).
+28. Villacís, L. A. et al. A freshwater diatom perspective on the evolution of the southern westerlies for the past ∼14,000 years in southwestern Patagonia. Quat. Sci. Rev. 301, 107929 (2023).
+29. Lamy, F. et al. Holocene changes in the position and intensity of the southern westerly wind belt. Nat. Geosci. 3, 695–699 (2010).
+30. Kilian, R. & Lamy, F. A review of Glacial and Holocene paleoclimate records from southernmost Patagonia (49–55°S). Quat. Sci. Rev. 53, 1–23 (2012).
+31. Schneider, T., Bischoff, T. & Haug, G. H. Migrations and dynamics of the intertropical convergence zone. Nature 513, 45–53 (2014).
+32. Li, S. & Liu, W. Deciphering the Migration of the Intertropical Convergence Zone During the Last Deglaciation. Geophys. Res. Lett. 49, e2022GL098806 (2022).
+33. Kaiser, J. et al. Orbital modulation of subtropical versus subantarctic moisture sources in the southeast Pacific mid-latitudes. Nat. Commun. 15, 7512 (2024).
+34. Flores-Aqueveque, V., Rojas, M., Aguirre, C., Arias, P. A. & González, C. South Pacific Subtropical High from the late Holocene to the end of the 21st century: insights from climate proxies and general circulation models. Clim. Past 16, 79–99 (2020).
+35. Latorre, C., Betancourt, J. L. & Arroyo, M. T. K. Late Quaternary vegetation and climate history of a perennial river canyon in the Río Salado basin (22°S) of Northern Chile. Quat. Res. 65, 450–466 (2006).
+36. Pedro, J. B. et al. The spatial extent and dynamics of the Antarctic Cold Reversal. Nat. Geosci. 9, 51–55 (2016).
+37. Martin, L. C. P. et al. Lake Tauca highstand (Heinrich Stadial 1a) driven by a southward shift of the Bolivian High. Sci. Adv. 4, eaar2514 (2018).
+38. Prates, L. & Perez, S. I. Late Pleistocene South American megafaunal extinctions associated with rise of Fishtail points and human population. Nat. Commun. 12, 2175 (2021).
+39. Villavicencio, N. A. et al. Combination of humans, climate, and vegetation change triggered Late Quaternary megafauna extinction in the Última Esperanza region, southern Patagonia, Chile. Ecography 39, 125–140 (2016).
+40. Timing and structure of the Younger Dryas event and its underlying climate dynamics \| PNAS. <https://www.pnas.org/doi/abs/10.1073/pnas.2007869117>.
+41. Alley, R. B. The Younger Dryas cold interval as viewed from central Greenland. Quat. Sci. Rev. 19, 213–226 (2000).
+42. Moreno-Mayar, J. V. et al. Early human dispersals within the Americas. Science 362, (2018).
+43. Liu, Z. et al. Transient Simulation of Last Deglaciation with a New Mechanism for Bølling-Allerød Warming. Science 325, 310–314 (2009).
+44. Heusser, C. J. Quaternary Pollen Record from Laguna de Tagua Tagua, Chile. Science 219, 1429–1432 (1983).
+45. Varela, J. Geología del Cuaternario de Laguna de Taguatagua (Provincia de O’Higgins). in Congreso Geológico Chileno D81–D114 (1976).
+46. Bird, D. et al. p3k14c, a synthetic global database of archaeological radiocarbon dates. Sci. Data 9, 27 (2022).
+47. Amann, B., Bertrand, S., Alvarez-Garreton, C. & Reid, B. Seasonal Variations in Fjord Sediment Grain Size: A Pre-requisite for Hydrological and Climate Reconstructions in Partially Glacierized Watersheds (Baker River, Patagonia). J. Geophys. Res. Earth Surf. 127, e2021JF006391 (2022).
+48. Sun, D. et al. Grain-size distribution function of polymodal sediments in hydraulic and aeolian environments, and numerical partitioning of the sedimentary components. Sediment. Geol. 152, 263–277 (2002).
+49. Vandenberghe, J., Sun, Y., Wang, X., Abels, H. A. & Liu, X. Grain-size characterization of reworked fine-grained aeolian deposits. Earth-Sci. Rev. 177, 43–52 (2018).
+50. Vandenberghe, J. Grain size of fine-grained windblown sediment: A powerful proxy for process identification. Earth-Sci. Rev. 121, 18–30 (2013).
+51. Dansgaard, W. Stable isotopes in precipitation. Tellus 16, 436–468 (1964).
+52. Rozanski, K., Araguás‐Araguás, L. & Gonfiantini, R. Isotopic patterns in modern global precipitation. Clim. Change Cont. Isot. Rec. 78, 1–36 (1993).
+53. Gonfiantini, R., Roche, M.-A., Olivry, J.-C., Fontes, J.-C. & Zuppi, G. M. The altitude effect on the isotopic composition of tropical rains. Chem. Geol. 181, 147–167 (2001).
+54. Zielhofer, C. et al. Millennial-scale fluctuations in Saharan dust supply across the decline of the African Humid Period. Quat. Sci. Rev. 171, 119–135 (2017).
+55. Montané, J. Fechado del nivel superior de Tagua Tagua. Not. Mens. Mus. Nac. Hist. Nat. 14, 9–10 (1969).
+56. Fathi-Moghadam, M., Arman, A., Emamgholizadeh, S. & Alikhani, A. Settling Properties of Cohesive Sediments in Lakes and Reservoirs. J. Waterw. Port Coast. Ocean Eng. 137, 204–209 (2011).
+57. Ciolkosz, E. J. et al. Genesis of soils and landscapes in the Ridge and Valley province of central Pennsylvania. Geomorphology 3, 245–261 (1990).
+58. Beal, E. J., House, C. H. & Orphan, V. J. Manganese- and Iron-Dependent Marine Methane Oxidation. Science 325, 184–187 (2009).
+59. Wang, X. et al. Anaerobic microbial manganese oxidation and reduction: A critical review. Sci. Total Environ. 822, 153513 (2022).
+60. Dietze, E. et al. Sediment transport processes across the Tibetan Plateau inferred from robust grain-size end members in lake sediments. Clim. Past 10, 91–106 (2014).
+61. Zhang, X. et al. Unmixing grain-size distributions in lake sediments: a new method of endmember modeling using hierarchical clustering. Quat. Res. 89, 365–373 (2018).
+62. Orton, G. J. & Reading, H. G. Variability of deltaic processes in terms of sediment supply, with particular emphasis on grain size. Sedimentology 40, 475–512 (1993).
+63. van IJzendoorn, C. O., Hallin, C., Reniers, A. J. H. M. & de Vries, S. Modeling Multi-Fraction Coastal Aeolian Sediment Transport With Horizontal and Vertical Grain-Size Variability. J. Geophys. Res. Earth Surf. 128, e2023JF007155 (2023).
+64. van der Vegt, H. et al. Grain size fractionation by process-driven sorting in sandy to muddy deltas. Depositional Rec. 6, 217–235 (2020).
+65. Heusser, C. J. Pollen and Spores of Chile. Modern Types of the Pteridophyta, Gymnospermae, and Angiospermae. (University of Arizona Press, 1971).
+66. Mathiasen, P., Venegas-González, A., Fresia, P. & Premoli, A. C. A relic of the past: current genetic patterns of the palaeoendemic tree Nothofagus macrocarpa were shaped by climatic oscillations in central Chile. Ann. Bot. 126, 891–904 (2020).
+67. León-Lobos, P. & Ellis, R. H. Seed survival in Chilean Nothofagus in response to desiccation and storage. Seed Sci. Res. 15, 113–123 (2005).
+68. Reyes-Díaz, M., Alberdi, M., Piper, F., Bravo, L. A. & Corcuera, L. J. Low temperature responses of Nothofagus dombeyi and Nothofagus nitida, two evergreen species from south central Chile. Tree Physiol. 25, 1389–1398 (2005).
+69. Broecker, W. S. The Glacial World According to Wally. (Eldigio Press, 1995).
+70. Quade, J. et al. Paleowetlands and regional climate change in the central Atacama Desert, northern Chile. Quat. Res. 69, 343–360 (2008).
+71. Gayo, E. M. et al. Late Quaternary hydrological and ecological changes in the hyperarid core of the northern Atacama Desert (\~ 21°S). Earth-Sci. Rev. 113, 120–140 (2012).
+72. González-Pinilla, F. J. et al. High- and low-latitude forcings drive Atacama Desert rainfall variations over the past 16,000 years. Sci. Adv. 7, eabg1333 (2021).
+73. Lamy, F., Hebbeln, D. & Wefer, G. High-Resolution Marine Record of Climatic Change in Mid-latitude Chile during the Last 28,000 Years Based on Terrigenous Sediment Parameters. Quat. Res. 51, 83–93 (1999).
+74. Novello, V. F. et al. A high-resolution history of the South American Monsoon from Last Glacial Maximum to the Holocene. Sci. Rep. 7, 44267 (2017).
+75. Kaiser, J., Schefu\ss, E., Lamy, F., Mohtadi, M. & Hebbeln, D. Glacial to Holocene changes in sea surface temperature and coastal vegetation in north central Chile: high versus low latitude forcing. Quat. Sci. Rev. 27, 2064–2075 (2008).
+76. Singer, B., Hildreth, W. & Vincze, Y. 40Ar/39Ar evidence for early deglaciation of the central Chilean Andes. Geophys. Res. Lett. 27, 1663–1666 (2000).
+77. Fernández-Navarro, H. et al. 10Be chronology of the Last Glacial Maximum and Termination in the Andes of central Chile: The record of the Universidad Glacier (34° S). Quat. Sci. Rev. 344, 108968 (2024).
+78. Kim, J.-H., Schneider, R. R., Hebbeln, D., Müller, P. J. & Wefer, G. Last deglacial sea-surface temperature evolution in the Southeast Pacific compared to climate changes on the South American continent. Quat. Sci. Rev. 21, 2085–2097 (2002).
+79. Kaiser, J., Lamy, F. & Hebbeln, D. A 70-kyr sea surface temperature record off southern Chile (Ocean Drilling Program Site 1233). Paleoceanography 20, (2005).
+80. Fritz, S. C. DIATOM METHODS \| Salinity and Climate Reconstructions from Continental Lakes. in Encyclopedia of Quaternary Science (Second Edition) (eds. Elias, S. A. & Mock, C. J.) 507–515 (Elsevier, Amsterdam, 2013). <doi:10.1016/B978-0-444-53643-3.00221-1>.
+81. Stenger-Kovács, C. et al. Diatom community response to inland water salinization: a review. Hydrobiologia 850, 4627–4663 (2023).
+82. Jara-Arancio, P. et al. Genetic Diversity and Population Structure of Jubaea chilensis, an Endemic and Monotype Gender from Chile, Based on SNP Markers. Plants 11, 1959 (2022).
+83. Trepel, J. et al. Meta-analysis shows that wild large herbivores shape ecosystem properties and promote spatial heterogeneity. Nat. Ecol. Evol. 8, 705–716 (2024).
+84. Robinson, M. et al. ‘Moving South’: Late Pleistocene Plant Exploitation and the Importance of Palm in the Colombian Amazon. Quaternary 4, 26 (2021).
+85. McCrea, J. M. On the Isotopic Chemistry of Carbonates and a Paleotemperature Scale. J. Chem. Phys. 18, 849–857 (1950).
+86. Horton, T. W., Defliese, W. F., Tripati, A. K. & Oze, C. Evaporation induced 18O and 13C enrichment in lake systems: A global perspective on hydrologic balance effects. Quat. Sci. Rev. 131, 365–379 (2016).
+87. McCormack, J., Nehrke, G., Jöns, N., Immenhauser, A. & Kwiecien, O. Refining the interpretation of lacustrine carbonate isotope records: Implications of a mineralogy-specific Lake Van case study. Chem. Geol. 513, 167–183 (2019).
+88. Scott, W. P. et al. Lake water based isoscape in central-south Chile reflects meteoric water. Sci. Rep. 11, 8725 (2021).
+89. Terzer-Wassmuth, S., Wassenaar, L. I., Welker, J. M. & Araguás-Araguás, L. J. Improved high-resolution global and regionalized isoscapes of δ18O, δ2H and d-excess in precipitation. Hydrol. Process. 35, e14254 (2021).
+90. Benito, X., Trobajo, R. & Ibáñez, C. Benthic diatoms in a Mediterranean delta: ecological indicators and a conductivity transfer function for paleoenvironmental studies. J. Paleolimnol. 54, 171–188 (2015).
+91. Starratt, S. W., Kirby, M. E. & Glover, K. Diatom Record of Holocene Moisture Variability in the San Bernardino Mountains, California, USA. in Limnogeology: Progress, Challenges and Opportunities: A Tribute to Elizabeth Gierlowski-Kordesch (eds. Rosen, M. R., Finkelstein, D. B., Park Boush, L. & Pla-Pueyo, S.) 329–365 (Springer International Publishing, Cham, 2021). <doi:10.1007/978-3-030-66576-0_11>.
+92. Prates, L., Politis, G. G. & Perez, S. I. Rapid radiation of humans in South America after the last glacial maximum: A radiocarbon-based study. PLOS ONE 15, e0236023 (2020).
+93. Montané, J. Paleo-Indian Remains from Laguna de Tagua Tagua, Central Chile. Science 161, 1137–1138 (1968).
+94. Méndez, C. & Jackson, D. Terminal pleistocene lithic technology and use of space in Central Chile. Chungara Rev. Antropol. Chil. 47, 53–65 (2015).
+95. Núñez, L., Varela, J., Casamiquela, R. & Villagrán, C. Reconstruccion Multidisciplinaria de la Ocupacion Prehistorica de Quereo, Centro de Chile. Lat. Am. Antiq. 5, 99–118 (1994).
+96. Lizama-Catalán, Á. & Labarca, R. Who eats What: Unravelling a complex taphonomic scenario in the lacustrine deposits of the late Pleistocene archaeological site, Taguatagua 1, central Chile. Quat. Sci. Rev. 300, 107831 (2023).
+97. Rein, B. et al. El Niño variability off Peru during the last 20,000 years. Paleoceanography 20, (2005).
+98. Jenny, B. et al. Early to Mid-Holocene Aridity in Central Chile and the Southern Westerlies: The Laguna Aculeo Record (34°S). Quat. Res. 58, 160–170 (2002).
+99. Maldonado, A. et al. Early Holocene climate change and human occupation along the semiarid coast of north-central Chile. J. Quat. Sci. 25, 985–988 (2010).
+100. Ortega, C., Vargas, G., Rutllant, J. A., Jackson, D. & Méndez, C. Major hydrological regime change along the semiarid western coast of South America during the early Holocene. Quat. Res. 78, 513–527 (2012).
+101. Frugone-Álvarez, M. et al. Volcanism and climate change as drivers in Holocene depositional dynamic of Laguna del Maule (Andes of central Chile – 36°S). Clim Past 16, 1097–1125 (2020).
+102. Zhu, F. et al. Climate models can correctly simulate the continuum of global-average temperature variability. Proc. Natl. Acad. Sci. 116, 8728–8733 (2019).
+103. Garreaud, R. D. et al. The Central Chile Mega Drought (2010–2018): A climate dynamics perspective. Int. J. Climatol. 40, 421–439 (2020).
+104. Jenny, B., Wilhelm, D. & Valero-Garcés, B. The Southern Westerlies in Central Chile: Holocene precipitation estimates based on a water balance model for Laguna Aculeo (33 50′ S). Clim. Dyn. 20, 269–280 (2003).
+105. Tagle, B. & del Río, C. Informe de prospecciones arqueológicas y excavación de túmulos funerarios en las provincias de Colchagua y Cachapoal. Inf. Al Cons. Monum. Nac. Ms (2005).
+106. Barberena, R., Méndez, C. & de Porras, M. E. Zooming out from archaeological discontinuities: The meaning of mid-Holocene temporal troughs in South American deserts. J. Anthropol. Archaeol. 46, 68–81 (2017).
+107. Núñez, L. & Grosjean, M. Biodiversity and Human Impact During the Last 11,000 Years in North-Central Chile. in How Landscapes Change: Human Disturbance and Ecosystem Fragmentation in the Americas (eds. Bradshaw, G. A. & Marquet, P. A.) 7–17 (Springer, Berlin, Heidelberg, 2003). <doi:10.1007/978-3-662-05238-9_2>.
+108. Magri, D. & Di Rita, F. Archaeopalynological Preparation Techniques. in Plant Microtechniques and Protocols (eds. Yeung, E. C. T., Stasolla, C., Sumner, M. J. & Huang, B. Q.) 495–506 (Springer International Publishing, Cham, 2015). <doi:10.1007/978-3-319-19944-3_27>.
+109. Van Geel, B. Non-pollen palynomorphs. in Tracking environmental change using lake sediments: Terrestrial, algal, and siliceous indicators (eds. Smol, J. P., Birks, H. J. B., Last, W. M., Bradley, R. S. & Alverson, K.) 99–119 (Springer Netherlands, Dordrecht, 2001). <doi:10.1007/0-306-47668-1_6>.
+110. Van Geel, B. et al. Environmental reconstruction of a Roman Period settlement site in Uitgeest (The Netherlands), with special reference to coprophilous fungi. J. Archaeol. Sci. 30, 873–883 (2003).
+111. Piperno, D. R. Phytolith Analysis. An Archaeological and Geological Perspective. 5 - laboratory techniques. in Phytolith analysis (ed. Piperno, D. R.) 119–130 (Academic Press, San Diego, 1988). <doi:https://doi.org/10.1016/B978-0-12-557175-3.50009-X>.
+112. Piperno, D. R. Phytoliths. In A Comprehensive Guide for Archaeologists and Palaeoecologists. (Altamira Press, USA, New York, 2006).
+113. International Committee for Phytolith Taxonomy (ICPT). International Code for Phytolith Nomenclature (ICPN) 2.0. Ann. Bot. 124, 189–199 (2019).
+114. Morales, E. A., Siver, P. A. & Trainor, F. R. Identification of diatoms (Bacillariophyceae) during ecological assessments: Comparison between Light Microscopy and Scanning Electron Microscopy techniques. Proc. Acad. Nat. Sci. Phila. 151, 95–103 (2001).
+115. Hogg, A. G. et al. SHCal20 Southern Hemisphere Calibration, 0–55,000 Years cal BP. Radiocarbon 62, 759–778 (2020).
+116. McKay, N. P., Emile-Geay, J. & Khider, D. geoChronR – an R package to model, analyze, and visualize age-uncertain data. Geochronology 3, 149–169 (2021).
+117. Blaauw, M. & Christen, J. A. Flexible paleoclimate age-depth models using an autoregressive gamma process. Bayesian Anal. 6, 457–474 (2011).
+118. Parnell, A. C., Haslett, J., Allen, J. R. M., Buck, C. E. & Huntley, B. A flexible approach to assessing synchroneity of past events using Bayesian reconstructions of sedimentation history. Quat. Sci. Rev. 27, 1872–1885 (2008).
+119. Dietze, E. & Dietze, M. Grain-size distribution unmixing using the R package EMMAgeo. EG Quat. Sci. J. 68, 29–46 (2019).
+120. Schnurrenberger, D., Russell, J. & Kelts, K. Classification of lacustrine sediments based on sedimentary components. J. Paleolimnol. 29, 141–154 (2003).
+121. Hall, B. Facies classification using machine learning. Lead. Edge 35, 906–909 (2016).
+122. Pedregosa, F. et al. Scikit-learn: Machine Learning in Python. J. Mach. Learn. Res. 12, 2825–2830 (2011).
+123. Khider, D., Emile-Geay, J., Zhu, F., James, A., Landers, J., Ratnakar, V. & Gil, Y. Pyleoclim: Paleoclimate timeseries analysis and visualization with Python. Paleoceanogr. Paleoclimatol. 37, e2022PA004509 (2022).
+
+ 
+\clearpage
+
+\begin{table}[!hbtp]
+\caption{Sedimentological, compositional characteristics and depositional environment of Tagua-Tagua lacustrine facies.}
+\resizebox*{0.98\textwidth}{!}{
+\begin{tabular}{p{2.5cm} p{5.5cm} p{5.5cm} p{5.2cm}}
+\hline
+\multicolumn{4}{l}{\textbf{1. Reworked diatomaceous mud soils}} \\
+\hline \\
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
+\hline
+\textbf{S1 (0-23 cm)} & Massive brown soil of fine silt (40 $\%$) to coarse clay (10 $\%$) with interbedded gravel clasts & High TOC (3.1 $\%$) and TN (0.5 $\%$) and low TIC (0.01 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-21 \textperthousand}$ and $\textrm{-11 \textperthousand}$, respectively) & Soil with modern edaphic features soil with\\ [0.9ex]
+\hline
+\textbf{S2 (23-38 cm)} & Massive gray-brown to whitish-brown soil of coarse clay (25 $\%$) to coarse silt (40 $\%$). Presence of stratified (fissile) diatomaceous mud with charcoal fragments. & High TOC (2.3 $\%$) and TN (0.5 $\%$) and low TIC (0.04 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-15 \textperthousand}$ and $\textrm{-7.8 \textperthousand}$, respectively) & Reworked fluvio-lacustrine sediment with modern edaphic features \\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{2. Banded, diatomaceous, organic-poor silts}}\\  
+\hline \\ 
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
+\hline
+\textbf{L3 (38-79 cm)} & Coarse silt (30-40 $\%$) to fine sand (30 $\%$), with shell fragments of gastropods and bivalve arranged at random. Diatomaceous mud well consolidated fragments of between 0.1 to 0.5 cm and charcoal fragments little abundant & Lower TOC (1.2 $\%$), TN ($0.1$ $\%$) and TS ($0.1$ $\%$) and hight TIC ($> $$4$ $\%$). Lower $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-1.15 \textperthousand}$ and $\textrm{-1.17 \textperthousand}$, respectively) & Littoral environments dominated by inorganic deposition, represent alternation from littoral to deeper environments\\ [0.5ex]
+\hline
+\textbf{D5} & Massive to banded, mm- to cm - thick layers of brown, macrophyte-rich coarse silt.& TS (1.4 $\%$) and presence of calcite (TIC = $0.1$$\%$). Higher TOC/TN. Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr), high Br/Ti, Ca/Ti, and S/Ti. High Mn values, and low Fe/Mn ratios.& \\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{Laminated diatomaceous organic-rich silts(TOC 2-3.5$\%$; BioSi ca. 20 $\%$)}}\\ [0.7ex] 
+\hline \hline
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\hline
+\textbf{D6} &Laminated, dark brown, organic-rich silt composed of three main laminae type: a) greenish grey, diatomaceous medium to fine silt; b) dark brown, organic-rich fine silt with diffuse upper and lower boundaries and c) brown, macrophyte–rich, coarse silt, with sharp, erosional lower boundaries. Facies D6b contains more frequent endogenic calcite crystals.& High TOC (3.1$\%$), BioSi (19.7$\%$) and TS (1.4$\%$, peaks up to 6$\%$ in D6c) and common presence of calcite (TIC $>=$ 0.1). Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr); high Br/Ti, Ca/Ti, and S/Ti. High Mn values and low Fe/Mn ratios.& Distal, frequently oxic environments dominated by organic deposition and higher clastic input. Some periods with endogenic calcite formation\\ [0.5ex]
+\hline
+\end{tabular}}
+\end{table}
+

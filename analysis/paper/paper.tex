@@ -1,0 +1,3459 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile},
+  pdfkeywords={Pleistocene-Holocene transition; Ancient Tagua Tagua
+Lake; Geoarchaeology; Central Chile paleoclimate; Sedimentary Facies
+Analysis; Anthropogenic Ecosystems; Biogeochemical Proxies},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Hydroclimatic variability drove human-megafauna-environment
+interactions during the late Pleistocene/Early Holocene in Central
+Chile}
+\author{true \and true \and true \and true \and true \and true \and true \and true \and true \and true \and true \and true \and true \and true}
+\date{2025-05-19}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Major environmental changes were occurring when the first modern humans
+arrived in South America during the Pleistocene-Holocene transition. How
+these changes shaped human-environmental interactions across this period
+remain unclear. We analyzed the stratigraphy, biogeochemistry, and
+paleoclimatic models from the Ancient TaguaTagua Lake (ATTL) in central
+Chile, one of the few continuous records of human and megafauna
+interactions with their environment in South America, to reconstruct its
+dynamics over the past 20,000 years. Results reveal that the ATTL
+transitioned from a shallow, cool lake with storm-driven alluvial
+deposition to a warmer, deeper, and more productive lake about 12,500
+years ago, aligning with early humans' arrival. The ATTL became wetter
+but experienced severe droughts between 11,000 and 8,500 years ago,
+linked to shifts in Southern Westerly Winds and ENSO-like patterns.
+Fluctuating conditions drove humans and fauna to seek refuge in the
+basin, emphasizing local paleohydrology's role in shaping early
+human-ecosystem interactions.
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+Modern humans settled the Americas at a time of profound ecological and
+hydroclimatic transformations (1--3). These Rapid Environmental Changes
+(REC)---including the extinction and redistribution of key
+ecosystem-structuring species, shifts in resource availability, and
+alterations in atmospheric and oceanic circulation---represented one of
+the last major continental-scale socio-ecological thresholds before
+modern global environmental changes (4--7). Such transformations
+reconfigured ecological landscapes and could have shaped how early human
+populations adapted and expanded across South America (8).
+
+Yet, how did these REC shape early human migration, settlement, and
+adaptation during the initial colonization of South America? A range of
+diverse sources of information, including palaeoecological,
+archaeological, and climatic data, are needed to adequately address this
+question (9). The role of climate teleconnections, including large-scale
+systems such as the Southeast Pacific Subtropical Anticyclone (SPSA) and
+the Southern Westerly Winds (SWW), have been identified as key factors
+influencing regional hydroclimates along the western slope of the
+subtropical Andes during the Last Glacial Termination (Fig. 1) (10-13).
+Presently, prolonged positive anomalies in the SPSA block storm fronts
+from reaching the subtropical Andes (Fig. 1a), frequently resulting in
+winter drought which impacts water resources, regional livestock, and
+agriculture (13). In contrast, the SWW has entrained storm systems that
+travel across the southern mid-latitudes, redistributing moisture and
+bringing heavy rainfall that support ecosystems but also cause flooding
+and economic losses (13). These climatic drivers are modulated by
+phenomena such as the El Niño--Southern Oscillation (ENSO) and the
+Southern Annular Mode (SAM), which influence regional and global climate
+dynamics, including the frequency and intensity of the upper-level
+Pacific Subtropical Jet Stream (PSJ) and atmospheric rivers (14--18). In
+mid-latitudes, anomalies in these climatic drivers are marked by extreme
+events, including droughts, pluvial floods, and severe storms. Early
+hunter-gatherers must have been well suited and adapted to such
+variability (13,19).
+
+Despite considerable research and progress in identifying global
+paleoclimatic drivers, discerning the impact of climate on human
+mobility and population density in past environments remains a
+significant challenge (20,21). The paucity of closely related
+high-resolution paleoenvironmental and archaeological records hinders
+comparisons of whether and how climate influenced human adaptation and
+resource use during this early stages of exploration and colonization,
+leaving uncertainties about the impact of REC (22--24). Paleoclimate
+records from southern mid-latitudes indicate an intensification of the
+SWW, modulated by the effects of ENSO/SAM and the Southern Ocean
+(controlling CO2 fluxes) during the last deglaciation (25--28).
+Alternative hypotheses suggest that the displacement of the SWW (29,30)
+was driven by shifts in the Intertropical Convergence Zone (ITCZ), in
+turn influenced by teleconnections with the Northern
+Hemisphere---particularly those associated with North Atlantic
+ice-rafting events and reductions in thermohaline circulation---as well
+as by orbital changes (31--33). In contrast, the interaction of the SPSA
+with climate dynamics that directly impact human activity---such as
+droughts, storms and floods associated with storm tracks---remains
+poorly studied (34). Past changes in the dynamics of the SPSA and SWW
+provide an opportunity to study the mechanisms that cause
+paleoenvironmental changes, and to assess the influence of mid-latitude
+climate variability and its interaction with human activities at an
+early stage (21).
+
+The Last Glacial Termination and the onset of the Holocene marked
+pronounced environmental shifts in South America, including early human
+colonization and fire use, the mass extinction of large continental
+mammals (\textgreater100 kg), large temperature changes (e.g.~Antarctic
+Cold Reversal; ∼14.5-12.9 cal ka BP or thousands of calibrated years
+before 1950), and major precipitation anomalies (e.g.~Central Andes
+Pluvial Event, CAPE I and II, between 18-14 cal ka BP and 13-9 cal ka
+BP, respectively) (23,35--39). Furthermore, geological and
+archaeological records clearly indicate that population expansion and
+megafaunal extinctions occurred relatively synchronously with climate
+variations observed during Termination I (T1) in the Northern
+Hemisphere, such as the Heinrich Stadial 1 (HS1, \textasciitilde{} 18-15
+cal ka BP), Oldest Dryas (17.5-14.5 cal ka BP), Bølling-Allerød
+(14.7-12.9 cal ka BP), and Younger Dryas Stadial
+(\textasciitilde12.9-11.7 cal ka BP) (1,40--43). However, the magnitude
+and distribution of these possible teleconnections at the South American
+mid-latitudes remain are not well-constrained. Hence, the study of past
+environmental records, especially those linked to human activity, is of
+paramount importance for understanding coupled human-environment systems
+and the global, regional, and local mechanisms that drove ecosystem
+changes during the Last Glacial Termination.
+
+Here, we examine hydroclimatic and ecosystem shifts at the ATTL
+geoarchaeological sites in central Chile, highlighting their importance
+for understanding late Pleistocene/Early Holocene human--environment
+interactions. Our study features a comprehensive multi-proxy analysis of
+a newly obtained 2.8-meter stratigraphic profile from the TT19-3A
+sequence (Fig. 1b), offering key insights into the climatic conditions
+surrounding the arrival of the first hunter-gatherers in the region.
+This record integrates data from sedimentary facies, grain size
+distributions (GSDs), geochemical proxies (TOC, TIC, C/N, TS, δ13Ccar,
+and δ18Ocar), and biological indicators, including phytoliths, pollen,
+non-pollen palynomorphs (NPPs), and diatoms. In addition, we use an
+ensemble of simulations from the Paleoclimate Modeling Intercomparison
+Project phase 4 (PMIP4), integrated into the Coupled Model
+Intercomparison Project phase 6 (CMIP6), to analyze zonal wind and
+precipitation patterns during the Last Glacial Maximum (LGM) and the
+Middle Holocene, focusing on their variability under humid and dry
+conditions in central Chile. This approach provides a comparative
+baseline of atmospheric circulation conditions before and after the
+arrival of the first hunter-gatherers in central Chile, thus enabling a
+direct contrast between these large-scale patterns and our local
+sedimentary record. Overall, our results highlight the interplay between
+hydroclimatic variability and human activity during the Last Glacial
+Termination, shedding deeper insight into how early populations
+interacted with shifting environmental conditions.
+
+\section{Results}\label{results}
+
+\subsection{Stratigraphy and Facies: Depositional Variability and
+Geochemical
+Shifts}\label{stratigraphy-and-facies-depositional-variability-and-geochemical-shifts}
+
+The TT19-3A sequence comprises 15 sedimentary facies distributed in 8
+stratigraphic units, and several sedimentary clusters (Figs. 1, 2 and
+supplementary material). At the base (Unit 8; 2.80 m - 2.30 m), brown to
+greenish sediments include clayey silty facies (\emph{L8; 2.80 m - 2.61
+m}) and sandy facies (\emph{L7; 2.61 m - 2.33 m}), associated with
+clusters 4, 7, and 2 (Fig. 2). A coarsening-upward sequence (\emph{L8b}
+\rightarrow L8a \rightarrow L7) with desiccation cracks lies above these
+sandy layers and may indicate subaerial exposure or subaquatic
+fracturing related to degassing.
+
+Units 7 and 6 consist of greenish-brown sandy and silty sediments
+(\emph{facies L6; 2.33 m - 1.84 m; and L5; 1.84 m - 1.65 m}), linked to
+clusters 3 and 7 (Figs. 2 and S1). Unit 7 forms a fining-upward sequence
+with fine sands containing subrounded clasts and dispersed fish
+vertebrae (\emph{L6b}), overlain by sandy silts (\emph{L6a}). Unit 6 is
+composed of dark grayish-green sandy silts with reworked gastropod and
+bivalve shells.
+
+A marked erosive unconformity formed at the base of Unit 5 (1.65 m -
+1.50 m), which is composed of massive light grayish green silt with
+millimeter to centimeter-sized carbon fragments, faunal remains and
+lithic artifacts, and abundant \emph{Biomphalaria taguataguensis}
+(\emph{Planorbidae}) shells (\emph{L4b facies}). Facies \emph{L4}
+corresponds to cluster 1. The top of Unit 5 (\emph{L4a}) is a dark
+brown, fine-grained, carbonate-rich (6\% TIC) silt layer (Figs. 2 and
+S1).
+
+Unit 4 (1.50 m - 0.80 m) contains carbonate (2-5\% TIC) and diatom-rich
+coarse gray silts and fine sands, defined by four facies. Facies
+\emph{L3d} (1.50 m - 1.30 m) consists of fine-grained light gray silts
+with some large volcanic clasts up to 3.5 cm. Facies \emph{L3c} (1.30 m
+- 1.10 m) is characterized by massive to banded gray clay silts with
+some millimetric clasts, higher carbonate content (up to 4\% TIC), and
+abundant shells of \emph{B. taguataguensis}, randomly dispersed but more
+abundant towards the top. Facies \emph{L3b} (1.10 m - 0.90 m) comprises
+massive to banded fine-to-medium gray clay silts with \emph{B.
+taguataguensis} shells and millimeter- to centimeter-sized charcoal
+fragments. Facies \emph{L3a} (0.90 m - 0.80 m) are massive
+medium-grained gray to dark gray sandy silts with sub-rounded clasts,
+higher carbonate content and shells of \emph{B. taguataguensis}.
+
+Units 3 and 2 contain finer gray sediments with relatively high
+carbonate (Unit 3, 1-5\% TIC) and organic (Unit 2, up to 2.5\% TOC)
+contents. Unit 3 (0.80 m - 0.45 m) is composed of gray fine sandy silts
+with silty sand lenses or pockets, and in situ shells of \emph{B.
+taguataguensis} and \emph{Diplodon} sp. (\emph{facies L2}). Unit 2 (0.45
+m - 0.38 m) consists of dark gray fine sandy silts with charcoal
+fragments (up to 1 cm) and gastropod shells. Finally, Unit 1 (0.38 m - 0
+m) consists of light brownish-gray clays with abundant diatoms, higher
+organic content and presence of charcoal (\emph{facies L2}), as well as
+silty sands containing rounded gravel clasts (0.5--1 cm) and larger
+charcoal fragments (0.2--1.5 cm; \emph{facies L1}). Abundant clasts,
+macrocharcoal, and elevated TOC and TN in Unit 1 suggest
+post-depositional reworking, soil formation, and anthropogenic
+influence.
+
+Overall, sediments are mostly silt (\textasciitilde50\%) and sand
+(\textasciitilde40\%), with 5--20\% clay and \textless5\% fine gravels
+(Fig. 2). The TT19-3A sequence displays a multimodal grain size
+distribution (GSD). Using rEMMA, we identified five end-members
+{[}modes; \emph{rEM1}: 8 ɸ, \emph{rEM2}: 4.1 ɸ, \emph{rEM3}: 2.7 ɸ,
+\emph{rEM4}: 1.3 ɸ, and \emph{rEM5}: 0.47 ɸ{]} that explain
+\textasciitilde78\% of the total variance (Figs. S2 and S3). The
+\emph{rEM2} end-member (peak at \textasciitilde60 µm) dominates the
+upper half of the record (\textasciitilde40\% variance), particularly in
+diatom-rich lacustrine facies (\emph{L3a, L3b, L3c}). In contrast,
+\emph{rEM1} (peak \textasciitilde4 µm; \textasciitilde18\% variance)
+characterizes silty clay facies such as \emph{L8} and \emph{L6}, while
+\emph{rEM3} (peak \textasciitilde160 µm; \textasciitilde15\% variance)
+occurs in fine-grained, diatom-rich intervals (1.30 - 0.80 m). The
+\emph{rEM4} end-member, with a bimodal distribution (\textasciitilde420
+µm and \textasciitilde60 µm), and \emph{rEM5}, with a dominant coarse
+sand peak (\textasciitilde720 µm), each explain \textasciitilde14\% of
+the variance.
+
+Carbonate and TOC contents vary among units. Units 8 to 6 are
+essentially carbonate-free, with TC \textless0.1\%. Facies \emph{L8a}
+and \emph{L8b} exhibit relatively high TS (0.1-1\%) and low TC
+(\textasciitilde0.1\%), alongside δ\^{}18O\_car and δ\^{}13C\_car values
+near -5‰ and -10‰, respectively. Facies \emph{L7} shows a gradual
+decrease in the δ\^{}18O\_car values (cluster 2, Fig. S1), reaching the
+lowest values of the sequence. Unit 7 (\emph{L6 facies}) is
+characterized by two sedimentary clusters: the cluster 7, with
+increasing δ\^{}18O\_car and δ\^{}13C\_car values and cluster 3, with
+low \emph{rEM1} and \emph{rEM2} values and the absence of \emph{rEM5}.
+In Unit 6 (\emph{L5 facies}), \emph{rEM5} increases while δ\^{}18O\_car,
+\emph{rEM1}, and \emph{rEM2} values decrease. In Unit 5 (\emph{L4
+facies}), TC, TIC, δ\^{}18O\_car, δ\^{}13C\_car, and \emph{rEM2} values
+increase, whereas \emph{rEM1}, \emph{rEM4}, and \emph{rEM5} values
+diminish. \emph{L4a facies} records the highest TIC (\textgreater7\%),
+δ\^{}18O\_car (\textgreater-1 ‰), δ\^{}13C\_car (\textgreater1 ‰), and
+\emph{rEM2} values, along with minimal \emph{rEM1}, \emph{rEM3},
+\emph{rEM4}, and \emph{rEM5}.
+
+In Unit 4 (\emph{L3 facies}), there is a gradual increase in the TOC/TN
+ratio (\textgreater5), δ\^{}18O\_car (\textgreater-1 ‰), and
+δ\^{}13C\_car values, along with variable GSD percentages. In Unit 3
+(\emph{L2 facies}), geochemical values show reduced variability, with
+high TC, TIC, TOC/TN, and \emph{rEM2} values. Finally, in Unit 2
+(\emph{facies 2}), TC values reach their highest levels, primarily due
+to the increase in TOC.
+
+\subsection{Aquatic--terrestrial ecosystem proxies and community
+shifts}\label{aquaticterrestrial-ecosystem-proxies-and-community-shifts}
+
+The diatom record in the TT19-3A sequence (Figs. 3 and S4) is dominated
+by benthic taxa with high specific conductance optima---such as
+\emph{Anomoeoneis sculpta} (Ehrenberg) Cleve, \emph{Nitzschia amphibia}
+Grunow, \emph{Epithemia turgida} (Ehrenberg) Kützing, \emph{Cymbella
+cymbiformis} Bahls, and \emph{Gomphonema affine} Kützing. This overall
+dominance is interrupted by an interval of increased tychoplanktonic
+small fragilarioids between 1.50 and 1.20 m (\emph{L3d}, \emph{L3c}).
+
+At the base of the sequence (\emph{Unit 8, L8b}), diatom valves are
+absent. Moving upward (\emph{L8a}, Units 7 and 6), we observe the
+presence of \emph{Anomoeoneis sculpta} (most abundant), \emph{N.
+amphibia}, \emph{E. turgida}, \emph{G. affine}, and \emph{Ulnaria} sp.
+In Unit 5 (\emph{L4b}), \emph{A. sculpta} remains the dominant taxon
+(\textasciitilde84\% abundance), and diatom valves are ubiquitous,
+allowing for the estimation of relative abundances.
+
+A notable assemblage shift occurs in \emph{L4a} (Unit 5), \emph{L3d},
+and \emph{L3c} (Unit 4), where \emph{A. sculpta} nearly disappears and
+diatom diversity increases substantially. Here, small fragilarioids,
+\emph{N. amphibia}, \emph{E. turgida}, \emph{C. cymbiformis}, and
+\emph{G. affine} all become more common, accompanied by planktonic
+species such as \emph{Stephanocyclus meneghinianus} (Kütz) Kulikovskiy,
+Genkal and Kociolek, \emph{Aulacoseira granulata} (Ehrenberg) Simonsen,
+and \emph{Ulnaria} sp.
+
+\emph{L4a} and \emph{L3d} differ from \emph{L3c} in that small
+fragilarioids and \emph{A. granulata} are more abundant, whereas
+\emph{N. amphibia}, \emph{S. meneghinianus}, and \emph{A. sculpta}
+(\textasciitilde5\% abundance) are more common in \emph{L3c}.
+Subsequently, \emph{L3b} records a marked recovery of \emph{A. sculpta}
+(\textasciitilde77\%), accompanied by a decrease in other taxa. In
+\emph{L3a}, \emph{A. sculpta} declines (\textasciitilde22\%) as \emph{G.
+affine} and \emph{N. amphibia} increase.
+
+In Unit 3 (\emph{L2}) and Unit 2 (\emph{L1}), \emph{A. sculpta}
+partially recovers (\textasciitilde36\%) alongside slight increases in
+planktonic taxa \emph{S. meneghinianus} and \emph{A. granulata}.
+
+Pollen and NPPs data (Fig. 3, S5) reveal distinct assemblages of
+hygro-hydrophytes, ferns, freshwater algae, and spores of coprophilous
+fungi. Two well-defined sections are apparent:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{The first section (2.63 m - 1.50 m; Units 8, 7, 6, and 5):}\\
+  This section is characterized by high abundances of freshwater algae
+  \emph{Botryococcus} and \emph{Spirogyra}, along with occasional
+  \emph{Mougeotia} and \emph{Pediastrum}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    In Units 8 and 7 (2.63 m - 1.85 m), \emph{Typha}, ferns
+    (\emph{Pteris}), \emph{Botryococcus}, and \emph{Spirogyra}
+    dominate.\\
+  \item
+    Towards the upper part of this section (2.38 m - 1.50 m), the
+    abundance of \emph{Botryococcus}, \emph{Spirogyra}, and arbuscular
+    mycorrhizal fungi (\emph{Glomus}) remains elevated, but littoral and
+    floating vegetation reach their lowest values.
+  \end{itemize}
+\item
+  \textbf{The second section (1.50 m - 0.38 m):}\\
+  This section shows a progressive increase in water surface indicators
+  and the colonization of littoral (\emph{Cyperaceae}, \emph{Juncaceae},
+  \emph{Typha}) and floating vegetation (\emph{Lemna}, \emph{Nuphar}),
+  especially pronounced between 0.55 m and 0.38 m. Freshwater algae
+  remain present throughout this interval.
+\end{enumerate}
+
+Phytolith analysis (Figs. 3 and S6) identifies opal phytoliths from
+\emph{Cyperaceae}, \emph{Poaceae}, and \emph{Arecaceae}. Within the
+\emph{Poaceae}, the subfamilies \emph{Bambusoideae},
+\emph{Chloridoideae}, and \emph{Pooideae} were distinguished. We also
+identified \emph{Jubaea chilensis} or Chilean palm (\emph{Arecaceae}),
+as well as phytoliths from woody dicotyledons.
+
+Unit 8 exhibits very low phytolith concentrations compared to the rest
+of the record. Here, \emph{Poaceae} phytoliths dominate
+(\textasciitilde90\%), with fewer \emph{Bambusoideae} and
+\emph{Chloridoideae} phytoliths (\textasciitilde5\%). Unit 7 (2.30 m -
+1.75 m), \emph{Bambusoideae} and \emph{Chloridoideae} reach their
+highest percentages (46\% and 26\%, respectively), while
+\emph{Cyperaceae} increases modestly (\textasciitilde13\%). Unit 6 (1.75
+m - 1.65 m) shows the highest overall \emph{Poaceae} content, though
+\emph{Bambusoideae}, \emph{Pooideae}, and \emph{Chloridoid} percentages
+decrease.
+
+From Unit 5 to Unit 3 (1.65 m - 0.40 m), the total phytolith content
+rises, accompanied by the first appearance of woody and shrub
+morphotypes indicative of sclerophyll forests (woody dicotyledons and
+\emph{J. chilensis}). During this interval, \emph{Bambusoideae} and
+\emph{Chloridoid} proportions slightly decline in Unit 3. Additionally,
+\emph{Cyperaceae} levels increase again (to \textasciitilde13\%) between
+Units 5 and 4 (1.50-1.42 m) before stabilizing at lower values
+(\textasciitilde2\%) thereafter.
+
+\subsection{Cultural Signals, Megafauna, and Chronological
+Context}\label{cultural-signals-megafauna-and-chronological-context}
+
+Archaeological evidence from the ATTL indicates that human occupation at
+sites Taguatagua-1 (\emph{TT-1}), Taguatagua-2 (\emph{TT-2}), and
+Taguatagua-3 (\emph{TT-3}) began around 12.6 - 11.6 ka cal BP during
+deposition of Unit 5 in the TT19-3A sequence (Fig. 1c) (10, 44, 45).
+These archaeological sites document direct human interactions with
+megafauna---such as gomphotheres, horses, and cervids---as well as the
+exploitation of smaller prey (birds, frogs) and the use of native
+plants.
+
+No archaeological radiocarbon dates have been identified between 11.6
+and 9.0 ka cal BP at the ATTL; however, open-air residential camps and
+extensive lithic knapping areas appear at ca. 9.0 ka cal BP. Human
+burials within residential zones, forming mounds composed of dense
+domestic refuse and mixed stratigraphic deposits, occur from ca. 8.2 --
+5.8 ka cal BP. At least seven such mounds were identified along the
+lakeshore, though only a few have been systematically excavated.
+Isolated radiocarbon dates after this period suggest reduced human
+presence until the onset of the Late Holocene (ca. 4.0 ka cal BP).
+
+In a broader regional context, the summed probability distributions
+(SPD) of archaeological radiocarbon dates for South America and central
+Chile (32°S -- 37°S) (46), reveal a pronounced increase around 12.6 ka
+cal BP. This uptick aligns with the timing of initial human presence
+documented at the ATTL and the environmental shifts described earlier,
+underscoring a notable rise in human activity as climates warmed and
+landscapes transformed.
+
+Throughout the Early to Mid Holocene (ca. 11.7 - 6 ka cal BP), the SPD
+remains generally elevated, albeit with periods of fluctuation. These
+patterns, when considered alongside the localized archaeological
+evidence, suggest sustained human presence and periodic fluctuations in
+occupation intensity in central Chile. The chronological framework for
+the TT19-3A sequence provided by the age-depth models (\emph{Bacon} and
+\emph{Bchron}; Fig. 4) supports these interpretations, offering a robust
+temporal backdrop for correlating cultural and environmental shifts. The
+models excluded two outlier ages. Bulk sediment and charcoal samples
+taken at the same depths showed no significant differences, ruling out a
+reservoir effect. According to the ensemble age-depth model, the TT19-3A
+sequence covers the last 20.5 cal ka BP (Table S1 and Fig. 4), with a
+higher model robustness in the upper four units. \textbf{Unit 8 (2.66 m
+-- 2.30 m):} spans from \textasciitilde20.5 to 16 cal ka BP with an
+accumulation rate of \textasciitilde200 a cm⁻¹. \textbf{Unit 7 (2.30 m -
+1.84 m):} was deposited between \textasciitilde16 and 12.5 cal ka BP
+with an accumulation rate of \textasciitilde100 a cm⁻¹. \textbf{Unit 6
+(1.84 m - 1.65 m):} was deposited between 13 and 12.6 cal ka BP with an
+accumulation rate of \textasciitilde20 a cm⁻¹. \textbf{Unit 5 (1.65 m -
+1.50 m):} encompassing the Pleistocene-Holocene transition (12.6 - 11.3
+cal ka BP), has an accumulation rate of \textasciitilde100 a cm⁻¹.
+\textbf{Unit 4 (1.50 m - 0.80 m):} extends from 11.3 to 8.6 cal ka BP,
+characterized by \textasciitilde50 a cm⁻¹. \textbf{Unit 3 (0.80 m - 0.45
+m):} spans between 8.6 and 6.5 cal ka BP with a median rate of
+\textasciitilde60 a cm⁻¹. \textbf{Unit 2 (0.45 - 0.38 m):} covers
+between 6.5 and 6.0 cal ka BP with an accumulation rate of
+\textasciitilde80 a cm⁻¹.
+
+Taken together, the localized archaeological evidence from the ATTL, the
+broader SPD patterns for central Chile and South America, and the robust
+ensemble age-depth models yield a coherent narrative of increasing human
+presence and activity beginning around the Pleistocene-Holocene
+transition.
+
+\begin{verbatim}
+## > reading /home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets/meta/meta
+\end{verbatim}
+
+\begin{center}\includegraphics[width=1\linewidth]{paper_files/figure-latex/unnamed-chunk-3-1} \end{center}
+
+\begin{verbatim}
+## > reading /home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets/meta/meta
+\end{verbatim}
+
+\begin{table}[!h]
+\caption{Radiocarbon dating of TT3 sequence. The table shows the ages in terms of years `before present' (BP), percent modern carbon (pMC) and their uncertainties (1 $1\sigma$).
+      The median age calibration was conducted with Oxcal 4.4 and SHCal20 calibration curve (Hogg et al., 2020; Bronk Ramsey 2009a)}
+\centering
+\fontsize{7}{9}\selectfont
+\begin{tabular}[t]{lcccccccr}
+\toprule
+Lab code & Depth & $^{14}$C a BP & $1\sigma$ & pMC & $1\sigma$ & Median a cal BP & $1\sigma$ & Material\\
+\midrule
+D-AMS 039542 & 39 & 5345 & 28 & 51.41 & 0.18 & 6086 & 69 & Charcoal\\
+D-AMS 039543 & 44 & 5806 & 33 & 48.54 & 0.20 & 6571 & 56 & Charcoal\\
+D-AMS 039544 & 67 & 7259 & 32 & 40.51 & 0.16 & 8021 & 62 & Charcoal\\
+D-AMS 039545 & 106 & 8657 & 45 & 34.04 & 0.19 & 9591 & 57 & Charcoal\\
+D-AMS 039546 & 150 & 9736 & 35 & 29.76 & 0.13 & 11134 & 111 & Bulk sediment\\
+D-AMS 039547 & 161 & 10211 & 63 & 28.05 & 0.22 & 11817 & 144 & Bulk sediment\\
+D-AMS 039548 & 162 & 10936 & 41 & 25.63 & 0.13 & 12813 & 46 & Charcoal\\
+D-AMS 039549 & 162 & 10747 & 49 & 26.24 & 0.16 & 12709 & 38 & Bulk sediment\\
+D-AMS 039550 & 168 & 10590 & 39 & 26.76 & 0.13 & 12549 & 64 & Charcoal\\
+D-AMS 039551 & 199 & 11117 & 51 & 25.06 & 0.16 & 13015 & 61 & Bulk sediment\\
+D-AMS 039552 & 223 & 9977 & 45 & 28.88 & 0.16 & 11377 & 122 & Bulk sediment\\
+D-AMS 039553 & 254 & 17353 & 84 & 11.53 & 0.12 & 20890 & 124 & Bulk sediment\\
+D-AMS 039554 & 266 & 16558 & 69 & 12.73 & 0.11 & 19959 & 130 & Bulk sediment\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{verbatim}
+## > reading /home/mat150604/MEGA/MEGAsync/workflow/TT3/_targets/meta/meta
+\end{verbatim}
+
+\begin{verbatim}
+## $core
+## [1] "TT3"
+## 
+## $thick
+## [1] 2
+## 
+## $dets
+##          labID   age error depth cc delta.R delta.STD t.a t.b
+## 1  D-AMS039542  5345    28    39  3       0         0   3   4
+## 2  D-AMS039543  5806    33    44  3       0         0   3   4
+## 3  D-AMS039544  7259    32    67  3       0         0   3   4
+## 4  D-AMS039545  8657    45   106  3       0         0   3   4
+## 5  D-AMS039546  9736    35   150  3       0         0   3   4
+## 6  D-AMS039547 10211    63   161  3       0         0   3   4
+## 7  D-AMS039548 10936    41   162  3       0         0   3   4
+## 8  D-AMS039549 10747    49   162  3       0         0   3   4
+## 9  D-AMS039550 10590    39   168  3       0         0   3   4
+## 10 D-AMS039551 11117    51   199  3       0         0   3   4
+## 11 D-AMS039552  9977    45   223  3       0         0   3   4
+## 12 D-AMS039553 17353    84   254  3       0         0   3   4
+## 13 D-AMS039554 16558    69   266  3       0         0   3   4
+## 
+## $d.min
+## [1] 39
+## 
+## $d.max
+## [1] 266
+## 
+## $d.by
+## [1] 1
+## 
+## $depths.file
+## [1] 0
+## 
+## $slump
+##      [,1] [,2]
+## [1,]  176  180
+## 
+## $acc.mean
+## [1] 50 80
+## 
+## $acc.shape
+## [1] 1.4 1.0
+## 
+## $mem.mean
+## [1] 0.5
+## 
+## $mem.strength
+## [1] 10
+## 
+## $boundary
+## [1] NA
+## 
+## $hiatus.depths
+## [1] 176
+## 
+## $hiatus.max
+## [1] 10000
+## 
+## $BCAD
+## [1] 0
+## 
+## $cc
+## [1] 1
+## 
+## $postbomb
+## [1] 0
+## 
+## $cc1
+## [1] "IntCal20"
+## 
+## $cc2
+## [1] "Marine20"
+## 
+## $cc3
+## [1] "SHCal20"
+## 
+## $cc4
+## [1] "ConstCal"
+## 
+## $depth.unit
+## [1] cm
+## 
+## $unit
+## [1] "cm"
+## 
+## $age.unit
+## [1] yr
+## 
+## $normal
+## [1] 0
+## 
+## $t.a
+## [1] 3
+## 
+## $t.b
+## [1] 4
+## 
+## $delta.R
+## [1] 0
+## 
+## $delta.STD
+## [1] 0
+## 
+## $prob
+## [1] 0.95
+## 
+## $date
+## [1] "Mon May 19 18:33:55 2025"
+## 
+## $runname
+## [1] ""
+## 
+## $ssize
+## [1] 8000
+## 
+## $dark
+## [1] 1
+## 
+## $youngest.age
+## [1] -75
+## 
+## $oldest.age
+## [1] 1e+06
+## 
+## $cutoff
+## [1] 0.01
+## 
+## $age.res
+## [1] 200
+## 
+## $after
+## [1] 5e-05
+## 
+## $save.info
+## [1] TRUE
+## 
+## $coredir
+## [1] "/home/mat150604/MEGA/MEGAsync/workflow/TT3/cores_bacon/"
+## 
+## $seed
+## [1] 128442
+## 
+## $isplum
+## [1] FALSE
+## 
+## $calib
+## $calib$d
+##  [1]  39  44  67 106 150 161 162 162 168 199 223 254 266
+## 
+## $calib$cc
+##  [1] 3 3 3 3 3 3 3 3 3 3 3 3 3
+## 
+## $calib$probs
+## $calib$probs[[1]]
+##       [,1]         [,2]
+##  [1,] 5905 0.0002733104
+##  [2,] 5910 0.0004490923
+##  [3,] 5915 0.0006697521
+##  [4,] 5920 0.0008817601
+##  [5,] 5925 0.0012801536
+##  [6,] 5930 0.0019001787
+##  [7,] 5935 0.0028838347
+##  [8,] 5940 0.0046375168
+##  [9,] 5945 0.0069111816
+## [10,] 5950 0.0090799558
+## [11,] 5955 0.0097906884
+## [12,] 5960 0.0083540770
+## [13,] 5965 0.0063572225
+## [14,] 5970 0.0046375168
+## [15,] 5975 0.0033497731
+## [16,] 5980 0.0025613511
+## [17,] 5985 0.0030773444
+## [18,] 5990 0.0060088445
+## [19,] 5995 0.0105173549
+## [20,] 6000 0.0186437515
+## [21,] 6005 0.0232429150
+## [22,] 6010 0.0240712125
+## [23,] 6015 0.0239575909
+## [24,] 6020 0.0235385128
+## [25,] 6025 0.0229842442
+## [26,] 6030 0.0224811190
+## [27,] 6035 0.0220334211
+## [28,] 6040 0.0224255596
+## [29,] 6045 0.0236965830
+## [30,] 6050 0.0240679128
+## [31,] 6055 0.0239371019
+## [32,] 6060 0.0240864478
+## [33,] 6065 0.0235927140
+## [34,] 6070 0.0233506152
+## [35,] 6075 0.0239314685
+## [36,] 6080 0.0238689467
+## [37,] 6085 0.0219631495
+## [38,] 6090 0.0192128462
+## [39,] 6095 0.0170714872
+## [40,] 6100 0.0169787175
+## [41,] 6105 0.0196438803
+## [42,] 6110 0.0231330192
+## [43,] 6115 0.0237102963
+## [44,] 6120 0.0198991724
+## [45,] 6125 0.0155891790
+## [46,] 6130 0.0137895534
+## [47,] 6135 0.0149966550
+## [48,] 6140 0.0189301387
+## [49,] 6145 0.0232128539
+## [50,] 6150 0.0239371019
+## [51,] 6155 0.0223679897
+## [52,] 6160 0.0215243076
+## [53,] 6165 0.0225567481
+## [54,] 6170 0.0238689467
+## [55,] 6175 0.0237887210
+## [56,] 6180 0.0213836808
+## [57,] 6185 0.0176581931
+## [58,] 6190 0.0132783582
+## [59,] 6195 0.0097589277
+## [60,] 6200 0.0069111816
+## [61,] 6205 0.0048570141
+## [62,] 6210 0.0032350386
+## [63,] 6215 0.0021339665
+## [64,] 6220 0.0015789819
+## [65,] 6225 0.0014003773
+## [66,] 6230 0.0014869325
+## [67,] 6235 0.0018845292
+## [68,] 6240 0.0030621806
+## [69,] 6245 0.0047747542
+## [70,] 6250 0.0071710321
+## [71,] 6255 0.0086779344
+## [72,] 6260 0.0079776365
+## [73,] 6265 0.0060851010
+## [74,] 6270 0.0039696132
+## [75,] 6275 0.0024821251
+## [76,] 6280 0.0014290703
+## [77,] 6285 0.0007460396
+## [78,] 6290 0.0004372640
+## [79,] 6295 0.0002616662
+## 
+## $calib$probs[[2]]
+##       [,1]         [,2]
+##  [1,] 6315 0.0003795822
+##  [2,] 6320 0.0005381358
+##  [3,] 6325 0.0005955125
+##  [4,] 6330 0.0005519012
+##  [5,] 6335 0.0005230453
+##  [6,] 6340 0.0004746277
+##  [7,] 6345 0.0005116987
+##  [8,] 6350 0.0006387642
+##  [9,] 6355 0.0006648483
+## [10,] 6360 0.0007897573
+## [11,] 6365 0.0007625744
+## [12,] 6370 0.0005116987
+## [13,] 6375 0.0003616014
+## [14,] 6380 0.0002838817
+## [15,] 6385 0.0002894656
+## [16,] 6390 0.0004195520
+## [17,] 6395 0.0007575894
+## [18,] 6400 0.0013530061
+## [19,] 6405 0.0023511966
+## [20,] 6410 0.0039755820
+## [21,] 6415 0.0048112893
+## [22,] 6420 0.0041557885
+## [23,] 6425 0.0031520075
+## [24,] 6430 0.0026771506
+## [25,] 6435 0.0027557459
+## [26,] 6440 0.0039038341
+## [27,] 6445 0.0057888245
+## [28,] 6450 0.0074030908
+## [29,] 6455 0.0088113474
+## [30,] 6460 0.0090285794
+## [31,] 6465 0.0088113474
+## [32,] 6470 0.0084880135
+## [33,] 6475 0.0076482964
+## [34,] 6480 0.0076482964
+## [35,] 6485 0.0093297114
+## [36,] 6490 0.0130208582
+## [37,] 6495 0.0186381808
+## [38,] 6500 0.0234987596
+## [39,] 6505 0.0252421997
+## [40,] 6510 0.0254896953
+## [41,] 6515 0.0246781702
+## [42,] 6520 0.0233945613
+## [43,] 6525 0.0227182626
+## [44,] 6530 0.0228669561
+## [45,] 6535 0.0241408833
+## [46,] 6540 0.0248250067
+## [47,] 6545 0.0248250067
+## [48,] 6550 0.0251000099
+## [49,] 6555 0.0263088718
+## [50,] 6560 0.0272184775
+## [51,] 6565 0.0265490986
+## [52,] 6570 0.0250377012
+## [53,] 6575 0.0240531656
+## [54,] 6580 0.0251839287
+## [55,] 6585 0.0266502097
+## [56,] 6590 0.0272177849
+## [57,] 6595 0.0272170725
+## [58,] 6600 0.0272170725
+## [59,] 6605 0.0268721978
+## [60,] 6610 0.0265490986
+## [61,] 6615 0.0266675510
+## [62,] 6620 0.0266844237
+## [63,] 6625 0.0258035492
+## [64,] 6630 0.0238046403
+## [65,] 6635 0.0205450959
+## [66,] 6640 0.0180162616
+## [67,] 6645 0.0175043631
+## [68,] 6650 0.0163458227
+## [69,] 6655 0.0150630648
+## [70,] 6660 0.0124834621
+## [71,] 6665 0.0090695662
+## [72,] 6670 0.0059399195
+## [73,] 6675 0.0036303755
+## [74,] 6680 0.0026904792
+## [75,] 6685 0.0023468795
+## [76,] 6690 0.0025420243
+## [77,] 6695 0.0029763400
+## [78,] 6700 0.0033967056
+## [79,] 6705 0.0037738437
+## [80,] 6710 0.0040090904
+## [81,] 6715 0.0043015780
+## [82,] 6720 0.0043015780
+## [83,] 6725 0.0038742153
+## [84,] 6730 0.0030685260
+## [85,] 6735 0.0024724855
+## [86,] 6740 0.0016621964
+## [87,] 6745 0.0009986609
+## [88,] 6750 0.0006150793
+## [89,] 6755 0.0004659244
+## [90,] 6760 0.0005166365
+## [91,] 6765 0.0006367454
+## [92,] 6770 0.0007871655
+## [93,] 6775 0.0007871655
+## [94,] 6780 0.0006098882
+## [95,] 6785 0.0005034247
+## [96,] 6790 0.0003611778
+## 
+## $calib$probs[[3]]
+##       [,1]         [,2]
+##  [1,] 7845 0.0005273065
+##  [2,] 7850 0.0005964623
+##  [3,] 7855 0.0005656011
+##  [4,] 7860 0.0007112891
+##  [5,] 7865 0.0009132702
+##  [6,] 7870 0.0013521219
+##  [7,] 7875 0.0022666274
+##  [8,] 7880 0.0030412101
+##  [9,] 7885 0.0031239386
+## [10,] 7890 0.0022449280
+## [11,] 7895 0.0012277596
+## [12,] 7900 0.0007103292
+## [13,] 7905 0.0005021287
+## [14,] 7910 0.0004414536
+## [15,] 7915 0.0005118891
+## [16,] 7920 0.0007103292
+## [17,] 7925 0.0011192186
+## [18,] 7930 0.0020383501
+## [19,] 7935 0.0038688009
+## [20,] 7940 0.0070427785
+## [21,] 7945 0.0091980481
+## [22,] 7950 0.0093286768
+## [23,] 7955 0.0097065056
+## [24,] 7960 0.0112912639
+## [25,] 7965 0.0150275241
+## [26,] 7970 0.0211712180
+## [27,] 7975 0.0281236514
+## [28,] 7980 0.0333655777
+## [29,] 7985 0.0351301920
+## [30,] 7990 0.0349099754
+## [31,] 7995 0.0328448889
+## [32,] 8000 0.0316308556
+## [33,] 8005 0.0338190861
+## [34,] 8010 0.0389705163
+## [35,] 8015 0.0446963589
+## [36,] 8020 0.0457789840
+## [37,] 8025 0.0393994960
+## [38,] 8030 0.0306946215
+## [39,] 8035 0.0234615710
+## [40,] 8040 0.0179094234
+## [41,] 8045 0.0146274566
+## [42,] 8050 0.0124116660
+## [43,] 8055 0.0110048596
+## [44,] 8060 0.0104816198
+## [45,] 8065 0.0106199687
+## [46,] 8070 0.0111408561
+## [47,] 8075 0.0115504348
+## [48,] 8080 0.0118668677
+## [49,] 8085 0.0128714983
+## [50,] 8090 0.0150275241
+## [51,] 8095 0.0169858658
+## [52,] 8100 0.0190578652
+## [53,] 8105 0.0194752106
+## [54,] 8110 0.0190102962
+## [55,] 8115 0.0172536612
+## [56,] 8120 0.0156836737
+## [57,] 8125 0.0149396568
+## [58,] 8130 0.0144907542
+## [59,] 8135 0.0156093128
+## [60,] 8140 0.0167914021
+## [61,] 8145 0.0184650320
+## [62,] 8150 0.0197911617
+## [63,] 8155 0.0202461925
+## [64,] 8160 0.0189310091
+## [65,] 8165 0.0150275241
+## [66,] 8170 0.0094437433
+## [67,] 8175 0.0052252879
+## [68,] 8180 0.0027137563
+## [69,] 8185 0.0015263656
+## [70,] 8190 0.0010331326
+## [71,] 8195 0.0006939167
+## [72,] 8200 0.0005844432
+## [73,] 8205 0.0005054591
+## [74,] 8210 0.0004379560
+## [75,] 8215 0.0003713799
+## [76,] 8220 0.0002710205
+## [77,] 8225 0.0002735940
+## [78,] 8230 0.0002559174
+## [79,] 8235 0.0002309766
+## [80,] 8240 0.0002710205
+## [81,] 8245 0.0003042909
+## [82,] 8250 0.0003003616
+## [83,] 8255 0.0003225044
+## [84,] 8260 0.0003723607
+## [85,] 8265 0.0004993458
+## [86,] 8270 0.0006579833
+## [87,] 8275 0.0007661465
+## [88,] 8280 0.0006098987
+## [89,] 8285 0.0005145501
+## 
+## $calib$probs[[4]]
+##         [,1]         [,2]
+##   [1,]  9425 0.0004865336
+##   [2,]  9430 0.0006647285
+##   [3,]  9435 0.0007973484
+##   [4,]  9440 0.0008831414
+##   [5,]  9445 0.0009393424
+##   [6,]  9450 0.0010504317
+##   [7,]  9455 0.0011088173
+##   [8,]  9460 0.0011420989
+##   [9,]  9465 0.0013227820
+##  [10,]  9470 0.0016468369
+##  [11,]  9475 0.0022927852
+##  [12,]  9480 0.0032570683
+##  [13,]  9485 0.0044420705
+##  [14,]  9490 0.0059908243
+##  [15,]  9495 0.0080431303
+##  [16,]  9500 0.0087132134
+##  [17,]  9505 0.0083417200
+##  [18,]  9510 0.0066943523
+##  [19,]  9515 0.0054214901
+##  [20,]  9520 0.0054214901
+##  [21,]  9525 0.0073735341
+##  [22,]  9530 0.0125427544
+##  [23,]  9535 0.0224147451
+##  [24,]  9540 0.0387473468
+##  [25,]  9545 0.0460995880
+##  [26,]  9550 0.0392531537
+##  [27,]  9555 0.0293680192
+##  [28,]  9560 0.0220211657
+##  [29,]  9565 0.0197415586
+##  [30,]  9570 0.0216313221
+##  [31,]  9575 0.0255552973
+##  [32,]  9580 0.0280833270
+##  [33,]  9585 0.0296295441
+##  [34,]  9590 0.0287800131
+##  [35,]  9595 0.0275134519
+##  [36,]  9600 0.0243221601
+##  [37,]  9605 0.0211724372
+##  [38,]  9610 0.0196401661
+##  [39,]  9615 0.0200010314
+##  [40,]  9620 0.0211075736
+##  [41,]  9625 0.0203659362
+##  [42,]  9630 0.0185824347
+##  [43,]  9635 0.0178985323
+##  [44,]  9640 0.0186166453
+##  [45,]  9645 0.0207950694
+##  [46,]  9650 0.0227196811
+##  [47,]  9655 0.0219387012
+##  [48,]  9660 0.0193760877
+##  [49,]  9665 0.0179247239
+##  [50,]  9670 0.0175854046
+##  [51,]  9675 0.0178790491
+##  [52,]  9680 0.0168978188
+##  [53,]  9685 0.0136626960
+##  [54,]  9690 0.0105031353
+##  [55,]  9695 0.0082805573
+##  [56,]  9700 0.0069059209
+##  [57,]  9705 0.0057993231
+##  [58,]  9710 0.0052428348
+##  [59,]  9715 0.0051808059
+##  [60,]  9720 0.0049518562
+##  [61,]  9725 0.0047328574
+##  [62,]  9730 0.0046269687
+##  [63,]  9735 0.0045819694
+##  [64,]  9740 0.0044804755
+##  [65,]  9745 0.0042263891
+##  [66,]  9750 0.0039849589
+##  [67,]  9755 0.0038948219
+##  [68,]  9760 0.0036365164
+##  [69,]  9765 0.0033954844
+##  [70,]  9770 0.0030991005
+##  [71,]  9775 0.0026580541
+##  [72,]  9780 0.0024684912
+##  [73,]  9785 0.0022547822
+##  [74,]  9790 0.0021978856
+##  [75,]  9795 0.0021978856
+##  [76,]  9800 0.0022927852
+##  [77,]  9805 0.0023400055
+##  [78,]  9810 0.0024416730
+##  [79,]  9815 0.0021455625
+##  [80,]  9820 0.0019228246
+##  [81,]  9825 0.0018393387
+##  [82,]  9830 0.0017596449
+##  [83,]  9835 0.0018393387
+##  [84,]  9840 0.0020555617
+##  [85,]  9845 0.0023504844
+##  [86,]  9850 0.0026784563
+##  [87,]  9855 0.0026296594
+##  [88,]  9860 0.0028636589
+##  [89,]  9865 0.0031857886
+##  [90,]  9870 0.0032949049
+##  [91,]  9875 0.0036069274
+##  [92,]  9880 0.0034473426
+##  [93,]  9885 0.0027032041
+##  [94,]  9890 0.0021019047
+##  [95,]  9895 0.0015081424
+##  [96,]  9900 0.0011179987
+##  [97,]  9905 0.0007751046
+##  [98,]  9910 0.0005919267
+##  [99,]  9915 0.0005093586
+## [100,]  9920 0.0004677294
+## [101,]  9925 0.0004409924
+## [102,]  9930 0.0004657507
+## [103,]  9935 0.0005114011
+## [104,]  9940 0.0005528378
+## [105,]  9945 0.0005667551
+## [106,]  9950 0.0005896854
+## [107,]  9955 0.0005163016
+## [108,]  9960 0.0003802887
+## [109,]  9965 0.0002586455
+## [110,]  9970 0.0001842331
+## [111,]  9975 0.0001619774
+## [112,]  9980 0.0001911983
+## [113,]  9985 0.0002734568
+## [114,]  9990 0.0004015426
+## [115,]  9995 0.0004830342
+## [116,] 10000 0.0005237278
+## [117,] 10005 0.0005480622
+## [118,] 10010 0.0004095000
+## [119,] 10015 0.0002952405
+## [120,] 10020 0.0003009798
+## [121,] 10025 0.0003786676
+## [122,] 10030 0.0004586256
+## [123,] 10035 0.0004259368
+## [124,] 10040 0.0003642116
+## [125,] 10045 0.0002632329
+## [126,] 10050 0.0002060188
+## [127,] 10055 0.0002221525
+## [128,] 10060 0.0002896212
+## [129,] 10065 0.0004198678
+## [130,] 10070 0.0005747823
+## [131,] 10075 0.0006295921
+## [132,] 10080 0.0006765964
+## [133,] 10085 0.0006427182
+## [134,] 10090 0.0006107047
+## [135,] 10095 0.0006312910
+## [136,] 10100 0.0007373563
+## [137,] 10105 0.0007982036
+## [138,] 10110 0.0006628627
+## [139,] 10115 0.0005093586
+## 
+## $calib$probs[[5]]
+##         [,1]         [,2]
+##   [1,] 10710 0.0003487031
+##   [2,] 10715 0.0004202430
+##   [3,] 10720 0.0005676822
+##   [4,] 10725 0.0007422027
+##   [5,] 10730 0.0008838234
+##   [6,] 10735 0.0009442099
+##   [7,] 10740 0.0009911761
+##   [8,] 10745 0.0010428037
+##   [9,] 10750 0.0010333016
+##  [10,] 10755 0.0010518453
+##  [11,] 10760 0.0011876103
+##  [12,] 10765 0.0012952676
+##  [13,] 10770 0.0015421006
+##  [14,] 10775 0.0017374533
+##  [15,] 10780 0.0019671386
+##  [16,] 10785 0.0024221859
+##  [17,] 10790 0.0030547683
+##  [18,] 10795 0.0036568203
+##  [19,] 10800 0.0039745232
+##  [20,] 10805 0.0045244454
+##  [21,] 10810 0.0052262224
+##  [22,] 10815 0.0060086327
+##  [23,] 10820 0.0068740597
+##  [24,] 10825 0.0069600278
+##  [25,] 10830 0.0070533444
+##  [26,] 10835 0.0070533444
+##  [27,] 10840 0.0063105260
+##  [28,] 10845 0.0050694165
+##  [29,] 10850 0.0041106824
+##  [30,] 10855 0.0034896777
+##  [31,] 10860 0.0032271631
+##  [32,] 10865 0.0038492964
+##  [33,] 10870 0.0053599505
+##  [34,] 10875 0.0077787838
+##  [35,] 10880 0.0098211361
+##  [36,] 10885 0.0110038493
+##  [37,] 10890 0.0120957773
+##  [38,] 10895 0.0132204534
+##  [39,] 10900 0.0147100402
+##  [40,] 10905 0.0153191228
+##  [41,] 10910 0.0150128169
+##  [42,] 10915 0.0147121279
+##  [43,] 10920 0.0132739007
+##  [44,] 10925 0.0111259508
+##  [45,] 10930 0.0091421745
+##  [46,] 10935 0.0083810145
+##  [47,] 10940 0.0083810145
+##  [48,] 10945 0.0072645790
+##  [49,] 10950 0.0054806826
+##  [50,] 10955 0.0046872926
+##  [51,] 10960 0.0040790773
+##  [52,] 10965 0.0032271631
+##  [53,] 10970 0.0022401325
+##  [54,] 10975 0.0014707212
+##  [55,] 10980 0.0011468742
+##  [56,] 10985 0.0010364632
+##  [57,] 10990 0.0011763717
+##  [58,] 10995 0.0015994314
+##  [59,] 11000 0.0022992176
+##  [60,] 11005 0.0035641446
+##  [61,] 11010 0.0048435742
+##  [62,] 11015 0.0056370141
+##  [63,] 11020 0.0052803198
+##  [64,] 11025 0.0044089162
+##  [65,] 11030 0.0031567590
+##  [66,] 11035 0.0023597009
+##  [67,] 11040 0.0019109344
+##  [68,] 11045 0.0017204115
+##  [69,] 11050 0.0015095630
+##  [70,] 11055 0.0015191544
+##  [71,] 11060 0.0017661240
+##  [72,] 11065 0.0027742140
+##  [73,] 11070 0.0055506458
+##  [74,] 11075 0.0097709042
+##  [75,] 11080 0.0126495445
+##  [76,] 11085 0.0138081236
+##  [77,] 11090 0.0141080945
+##  [78,] 11095 0.0147327721
+##  [79,] 11100 0.0173115674
+##  [80,] 11105 0.0200797817
+##  [81,] 11110 0.0229212575
+##  [82,] 11115 0.0246733026
+##  [83,] 11120 0.0248633200
+##  [84,] 11125 0.0247162888
+##  [85,] 11130 0.0240412958
+##  [86,] 11135 0.0234894704
+##  [87,] 11140 0.0239780781
+##  [88,] 11145 0.0251779169
+##  [89,] 11150 0.0265313510
+##  [90,] 11155 0.0276304948
+##  [91,] 11160 0.0284625255
+##  [92,] 11165 0.0299469450
+##  [93,] 11170 0.0315917966
+##  [94,] 11175 0.0327780711
+##  [95,] 11180 0.0313828541
+##  [96,] 11185 0.0289872853
+##  [97,] 11190 0.0258625854
+##  [98,] 11195 0.0205343616
+##  [99,] 11200 0.0147199440
+## [100,] 11205 0.0105859890
+## [101,] 11210 0.0077076729
+## [102,] 11215 0.0065490985
+## [103,] 11220 0.0058620653
+## [104,] 11225 0.0049680909
+## [105,] 11230 0.0042642256
+## [106,] 11235 0.0030631140
+## [107,] 11240 0.0020252646
+## [108,] 11245 0.0012952676
+## [109,] 11250 0.0007997823
+## [110,] 11255 0.0005612079
+## [111,] 11260 0.0004618648
+## [112,] 11265 0.0003387672
+## 
+## $calib$probs[[6]]
+##         [,1]         [,2]
+##   [1,] 11240 1.665541e-04
+##   [2,] 11245 2.358136e-04
+##   [3,] 11250 3.006180e-04
+##   [4,] 11255 3.284416e-04
+##   [5,] 11260 3.754758e-04
+##   [6,] 11265 4.678720e-04
+##   [7,] 11270 6.051985e-04
+##   [8,] 11275 7.778892e-04
+##   [9,] 11280 8.784969e-04
+##  [10,] 11285 9.488030e-04
+##  [11,] 11290 9.728322e-04
+##  [12,] 11295 9.728322e-04
+##  [13,] 11300 9.977221e-04
+##  [14,] 11305 1.041043e-03
+##  [15,] 11310 1.123607e-03
+##  [16,] 11315 1.213548e-03
+##  [17,] 11320 1.358670e-03
+##  [18,] 11325 1.558618e-03
+##  [19,] 11330 1.727366e-03
+##  [20,] 11335 1.849637e-03
+##  [21,] 11340 2.099318e-03
+##  [22,] 11345 2.447358e-03
+##  [23,] 11350 2.883390e-03
+##  [24,] 11355 3.331617e-03
+##  [25,] 11360 3.726873e-03
+##  [26,] 11365 3.787628e-03
+##  [27,] 11370 3.384469e-03
+##  [28,] 11375 2.679492e-03
+##  [29,] 11380 2.228612e-03
+##  [30,] 11385 2.133860e-03
+##  [31,] 11390 1.906214e-03
+##  [32,] 11395 1.608151e-03
+##  [33,] 11400 1.471333e-03
+##  [34,] 11405 1.670182e-03
+##  [35,] 11410 1.955849e-03
+##  [36,] 11415 2.215341e-03
+##  [37,] 11420 2.432064e-03
+##  [38,] 11425 2.872501e-03
+##  [39,] 11430 3.413372e-03
+##  [40,] 11435 3.445165e-03
+##  [41,] 11440 2.921842e-03
+##  [42,] 11445 2.316988e-03
+##  [43,] 11450 1.876945e-03
+##  [44,] 11455 1.933742e-03
+##  [45,] 11460 2.149287e-03
+##  [46,] 11465 2.174239e-03
+##  [47,] 11470 1.979378e-03
+##  [48,] 11475 1.745776e-03
+##  [49,] 11480 1.568378e-03
+##  [50,] 11485 1.453063e-03
+##  [51,] 11490 1.312539e-03
+##  [52,] 11495 1.239680e-03
+##  [53,] 11500 1.305518e-03
+##  [54,] 11505 1.435350e-03
+##  [55,] 11510 1.734552e-03
+##  [56,] 11515 2.415143e-03
+##  [57,] 11520 3.413372e-03
+##  [58,] 11525 4.133422e-03
+##  [59,] 11530 4.162310e-03
+##  [60,] 11535 3.946572e-03
+##  [61,] 11540 3.996093e-03
+##  [62,] 11545 4.352934e-03
+##  [63,] 11550 4.171903e-03
+##  [64,] 11555 3.557181e-03
+##  [65,] 11560 2.827075e-03
+##  [66,] 11565 2.387190e-03
+##  [67,] 11570 2.312732e-03
+##  [68,] 11575 2.226941e-03
+##  [69,] 11580 2.064313e-03
+##  [70,] 11585 1.758413e-03
+##  [71,] 11590 1.372129e-03
+##  [72,] 11595 1.127452e-03
+##  [73,] 11600 1.105994e-03
+##  [74,] 11605 1.279952e-03
+##  [75,] 11610 1.598590e-03
+##  [76,] 11615 1.949843e-03
+##  [77,] 11620 2.496921e-03
+##  [78,] 11625 3.179809e-03
+##  [79,] 11630 4.117342e-03
+##  [80,] 11635 5.219007e-03
+##  [81,] 11640 6.723955e-03
+##  [82,] 11645 8.152103e-03
+##  [83,] 11650 8.977858e-03
+##  [84,] 11655 8.890152e-03
+##  [85,] 11660 7.780628e-03
+##  [86,] 11665 6.441768e-03
+##  [87,] 11670 5.401773e-03
+##  [88,] 11675 4.688494e-03
+##  [89,] 11680 4.644543e-03
+##  [90,] 11685 4.970486e-03
+##  [91,] 11690 5.189310e-03
+##  [92,] 11695 4.851153e-03
+##  [93,] 11700 4.311454e-03
+##  [94,] 11705 4.543206e-03
+##  [95,] 11710 5.821953e-03
+##  [96,] 11715 7.780628e-03
+##  [97,] 11720 9.568856e-03
+##  [98,] 11725 1.035511e-02
+##  [99,] 11730 1.059287e-02
+## [100,] 11735 1.081075e-02
+## [101,] 11740 1.082928e-02
+## [102,] 11745 9.900499e-03
+## [103,] 11750 8.715446e-03
+## [104,] 11755 9.124526e-03
+## [105,] 11760 1.128576e-02
+## [106,] 11765 1.303089e-02
+## [107,] 11770 1.346534e-02
+## [108,] 11775 1.370831e-02
+## [109,] 11780 1.427607e-02
+## [110,] 11785 1.473544e-02
+## [111,] 11790 1.487871e-02
+## [112,] 11795 1.479378e-02
+## [113,] 11800 1.428767e-02
+## [114,] 11805 1.372134e-02
+## [115,] 11810 1.355821e-02
+## [116,] 11815 1.355058e-02
+## [117,] 11820 1.310430e-02
+## [118,] 11825 1.270310e-02
+## [119,] 11830 1.310430e-02
+## [120,] 11835 1.428357e-02
+## [121,] 11840 1.489123e-02
+## [122,] 11845 1.454385e-02
+## [123,] 11850 1.421103e-02
+## [124,] 11855 1.427607e-02
+## [125,] 11860 1.454385e-02
+## [126,] 11865 1.466824e-02
+## [127,] 11870 1.459018e-02
+## [128,] 11875 1.396116e-02
+## [129,] 11880 1.265217e-02
+## [130,] 11885 1.119893e-02
+## [131,] 11890 1.061367e-02
+## [132,] 11895 1.063591e-02
+## [133,] 11900 1.075344e-02
+## [134,] 11905 1.135431e-02
+## [135,] 11910 1.204138e-02
+## [136,] 11915 1.244772e-02
+## [137,] 11920 1.213103e-02
+## [138,] 11925 1.103277e-02
+## [139,] 11930 9.421507e-03
+## [140,] 11935 8.004192e-03
+## [141,] 11940 7.127590e-03
+## [142,] 11945 6.673606e-03
+## [143,] 11950 6.673606e-03
+## [144,] 11955 6.571128e-03
+## [145,] 11960 6.073278e-03
+## [146,] 11965 5.419065e-03
+## [147,] 11970 4.654541e-03
+## [148,] 11975 4.089333e-03
+## [149,] 11980 3.946542e-03
+## [150,] 11985 4.089333e-03
+## [151,] 11990 4.120038e-03
+## [152,] 11995 3.837820e-03
+## [153,] 12000 3.475577e-03
+## [154,] 12005 3.383207e-03
+## [155,] 12010 3.508105e-03
+## [156,] 12015 3.262204e-03
+## [157,] 12020 2.663013e-03
+## [158,] 12025 2.356783e-03
+## [159,] 12030 2.517975e-03
+## [160,] 12035 2.738354e-03
+## [161,] 12040 2.743407e-03
+## [162,] 12045 2.743407e-03
+## [163,] 12050 2.842233e-03
+## [164,] 12055 2.763928e-03
+## [165,] 12060 2.424858e-03
+## [166,] 12065 2.144853e-03
+## [167,] 12070 2.144163e-03
+## [168,] 12075 2.335977e-03
+## [169,] 12080 2.517975e-03
+## [170,] 12085 2.405384e-03
+## [171,] 12090 1.906214e-03
+## [172,] 12095 1.305518e-03
+## [173,] 12100 9.322165e-04
+## [174,] 12105 8.201802e-04
+## [175,] 12110 9.500578e-04
+## [176,] 12115 1.216308e-03
+## [177,] 12120 1.509633e-03
+## [178,] 12125 1.706053e-03
+## [179,] 12130 1.826615e-03
+## [180,] 12135 1.841489e-03
+## [181,] 12140 1.792199e-03
+## [182,] 12145 1.557735e-03
+## [183,] 12150 1.271165e-03
+## [184,] 12155 1.155374e-03
+## [185,] 12160 1.247109e-03
+## [186,] 12165 1.247109e-03
+## [187,] 12170 1.064681e-03
+## [188,] 12175 8.047853e-04
+## [189,] 12180 6.789958e-04
+## [190,] 12185 6.207825e-04
+## [191,] 12190 6.207825e-04
+## [192,] 12195 5.867611e-04
+## [193,] 12200 5.129201e-04
+## [194,] 12205 4.178969e-04
+## [195,] 12210 3.552412e-04
+## [196,] 12215 3.884982e-04
+## [197,] 12220 5.211447e-04
+## [198,] 12225 6.821453e-04
+## [199,] 12230 7.937906e-04
+## [200,] 12235 8.518883e-04
+## [201,] 12240 9.147183e-04
+## [202,] 12245 1.064681e-03
+## [203,] 12250 1.193378e-03
+## [204,] 12255 1.127173e-03
+## [205,] 12260 9.284814e-04
+## [206,] 12265 7.461328e-04
+## [207,] 12270 7.050636e-04
+## [208,] 12275 6.639461e-04
+## [209,] 12280 5.509565e-04
+## [210,] 12285 4.665084e-04
+## [211,] 12290 4.186607e-04
+## [212,] 12295 4.264178e-04
+## [213,] 12300 5.022180e-04
+## [214,] 12305 6.160856e-04
+## [215,] 12310 7.603680e-04
+## [216,] 12315 8.730245e-04
+## [217,] 12320 8.642190e-04
+## [218,] 12325 6.860820e-04
+## [219,] 12330 4.657906e-04
+## [220,] 12335 3.364468e-04
+## [221,] 12340 3.251359e-04
+## [222,] 12345 4.035929e-04
+## [223,] 12350 5.706453e-04
+## [224,] 12355 7.292800e-04
+## [225,] 12360 8.848603e-04
+## [226,] 12365 9.978345e-04
+## [227,] 12370 1.077195e-03
+## [228,] 12375 1.070450e-03
+## [229,] 12380 9.191452e-04
+## [230,] 12385 8.090215e-04
+## [231,] 12390 8.682132e-04
+## [232,] 12395 1.010937e-03
+## [233,] 12400 1.200359e-03
+## [234,] 12405 1.329989e-03
+## [235,] 12410 1.453063e-03
+## [236,] 12415 1.520968e-03
+## [237,] 12420 1.580358e-03
+## [238,] 12425 1.453063e-03
+## [239,] 12430 1.165141e-03
+## [240,] 12435 8.449515e-04
+## [241,] 12440 6.539307e-04
+## [242,] 12445 5.978791e-04
+## [243,] 12450 6.092181e-04
+## [244,] 12455 6.092181e-04
+## [245,] 12460 5.651707e-04
+## [246,] 12465 4.590048e-04
+## [247,] 12470 3.422109e-04
+## [248,] 12475 2.485649e-04
+## [249,] 12480 1.851025e-04
+## [250,] 12485 1.343552e-04
+## [251,] 12490 8.430422e-05
+## [252,] 12495 5.223501e-05
+## [253,] 12500 4.249777e-05
+## [254,] 12505 4.124649e-05
+## [255,] 12510 3.758667e-05
+## [256,] 12515 3.306675e-05
+## [257,] 12520 2.821504e-05
+## [258,] 12525 2.920585e-05
+## [259,] 12530 4.324709e-05
+## [260,] 12535 7.256679e-05
+## [261,] 12540 1.061923e-04
+## [262,] 12545 1.268125e-04
+## [263,] 12550 1.333599e-04
+## [264,] 12555 1.379447e-04
+## [265,] 12560 1.579937e-04
+## [266,] 12565 1.722810e-04
+## [267,] 12570 1.721360e-04
+## [268,] 12575 1.607176e-04
+## 
+## $calib$probs[[7]]
+##        [,1]         [,2]
+##  [1,] 12725 0.0005223418
+##  [2,] 12730 0.0010184326
+##  [3,] 12735 0.0021247793
+##  [4,] 12740 0.0045813584
+##  [5,] 12745 0.0098774529
+##  [6,] 12750 0.0184894386
+##  [7,] 12755 0.0254225359
+##  [8,] 12760 0.0292978198
+##  [9,] 12765 0.0340512343
+## [10,] 12770 0.0398492351
+## [11,] 12775 0.0402394328
+## [12,] 12780 0.0389808147
+## [13,] 12785 0.0375821297
+## [14,] 12790 0.0338754013
+## [15,] 12795 0.0306109433
+## [16,] 12800 0.0306109433
+## [17,] 12805 0.0332781694
+## [18,] 12810 0.0358297640
+## [19,] 12815 0.0382188060
+## [20,] 12820 0.0396249800
+## [21,] 12825 0.0396249800
+## [22,] 12830 0.0376207454
+## [23,] 12835 0.0334452873
+## [24,] 12840 0.0279930407
+## [25,] 12845 0.0218064056
+## [26,] 12850 0.0166407934
+## [27,] 12855 0.0138319381
+## [28,] 12860 0.0129708929
+## [29,] 12865 0.0138319381
+## [30,] 12870 0.0156702308
+## [31,] 12875 0.0195627589
+## [32,] 12880 0.0245122133
+## [33,] 12885 0.0267686905
+## [34,] 12890 0.0246543969
+## [35,] 12895 0.0189558948
+## [36,] 12900 0.0132725120
+## [37,] 12905 0.0109135399
+## [38,] 12910 0.0108326747
+## [39,] 12915 0.0102226354
+## [40,] 12920 0.0078214234
+## [41,] 12925 0.0048213006
+## [42,] 12930 0.0030941227
+## [43,] 12935 0.0023988251
+## [44,] 12940 0.0024662642
+## [45,] 12945 0.0030098710
+## [46,] 12950 0.0038742132
+## [47,] 12955 0.0050914073
+## [48,] 12960 0.0058389355
+## [49,] 12965 0.0050849719
+## [50,] 12970 0.0031984991
+## [51,] 12975 0.0017395384
+## [52,] 12980 0.0012441164
+## [53,] 12985 0.0014015210
+## [54,] 12990 0.0016768445
+## [55,] 12995 0.0018073389
+## [56,] 13000 0.0016534401
+## [57,] 13005 0.0014396965
+## [58,] 13010 0.0014632380
+## [59,] 13015 0.0013859885
+## [60,] 13020 0.0011984494
+## [61,] 13025 0.0010472760
+## [62,] 13030 0.0010045512
+## [63,] 13035 0.0011937968
+## [64,] 13040 0.0016665579
+## [65,] 13045 0.0018711548
+## [66,] 13050 0.0017000473
+## [67,] 13055 0.0015140356
+## [68,] 13060 0.0014320605
+## [69,] 13065 0.0013177556
+## [70,] 13070 0.0011353681
+## [71,] 13075 0.0008461378
+## [72,] 13080 0.0006553321
+## [73,] 13085 0.0004375149
+## 
+## $calib$probs[[8]]
+##        [,1]         [,2]
+##  [1,] 12485 0.0011057559
+##  [2,] 12490 0.0021057724
+##  [3,] 12495 0.0033727320
+##  [4,] 12500 0.0042016379
+##  [5,] 12505 0.0044101581
+##  [6,] 12510 0.0048852582
+##  [7,] 12515 0.0063467198
+##  [8,] 12520 0.0082827764
+##  [9,] 12525 0.0082259023
+## [10,] 12530 0.0058285460
+## [11,] 12535 0.0030108536
+## [12,] 12540 0.0014239010
+## [13,] 12545 0.0008423176
+## [14,] 12550 0.0007514571
+## [15,] 12555 0.0007192297
+## [16,] 12560 0.0006345339
+## [17,] 12565 0.0005431467
+## [18,] 12570 0.0005701047
+## [19,] 12575 0.0006210382
+## [20,] 12580 0.0007225285
+## [21,] 12585 0.0008423176
+## [22,] 12590 0.0010569849
+## [23,] 12595 0.0012654479
+## [24,] 12600 0.0016271755
+## [25,] 12605 0.0023189774
+## [26,] 12610 0.0035453650
+## [27,] 12615 0.0062519510
+## [28,] 12620 0.0104517200
+## [29,] 12625 0.0146840242
+## [30,] 12630 0.0179682658
+## [31,] 12635 0.0213681305
+## [32,] 12640 0.0249890587
+## [33,] 12645 0.0255031377
+## [34,] 12650 0.0222903672
+## [35,] 12655 0.0200390524
+## [36,] 12660 0.0204650666
+## [37,] 12665 0.0213684632
+## [38,] 12670 0.0202431142
+## [39,] 12675 0.0171899176
+## [40,] 12680 0.0151564782
+## [41,] 12685 0.0182035606
+## [42,] 12690 0.0281179383
+## [43,] 12695 0.0425146375
+## [44,] 12700 0.0536576782
+## [45,] 12705 0.0592496157
+## [46,] 12710 0.0609913553
+## [47,] 12715 0.0609913553
+## [48,] 12720 0.0609913553
+## [49,] 12725 0.0631199041
+## [50,] 12730 0.0608454655
+## [51,] 12735 0.0484423723
+## [52,] 12740 0.0322943965
+## [53,] 12745 0.0181882172
+## [54,] 12750 0.0091629229
+## [55,] 12755 0.0056555896
+## [56,] 12760 0.0046527262
+## [57,] 12765 0.0038043114
+## [58,] 12770 0.0024802502
+## [59,] 12775 0.0016229401
+## [60,] 12780 0.0013488410
+## [61,] 12785 0.0012021817
+## [62,] 12790 0.0009809349
+## [63,] 12795 0.0008189520
+## [64,] 12800 0.0008189520
+## [65,] 12805 0.0009158757
+## [66,] 12810 0.0010725242
+## [67,] 12815 0.0012879800
+## [68,] 12820 0.0014459567
+## [69,] 12825 0.0014459567
+## [70,] 12830 0.0012303448
+## [71,] 12835 0.0009591738
+## [72,] 12840 0.0007547442
+## [73,] 12845 0.0005701047
+## [74,] 12850 0.0004428103
+## [75,] 12855 0.0003725717
+## [76,] 12860 0.0003482588
+## [77,] 12865 0.0003725717
+## [78,] 12870 0.0004131278
+## [79,] 12875 0.0005127562
+## [80,] 12880 0.0006726334
+## [81,] 12885 0.0007809883
+## [82,] 12890 0.0007264531
+## 
+## $calib$probs[[9]]
+##         [,1]         [,2]
+##   [1,] 12095 0.0004291513
+##   [2,] 12100 0.0006449079
+##   [3,] 12105 0.0007290868
+##   [4,] 12110 0.0006276185
+##   [5,] 12115 0.0004432025
+##   [6,] 12120 0.0003098387
+##   [7,] 12125 0.0002478200
+##   [8,] 12130 0.0002402423
+##   [9,] 12135 0.0002239770
+##  [10,] 12140 0.0002463632
+##  [11,] 12145 0.0003161906
+##  [12,] 12150 0.0003916492
+##  [13,] 12155 0.0004470726
+##  [14,] 12160 0.0004021050
+##  [15,] 12165 0.0004021050
+##  [16,] 12170 0.0005338478
+##  [17,] 12175 0.0007495881
+##  [18,] 12180 0.0009645016
+##  [19,] 12185 0.0010405543
+##  [20,] 12190 0.0010405543
+##  [21,] 12195 0.0011341425
+##  [22,] 12200 0.0014817217
+##  [23,] 12205 0.0021770426
+##  [24,] 12210 0.0026624985
+##  [25,] 12215 0.0024467915
+##  [26,] 12220 0.0015376991
+##  [27,] 12225 0.0009023612
+##  [28,] 12230 0.0007204645
+##  [29,] 12235 0.0006898696
+##  [30,] 12240 0.0006627118
+##  [31,] 12245 0.0005338478
+##  [32,] 12250 0.0004550601
+##  [33,] 12255 0.0004927490
+##  [34,] 12260 0.0006925321
+##  [35,] 12265 0.0008379958
+##  [36,] 12270 0.0009116085
+##  [37,] 12275 0.0010618563
+##  [38,] 12280 0.0014108328
+##  [39,] 12285 0.0018285731
+##  [40,] 12290 0.0020423205
+##  [41,] 12295 0.0019832702
+##  [42,] 12300 0.0016288760
+##  [43,] 12305 0.0011890163
+##  [44,] 12310 0.0008148931
+##  [45,] 12315 0.0006270837
+##  [46,] 12320 0.0007193741
+##  [47,] 12325 0.0011543945
+##  [48,] 12330 0.0020880126
+##  [49,] 12335 0.0029095125
+##  [50,] 12340 0.0029072774
+##  [51,] 12345 0.0021659321
+##  [52,] 12350 0.0014260179
+##  [53,] 12355 0.0009228902
+##  [54,] 12360 0.0006529134
+##  [55,] 12365 0.0005176333
+##  [56,] 12370 0.0004645244
+##  [57,] 12375 0.0004975596
+##  [58,] 12380 0.0006180818
+##  [59,] 12385 0.0007006544
+##  [60,] 12390 0.0006711176
+##  [61,] 12395 0.0005394783
+##  [62,] 12400 0.0004239406
+##  [63,] 12405 0.0003467131
+##  [64,] 12410 0.0003262566
+##  [65,] 12415 0.0002889772
+##  [66,] 12420 0.0002744799
+##  [67,] 12425 0.0003262566
+##  [68,] 12430 0.0005023126
+##  [69,] 12435 0.0007935857
+##  [70,] 12440 0.0010206783
+##  [71,] 12445 0.0011019908
+##  [72,] 12450 0.0010708047
+##  [73,] 12455 0.0010708047
+##  [74,] 12460 0.0012014660
+##  [75,] 12465 0.0017642082
+##  [76,] 12470 0.0031963616
+##  [77,] 12475 0.0053867605
+##  [78,] 12480 0.0087126048
+##  [79,] 12485 0.0166022742
+##  [80,] 12490 0.0290230281
+##  [81,] 12495 0.0370394241
+##  [82,] 12500 0.0379497161
+##  [83,] 12505 0.0378724648
+##  [84,] 12510 0.0373371146
+##  [85,] 12515 0.0349849738
+##  [86,] 12520 0.0308312858
+##  [87,] 12525 0.0313552896
+##  [88,] 12530 0.0372673586
+##  [89,] 12535 0.0342082856
+##  [90,] 12540 0.0217316949
+##  [91,] 12545 0.0137491486
+##  [92,] 12550 0.0121889664
+##  [93,] 12555 0.0115456940
+##  [94,] 12560 0.0096787371
+##  [95,] 12565 0.0080083243
+##  [96,] 12570 0.0084050068
+##  [97,] 12575 0.0094115352
+##  [98,] 12580 0.0114178130
+##  [99,] 12585 0.0137491486
+## [100,] 12590 0.0174217622
+## [101,] 12595 0.0208810309
+## [102,] 12600 0.0259701285
+## [103,] 12605 0.0319636852
+## [104,] 12610 0.0370728185
+## [105,] 12615 0.0367402944
+## [106,] 12620 0.0288681559
+## [107,] 12625 0.0206366350
+## [108,] 12630 0.0168234790
+## [109,] 12635 0.0138115903
+## [110,] 12640 0.0110035388
+## [111,] 12645 0.0107087072
+## [112,] 12650 0.0131213927
+## [113,] 12655 0.0148948034
+## [114,] 12660 0.0137491486
+## [115,] 12665 0.0130495555
+## [116,] 12670 0.0143128160
+## [117,] 12675 0.0176356455
+## [118,] 12680 0.0195490329
+## [119,] 12685 0.0170480920
+## [120,] 12690 0.0107033279
+## [121,] 12695 0.0050850730
+## [122,] 12700 0.0027423792
+## [123,] 12705 0.0018032109
+## [124,] 12710 0.0015071390
+## [125,] 12715 0.0015071390
+## [126,] 12720 0.0015071390
+## [127,] 12725 0.0012463153
+## [128,] 12730 0.0007859940
+## [129,] 12735 0.0004164305
+## 
+## $calib$probs[[10]]
+##         [,1]         [,2]
+##   [1,] 12750 0.0003166976
+##   [2,] 12755 0.0004080680
+##   [3,] 12760 0.0004854824
+##   [4,] 12765 0.0006338990
+##   [5,] 12770 0.0009926599
+##   [6,] 12775 0.0013117619
+##   [7,] 12780 0.0015166397
+##   [8,] 12785 0.0017055175
+##   [9,] 12790 0.0021943132
+##  [10,] 12795 0.0025468067
+##  [11,] 12800 0.0025468067
+##  [12,] 12805 0.0021771388
+##  [13,] 12810 0.0019185728
+##  [14,] 12815 0.0016559955
+##  [15,] 12820 0.0014137946
+##  [16,] 12825 0.0014137946
+##  [17,] 12830 0.0017353441
+##  [18,] 12835 0.0022465009
+##  [19,] 12840 0.0030260954
+##  [20,] 12845 0.0040933261
+##  [21,] 12850 0.0053860280
+##  [22,] 12855 0.0062280842
+##  [23,] 12860 0.0064425936
+##  [24,] 12865 0.0062280842
+##  [25,] 12870 0.0055653223
+##  [26,] 12875 0.0045923641
+##  [27,] 12880 0.0037656104
+##  [28,] 12885 0.0035628640
+##  [29,] 12890 0.0040651604
+##  [30,] 12895 0.0054268096
+##  [31,] 12900 0.0071415558
+##  [32,] 12905 0.0081863001
+##  [33,] 12910 0.0084567419
+##  [34,] 12915 0.0091002331
+##  [35,] 12920 0.0117465230
+##  [36,] 12925 0.0156599744
+##  [37,] 12930 0.0194390628
+##  [38,] 12935 0.0214024228
+##  [39,] 12940 0.0211536073
+##  [40,] 12945 0.0196970286
+##  [41,] 12950 0.0177102501
+##  [42,] 12955 0.0151578270
+##  [43,] 12960 0.0132394698
+##  [44,] 12965 0.0144548419
+##  [45,] 12970 0.0195183590
+##  [46,] 12975 0.0243811810
+##  [47,] 12980 0.0261978165
+##  [48,] 12985 0.0257859929
+##  [49,] 12990 0.0243477078
+##  [50,] 12995 0.0234708261
+##  [51,] 13000 0.0238676866
+##  [52,] 13005 0.0248711971
+##  [53,] 13010 0.0252790284
+##  [54,] 13015 0.0256110329
+##  [55,] 13020 0.0261847454
+##  [56,] 13025 0.0267670850
+##  [57,] 13030 0.0270291039
+##  [58,] 13035 0.0265747295
+##  [59,] 13040 0.0249790176
+##  [60,] 13045 0.0235110938
+##  [61,] 13050 0.0236521795
+##  [62,] 13055 0.0242550041
+##  [63,] 13060 0.0246550653
+##  [64,] 13065 0.0252133329
+##  [65,] 13070 0.0264397491
+##  [66,] 13075 0.0272950570
+##  [67,] 13080 0.0270330563
+##  [68,] 13085 0.0246087383
+##  [69,] 13090 0.0194315594
+##  [70,] 13095 0.0128662820
+##  [71,] 13100 0.0082114563
+##  [72,] 13105 0.0056604590
+##  [73,] 13110 0.0045935716
+##  [74,] 13115 0.0037153492
+##  [75,] 13120 0.0028445907
+##  [76,] 13125 0.0026549164
+##  [77,] 13130 0.0031078216
+##  [78,] 13135 0.0038138509
+##  [79,] 13140 0.0045462399
+##  [80,] 13145 0.0057166641
+##  [81,] 13150 0.0062883196
+##  [82,] 13155 0.0055611731
+##  [83,] 13160 0.0041418342
+##  [84,] 13165 0.0026951842
+##  [85,] 13170 0.0017294759
+##  [86,] 13175 0.0011370764
+##  [87,] 13180 0.0007523862
+##  [88,] 13185 0.0005178802
+##  [89,] 13190 0.0004192051
+##  [90,] 13195 0.0004056213
+##  [91,] 13200 0.0004212215
+##  [92,] 13205 0.0004720401
+##  [93,] 13210 0.0005398197
+##  [94,] 13215 0.0006181607
+##  [95,] 13220 0.0006959712
+##  [96,] 13225 0.0006694697
+##  [97,] 13230 0.0005628728
+##  [98,] 13235 0.0004508795
+##  [99,] 13240 0.0003356740
+## 
+## $calib$probs[[11]]
+##         [,1]         [,2]
+##   [1,] 11170 0.0002431667
+##   [2,] 11175 0.0003058674
+##   [3,] 11180 0.0004173059
+##   [4,] 11185 0.0004912216
+##   [5,] 11190 0.0006095934
+##   [6,] 11195 0.0008473031
+##   [7,] 11200 0.0013189772
+##   [8,] 11205 0.0019574846
+##   [9,] 11210 0.0024680836
+##  [10,] 11215 0.0030455418
+##  [11,] 11220 0.0035792463
+##  [12,] 11225 0.0038710174
+##  [13,] 11230 0.0044040331
+##  [14,] 11235 0.0054210355
+##  [15,] 11240 0.0079620663
+##  [16,] 11245 0.0115490203
+##  [17,] 11250 0.0147571191
+##  [18,] 11255 0.0163521858
+##  [19,] 11260 0.0178875793
+##  [20,] 11265 0.0200005348
+##  [21,] 11270 0.0214838960
+##  [22,] 11275 0.0216901092
+##  [23,] 11280 0.0213666675
+##  [24,] 11285 0.0211517421
+##  [25,] 11290 0.0211639188
+##  [26,] 11295 0.0211639188
+##  [27,] 11300 0.0211759431
+##  [28,] 11305 0.0211076456
+##  [29,] 11310 0.0208558354
+##  [30,] 11315 0.0201676844
+##  [31,] 11320 0.0189907224
+##  [32,] 11325 0.0176393838
+##  [33,] 11330 0.0165320925
+##  [34,] 11335 0.0157655159
+##  [35,] 11340 0.0150209931
+##  [36,] 11345 0.0136167806
+##  [37,] 11350 0.0117561003
+##  [38,] 11355 0.0098527346
+##  [39,] 11360 0.0087180971
+##  [40,] 11365 0.0082582350
+##  [41,] 11370 0.0087390584
+##  [42,] 11375 0.0095393382
+##  [43,] 11380 0.0086182975
+##  [44,] 11385 0.0085892187
+##  [45,] 11390 0.0097580240
+##  [46,] 11395 0.0116720486
+##  [47,] 11400 0.0124795988
+##  [48,] 11405 0.0112322257
+##  [49,] 11410 0.0092572926
+##  [50,] 11415 0.0082210782
+##  [51,] 11420 0.0073497634
+##  [52,] 11425 0.0059603323
+##  [53,] 11430 0.0045949143
+##  [54,] 11435 0.0044043719
+##  [55,] 11440 0.0055059091
+##  [56,] 11445 0.0075905987
+##  [57,] 11450 0.0092693051
+##  [58,] 11455 0.0091613107
+##  [59,] 11460 0.0083033494
+##  [60,] 11465 0.0084037676
+##  [61,] 11470 0.0093580069
+##  [62,] 11475 0.0104881346
+##  [63,] 11480 0.0114848180
+##  [64,] 11485 0.0123917444
+##  [65,] 11490 0.0138705951
+##  [66,] 11495 0.0145735423
+##  [67,] 11500 0.0141869159
+##  [68,] 11505 0.0130289508
+##  [69,] 11510 0.0108000973
+##  [70,] 11515 0.0076218649
+##  [71,] 11520 0.0045949143
+##  [72,] 11525 0.0032084797
+##  [73,] 11530 0.0032666387
+##  [74,] 11535 0.0042876637
+##  [75,] 11540 0.0066656760
+##  [76,] 11545 0.0090359194
+##  [77,] 11550 0.0101112881
+##  [78,] 11555 0.0098261392
+##  [79,] 11560 0.0086970663
+##  [80,] 11565 0.0075183601
+##  [81,] 11570 0.0072369985
+##  [82,] 11575 0.0075802606
+##  [83,] 11580 0.0083021900
+##  [84,] 11585 0.0101819953
+##  [85,] 11590 0.0130867863
+##  [86,] 11595 0.0150735716
+##  [87,] 11600 0.0153114814
+##  [88,] 11605 0.0137137193
+##  [89,] 11610 0.0112624504
+##  [90,] 11615 0.0088740427
+##  [91,] 11620 0.0069238844
+##  [92,] 11625 0.0053786917
+##  [93,] 11630 0.0038990933
+##  [94,] 11635 0.0027487807
+##  [95,] 11640 0.0018340155
+##  [96,] 11645 0.0012126721
+##  [97,] 11650 0.0009088548
+##  [98,] 11655 0.0009579867
+##  [99,] 11660 0.0012733650
+## [100,] 11665 0.0018279635
+## [101,] 11670 0.0024253739
+## [102,] 11675 0.0029119387
+## [103,] 11680 0.0030531606
+## [104,] 11685 0.0027568592
+## [105,] 11690 0.0024947332
+## [106,] 11695 0.0027658880
+## [107,] 11700 0.0031014925
+## [108,] 11705 0.0028685976
+## [109,] 11710 0.0020814492
+## [110,] 11715 0.0012733650
+## [111,] 11720 0.0007993143
+## [112,] 11725 0.0006345468
+## [113,] 11730 0.0006029565
+## [114,] 11735 0.0005593572
+## [115,] 11740 0.0005730325
+## [116,] 11745 0.0007209185
+## [117,] 11750 0.0009330359
+## [118,] 11755 0.0009101168
+## [119,] 11760 0.0006148011
+## [120,] 11765 0.0003682801
+## [121,] 11770 0.0003078592
+## [122,] 11775 0.0002788133
+## [123,] 11780 0.0002364413
+## [124,] 11785 0.0001869770
+## [125,] 11790 0.0001693674
+## [126,] 11795 0.0001963664
+## [127,] 11800 0.0002593792
+## [128,] 11805 0.0002945617
+## [129,] 11810 0.0003090989
+## [130,] 11815 0.0003004862
+## [131,] 11820 0.0003393702
+## [132,] 11825 0.0003649080
+## [133,] 11830 0.0003393702
+## [134,] 11835 0.0002510465
+## 
+## $calib$probs[[12]]
+##         [,1]         [,2]
+##   [1,] 20430 0.0003858044
+##   [2,] 20440 0.0004389171
+##   [3,] 20450 0.0005184455
+##   [4,] 20460 0.0006280199
+##   [5,] 20470 0.0007611816
+##   [6,] 20480 0.0009022009
+##   [7,] 20490 0.0010847039
+##   [8,] 20500 0.0013357687
+##   [9,] 20510 0.0016108617
+##  [10,] 20520 0.0019306135
+##  [11,] 20530 0.0024127213
+##  [12,] 20540 0.0029195164
+##  [13,] 20550 0.0034282627
+##  [14,] 20560 0.0040993416
+##  [15,] 20570 0.0047617309
+##  [16,] 20580 0.0054759211
+##  [17,] 20590 0.0062114183
+##  [18,] 20600 0.0069500317
+##  [19,] 20610 0.0073913912
+##  [20,] 20620 0.0078639612
+##  [21,] 20630 0.0081606228
+##  [22,] 20640 0.0083696137
+##  [23,] 20650 0.0083772675
+##  [24,] 20660 0.0084816210
+##  [25,] 20670 0.0083867666
+##  [26,] 20680 0.0085870878
+##  [27,] 20690 0.0085870878
+##  [28,] 20700 0.0086936737
+##  [29,] 20710 0.0090088377
+##  [30,] 20720 0.0094453831
+##  [31,] 20730 0.0097918196
+##  [32,] 20740 0.0104990857
+##  [33,] 20750 0.0111304292
+##  [34,] 20760 0.0119264071
+##  [35,] 20770 0.0129079039
+##  [36,] 20780 0.0140983167
+##  [37,] 20790 0.0154089115
+##  [38,] 20800 0.0169169267
+##  [39,] 20810 0.0188599462
+##  [40,] 20820 0.0209890123
+##  [41,] 20830 0.0235278218
+##  [42,] 20840 0.0260330244
+##  [43,] 20850 0.0287487235
+##  [44,] 20860 0.0311847511
+##  [45,] 20870 0.0332056013
+##  [46,] 20880 0.0345646224
+##  [47,] 20890 0.0351508650
+##  [48,] 20900 0.0349608117
+##  [49,] 20910 0.0340288410
+##  [50,] 20920 0.0325199154
+##  [51,] 20930 0.0304871789
+##  [52,] 20940 0.0281533937
+##  [53,] 20950 0.0255426969
+##  [54,] 20960 0.0229651525
+##  [55,] 20970 0.0206390433
+##  [56,] 20980 0.0183610050
+##  [57,] 20990 0.0162952622
+##  [58,] 21000 0.0147934789
+##  [59,] 21010 0.0133980851
+##  [60,] 21020 0.0123640394
+##  [61,] 21030 0.0113091106
+##  [62,] 21040 0.0104440318
+##  [63,] 21050 0.0096326081
+##  [64,] 21060 0.0088725825
+##  [65,] 21070 0.0082571769
+##  [66,] 21080 0.0075782798
+##  [67,] 21090 0.0070327461
+##  [68,] 21100 0.0066019549
+##  [69,] 21110 0.0061927951
+##  [70,] 21120 0.0058799157
+##  [71,] 21130 0.0055848379
+##  [72,] 21140 0.0053036702
+##  [73,] 21150 0.0050293171
+##  [74,] 21160 0.0048363024
+##  [75,] 21170 0.0045232488
+##  [76,] 21180 0.0042846728
+##  [77,] 21190 0.0041177396
+##  [78,] 21200 0.0038984793
+##  [79,] 21210 0.0037455790
+##  [80,] 21220 0.0036541486
+##  [81,] 21230 0.0036143368
+##  [82,] 21240 0.0034737045
+##  [83,] 21250 0.0034378911
+##  [84,] 21260 0.0034038220
+##  [85,] 21270 0.0033594916
+##  [86,] 21280 0.0033157349
+##  [87,] 21290 0.0032614315
+##  [88,] 21300 0.0032187433
+##  [89,] 21310 0.0030939949
+##  [90,] 21320 0.0030135271
+##  [91,] 21330 0.0028214253
+##  [92,] 21340 0.0025847174
+##  [93,] 21350 0.0023840209
+##  [94,] 21360 0.0021497443
+##  [95,] 21370 0.0019122653
+##  [96,] 21380 0.0016551621
+##  [97,] 21390 0.0013883812
+##  [98,] 21400 0.0011720554
+##  [99,] 21410 0.0009488750
+## [100,] 21420 0.0008016994
+## [101,] 21430 0.0006714234
+## [102,] 21440 0.0005711339
+## [103,] 21450 0.0004713771
+## [104,] 21460 0.0003911450
+## 
+## $calib$probs[[13]]
+##        [,1]         [,2]
+##  [1,] 19510 0.0003377589
+##  [2,] 19520 0.0004365525
+##  [3,] 19530 0.0005542492
+##  [4,] 19540 0.0007247793
+##  [5,] 19550 0.0009921475
+##  [6,] 19560 0.0013366044
+##  [7,] 19570 0.0018006770
+##  [8,] 19580 0.0023962901
+##  [9,] 19590 0.0032649269
+## [10,] 19600 0.0043316368
+## [11,] 19610 0.0055675082
+## [12,] 19620 0.0069273063
+## [13,] 19630 0.0083448239
+## [14,] 19640 0.0093602621
+## [15,] 19650 0.0102408035
+## [16,] 19660 0.0107803598
+## [17,] 19670 0.0110566666
+## [18,] 19680 0.0109178900
+## [19,] 19690 0.0103752849
+## [20,] 19700 0.0095991576
+## [21,] 19710 0.0087510823
+## [22,] 19720 0.0079641716
+## [23,] 19730 0.0072220813
+## [24,] 19740 0.0067198626
+## [25,] 19750 0.0063337611
+## [26,] 19760 0.0061393117
+## [27,] 19770 0.0060366862
+## [28,] 19780 0.0061126382
+## [29,] 19790 0.0064802444
+## [30,] 19800 0.0071775365
+## [31,] 19810 0.0080374255
+## [32,] 19820 0.0092301380
+## [33,] 19830 0.0109646153
+## [34,] 19840 0.0127656660
+## [35,] 19850 0.0152076870
+## [36,] 19860 0.0178133738
+## [37,] 19870 0.0207455222
+## [38,] 19880 0.0234324403
+## [39,] 19890 0.0258211808
+## [40,] 19900 0.0277158453
+## [41,] 19910 0.0290520979
+## [42,] 19920 0.0296871819
+## [43,] 19930 0.0297911697
+## [44,] 19940 0.0295768582
+## [45,] 19950 0.0291247278
+## [46,] 19960 0.0286375951
+## [47,] 19970 0.0280326508
+## [48,] 19980 0.0275970153
+## [49,] 19990 0.0269981417
+## [50,] 20000 0.0264518411
+## [51,] 20010 0.0258697090
+## [52,] 20020 0.0252555036
+## [53,] 20030 0.0244484866
+## [54,] 20040 0.0236048884
+## [55,] 20050 0.0227321976
+## [56,] 20060 0.0217459980
+## [57,] 20070 0.0206599487
+## [58,] 20080 0.0193825169
+## [59,] 20090 0.0178133738
+## [60,] 20100 0.0163790888
+## [61,] 20110 0.0148209189
+## [62,] 20120 0.0135001677
+## [63,] 20130 0.0122503169
+## [64,] 20140 0.0110780418
+## [65,] 20150 0.0098613919
+## [66,] 20160 0.0088567196
+## [67,] 20170 0.0079254274
+## [68,] 20180 0.0070681110
+## [69,] 20190 0.0063865520
+## [70,] 20200 0.0057637740
+## [71,] 20210 0.0051964345
+## [72,] 20220 0.0046809853
+## [73,] 20230 0.0041507687
+## [74,] 20240 0.0037342546
+## [75,] 20250 0.0033076670
+## [76,] 20260 0.0029943840
+## [77,] 20270 0.0026532869
+## [78,] 20280 0.0023716869
+## [79,] 20290 0.0020522616
+## [80,] 20300 0.0018192312
+## [81,] 20310 0.0015892699
+## [82,] 20320 0.0014101032
+## [83,] 20330 0.0012518498
+## [84,] 20340 0.0011120757
+## [85,] 20350 0.0010032216
+## [86,] 20360 0.0008796947
+## [87,] 20370 0.0007712389
+## [88,] 20380 0.0006963953
+## [89,] 20390 0.0006202513
+## [90,] 20400 0.0005702238
+## [91,] 20410 0.0005091027
+## [92,] 20420 0.0004486690
+## [93,] 20430 0.0004033594
+## [94,] 20440 0.0003470479
+## [95,] 20450 0.0003053426
+## 
+## 
+## 
+## $rng
+## [1]  5905 21460
+## 
+## $th0
+## [1] 5361 5379
+## 
+## $depths
+##   [1]  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56
+##  [19]  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74
+##  [37]  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92
+##  [55]  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110
+##  [73] 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128
+##  [91] 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146
+## [109] 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164
+## [127] 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182
+## [145] 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200
+## [163] 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218
+## [181] 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236
+## [199] 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254
+## [217] 255 256 257 258 259 260 261 262 263 264 265 266
+## 
+## $elbows
+##   [1]  39  41  43  45  47  49  51  53  55  57  59  61  63  65  67  69  71  73
+##  [19]  75  77  79  81  83  85  87  89  91  93  95  97  99 101 103 105 107 109
+##  [37] 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145
+##  [55] 147 149 151 153 155 157 159 161 163 165 167 169 171 173 175 177 179 181
+##  [73] 183 185 187 189 191 193 195 197 199 201 203 205 207 209 211 213 215 217
+##  [91] 219 221 223 225 227 229 231 233 235 237 239 241 243 245 247 249 251 253
+## [109] 255 257 259 261
+## 
+## $K
+## [1] 112
+## 
+## $cK
+## [1] 263
+## 
+## $slumpfree
+##   [1]  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56
+##  [19]  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74
+##  [37]  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92
+##  [55]  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110
+##  [73] 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128
+##  [91] 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146
+## [109] 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164
+## [127] 165 166 167 168 169 170 171 172 173 174 175 176 176 176 176 176 177 178
+## [145] 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196
+## [163] 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214
+## [181] 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232
+## [199] 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250
+## [217] 251 252 253 254 255 256 257 258 259 260 261 262
+## 
+## $slumphiatus
+## [1] 176
+## 
+## $slumpdets
+##          labID   age error depth cc delta.R delta.STD t.a t.b
+## 1  D-AMS039542  5345    28    39  3       0         0   3   4
+## 2  D-AMS039543  5806    33    44  3       0         0   3   4
+## 3  D-AMS039544  7259    32    67  3       0         0   3   4
+## 4  D-AMS039545  8657    45   106  3       0         0   3   4
+## 5  D-AMS039546  9736    35   150  3       0         0   3   4
+## 6  D-AMS039547 10211    63   161  3       0         0   3   4
+## 7  D-AMS039548 10936    41   162  3       0         0   3   4
+## 8  D-AMS039549 10747    49   162  3       0         0   3   4
+## 9  D-AMS039550 10590    39   168  3       0         0   3   4
+## 10 D-AMS039551 11117    51   195  3       0         0   3   4
+## 11 D-AMS039552  9977    45   219  3       0         0   3   4
+## 12 D-AMS039553 17353    84   250  3       0         0   3   4
+## 13 D-AMS039554 16558    69   262  3       0         0   3   4
+## 
+## $prefix
+## [1] "/home/mat150604/MEGA/MEGAsync/workflow/TT3/cores_bacon/TT3/TT3_112"
+## 
+## $bacon.file
+## [1] "/home/mat150604/MEGA/MEGAsync/workflow/TT3/cores_bacon/TT3/TT3_112.bacon"
+\end{verbatim}
+
+\section{Discussion}\label{discussion}
+
+\subsection{Depositional dynamics and associated hydroclimatic changes
+during the Last Glacial Termination (20.5--12.8 cal ka
+BP)}\label{depositional-dynamics-and-associated-hydroclimatic-changes-during-the-last-glacial-termination-20.512.8-cal-ka-bp}
+
+The ATTL record highlights the climatic shifts at mid-latitude South
+America during the Last Glacial Termination (\emph{T1}; ca. 20.5 - 12.5
+cal ka BP), showing shallow littoral lacustrine conditions and
+high-energy sediment input prior to the first human settlements in
+central Chile (Figs. 5 and 7). Drier conditions prevailed between 20.5
+and 18.5 cal ka BP as indicated by fine-grained deposition consistent
+with greater meltwater drainage and dust input (47--51), whereas low
+δ¹³C\_car and δ¹⁸O\_car values reflect reduced evaporation and increased
+freshwater input from snowmelt (52--54) (Fig. 5F-H).
+
+During the final stage of the LGM, the ATTL basin was characterized by
+the deposition of fine \emph{L8 facies}, with high silt and clay
+contents (\textgreater80\%), very low TC (\textless0.1\%), and
+relatively elevated TS percentages (Figs. 2, 3, and 4). The unimodal
+grain size distribution (\textasciitilde4 μm mode) and low sorting
+suggest gradual, year-round sediment input, either via long-distance
+aeolian transport (53) or meltwater flows from glaciated areas (48). As
+in other glaciated settings, the fine-grained material deposited during
+glacial times was likely related to glacier dynamics, aeolian dust
+(47--51), and local clays derived from weathered soils in the catchment
+(49).
+
+Stratigraphic correlations show that the \emph{L8 facies} can be
+correlated with Unit 5 (10) and Member 5 (45, 55) from previously
+described Tagua Tagua profiles, dated to ca. 21.5 ± 0.65 and 20.4 ± 1.3
+cal ka BP, respectively (Fig. 1c). Researchers originally interpreted
+these deposits as a massive clay layer rich in \emph{Nothofagus
+dombeyi/obliqua} type pollen, suggesting cold and wet conditions or
+shallow lacustrine environments. However, the limited presence of
+planktonic diatoms, aquatic pollen, and phytoliths, along with only
+minor benthic diatoms and freshwater algae, points instead to a shallow
+littoral lake setting under persistent, fine detrital input influenced
+by a glaciated watershed.
+
+A brief high-energy alluvial event at \textasciitilde19.5 cal ka BP did
+not significantly elevate lake levels or bioproductivity (Figs. 3 and
+5F-H). Varela (45) describes subvertical cracks filled with authigenic
+magnesium oxide and iron minerals in Member 5, consistent with those in
+the \emph{L8} and \emph{L7 facies} (Unit 8). Subvertical cracks filled
+with authigenic minerals can be interpreted as desiccation cracks,
+sub-aquatic sedimentary fractures, or fragipan features (56--59). These
+cracks, lacking mud curls and filled with magnesium oxide, iron, and
+sulfur minerals, suggest salinity fluctuations or anoxic conditions
+promoted shrinkage through deflocculation or intracrystalline dewatering
+(56,57).
+
+The high sulfur content of these facies suggests methane emissions and
+anaerobic sulfate or metal reduction by methanotrophic archaea (57),
+reinforcing the notion of a littoral depositional environment strongly
+shaped by watershed inputs.
+
+Our interpretation contrasts with earlier suggestions of cold and wet
+conditions at the end of the LGM (10, 44, 45, 65). \emph{Heusser} (44)
+proposed the presence of a closed-canopy \emph{Nothofagus} forest
+between 28 and 11 ka BP, suggesting cool and wet conditions potentially
+driven by a northward shift of the SWW. Recalibrated pollen
+chronologies, however, suggest that the percentages of the
+\emph{Nothofagus antarctica/dombeyi} type declined earlier than
+previously reported (Fig. S6), occurring between approximately 19--16
+cal ka BP (initially dated at 14.5 ± 0.35 cal ka BP; Unit 2a, Figs. 7h
+and S6) in \emph{Heusser} (1983) and between 14.9--12.7 cal ka BP
+(initially dated at 11.71 ± 0.43 cal ka BP; Unit 3, Fig. 1) in
+\emph{Valero-Garcés et al.} (2005).
+
+In the central Chile valley, \emph{Nothofagus dombeyi/obliqua} exhibits
+a more restricted distribution compared to other members of the genus
+and subgenus \emph{Lophozonia} (66). Germination studies reveal that
+these species are not strictly dependent on high moisture levels,
+challenging the assumption that their expansion was moisture-driven (67,
+68). \emph{León-Lobos} and \emph{Ellis} (2007) found that the
+germination of \emph{Nothofagus} species (\emph{N. alpina}, \emph{N.
+dombeyi}, \emph{N. leonii}, \emph{N. glauca}, and \emph{N. obliqua})
+varies more significantly with temperature, suggesting that moisture was
+important but not critical for their expansion into central Chile.
+
+Intensified alluvial activity, associated with more frequent and severe
+storms at ATTL, is practically coeval with the HS1 (37, 69), CAPE I (23,
+70--72), and the ACR/Bölling--Alleröd (36) (Fig. 7), during a period
+characterized by increasing winter insolation and decreasing summer
+insolation (Figs. 7D, 7E, 7O, and 7P). These changes have been linked to
+shifts in global temperature gradients driven by residual Milankovitch
+effects (precession and obliquity; Figs. 7A and 7B). Some authors have
+posited that these shifts may have triggered a southward migration of
+the ITCZ and SWW, a weakening of the American Monsoon System, and
+modifications to the PSJ (33, 73--75).
+
+This atmospheric configuration, coupled with the reactivation of
+ENSO-like conditions ca. 16 cal ka BP (Figs. 7J and 7Q), likely
+amplified the frequency and intensity of alluvial events, displaying
+atmospheric patterns similar to those observed in simulations for the
+LGM (Fig. 6G). Marine sediment cores off the Chilean coast date
+\emph{T1} to between 19.2 and 18.5 cal ka BP, indicating arid conditions
+(73). Similarly, Andean glaciers (33°S - 36°S) retreated between 28.0
+and 18.0 ka BP (Fig. 7I) without subsequent re-advances during \emph{T1}
+(11, 76, 77). Changes in leaf wax δD and δ¹³C isotopes from marine
+sediment cores suggest hydrological changes influenced by precessional
+cycles, with SWW retreating during \emph{T1} (Figs. 7N and 7G), reaching
+a minimum at 11 cal ka BP and again between 5--6 cal ka BP (33). Marine
+records also show a 6°C--7°C rise in SST between 19 and 12.5 cal ka BP,
+interrupted by cooling around 14.8--13.3 cal ka BP, corresponding to the
+ACR (33, 73, 78, 79).
+
+The decline in high-energy processes after ca. 14.8 cal ka BP was
+accompanied by fluvial and fine-grained sediment deposition (Fig.
+7J-K-L). Orbital changes alone cannot fully explain these phenomena.
+Instead, multiple high-magnitude events associated with rapid coupled
+oceanic--atmospheric changes likely interacted with gradual orbital
+processes to produce the alluvial and fluvial deposits in TT19-3A
+between \textasciitilde18.5 and 14.5 cal ka BP. Further studies are
+required to better understand the interplay among these factors and
+their implications for regional paleoecology.
+
+\section{Changing lake environments, emerging habitats, and first human
+settlement (12.9--8.6 cal ka
+BP)}\label{changing-lake-environments-emerging-habitats-and-first-human-settlement-12.98.6-cal-ka-bp}
+
+Between ca. 12.8 and 12.4 cal ka BP (\emph{Unit 5}), coarser \emph{L5b}
+and \emph{L5a facies} (with a grain size mode at \textasciitilde700 µm;
+\emph{rEM5}) indicate high-energy conditions and stronger alluvial
+influence in the lake shoreline (Figs. 2, 4, and 5). The increasing
+ubiquity of the diatom species \emph{Anomoeoneis sculpta} (Figs. 3 and
+S4) ---known for inhabiting alkaline (1350 mg/L CaCO₃), shallow
+freshwater environments with elevated pH (9.3) and conductivity (5760
+µmS/cm) (80, 81)--- and the rise of planktonic diatoms (e.g., small
+fragilarioids) suggest a permanent, alkaline lake established in the
+basin (Fig. S4). The presence of \emph{Sporormiella} spores,
+megaherbivore remains, and evidence of early human occupation around
+12.5 cal ka BP coincides with this transitory alkaline lake phase (22).
+
+From 12.5 to 11.2 cal ka BP (\emph{Unit 5}), a significant depositional
+and biogeochemical shift occurred. Greenish to gray sandy silts with
+coarser GSDs (\emph{rEM2; L4b facies}) had abundant gastropods and
+charcoal spicules, higher carbonate (TIC) content, more positive
+δ¹³C\_car and δ¹⁸O\_car, increased diatom abundance (especially \emph{A.
+sculpta}), and a rise in woody, shrub, and \emph{Jubaea chilensis}
+phytoliths (Figs. 2, 3, 4, and 5). This suggests a moderately alkaline,
+shallow lake environment characterized by higher bioproductivity, more
+stable water levels, and warmer, more humid conditions. In general,
+freshwater lakes with high conductivity and salinity levels exhibit a
+negative correlation with diatom diversity (81). The presence of
+\emph{J. chilensis} corresponds to the endemic Chilean palm, currently
+distributed between \textasciitilde30°S and 35°S (82). Their occurrence
+near the 1.65 m depth (ca. 12.4 cal ka BP; see Fig. 4) may indicate
+increased humidity, reduced megafaunal pressure, or human transport for
+food, temporary habitation, or other uses (83, 84). Alternatively, other
+taphonomic and sedimentary transport processes associated with a rising
+lake level could also explain its presence.
+
+A brief interval between \textasciitilde11.4 and 11.2 cal ka BP
+(\emph{L4a facies}) shows even higher TIC, δ¹³C\_car, δ¹⁸O\_car, and
+\emph{rEM2} values, as well as a shift in diatom assemblages toward
+tychoplanktonic small fragilarioids and \emph{Aulacoseira granulata}.
+These changes suggest a decrease in salinity and an increase in lake
+turbulence (Figs. 2, 3, and 4). During this period, freshwater algae
+dominate the palynomorph assemblage, and woody and shrub taxa appear
+alongside \emph{Poaceae}, \emph{Bambusoideae}, and \emph{Chloridoid}
+phytoliths (Fig. 3).
+
+Isotope signatures support warmer conditions and higher lake levels at
+the onset of the Holocene. In ATTL sediments, calcite is the principal
+carbonate phase. Elevated δ¹³C\_car (\textasciitilde1‰) and δ¹⁸O\_car
+(\textasciitilde-0.2‰) values in authigenic calcite indicate
+evaporation-driven isotopic enrichment of dissolved inorganic carbon
+(DIC). This enrichment, facilitated by isotopic equilibrium exchange
+with CO₂, is regulated by temperature, the isotopic composition of
+inflows, pH, and lacustrine bioproductivity (10, 85--87). Currently,
+there is no data to validate the isotopic enrichment model for meteoric
+precipitation proposed by \emph{Valero-Garcés et al.} (2005) for ATTL.
+However, \emph{McCormack et al.} (2019) suggest that δ¹⁸O\_car and
+δ¹³C\_car values are closer to freshwater runoff compared to other
+carbonates like aragonite or dolomite. The isoscape from Chilean lakes
+serves as an analogue for time-averaged local precipitation isotopes
+where direct data are lacking (88). In central Chile, meteoric water
+δ¹⁸O averages from -4‰ to -2‰ in summer and -7.6‰ to -5.9‰ in winter
+(88, 89). Data from the \emph{HOLOCHILL} project show notable isotopic
+variability in lakes by altitude (Fig. 10S). Coastal areas, such as Lago
+Vichuquén, exhibit δ¹⁸O values ranging from -2‰ to 0‰, while Laguna
+Matanzas shows values between 7‰ to 8‰. In contrast, mountain lakes like
+Laguna del Maule and Laguna Lo Encañado have δ¹⁸O values of
+\textasciitilde-11‰ to -12‰.
+
+Altogether, these data suggest a rise in lake levels under warm and
+humid conditions at the onset of the Holocene, consistent with an
+environment transitioning toward a new ecological state (22). From 11.2
+to 8.6 cal ka BP (\emph{Unit 4}), a series of fluctuations in water
+levels, detrital input, and carbonate isotopic signals are documented by
+several proxies (Figs. 2 and 3).
+
+\emph{L3a-d facies} show alternating clayey silty sands and sandy silts
+with variable TIC, δ¹³C\_car and δ¹⁸O\_car values, as well as shifts in
+diatom communities and phytolith assemblages (Fig. 3). \emph{L3d facies}
+(ca. 11.2 and 10.4 cal ka BP) show a shift in the isotopic signal of
+authigenic calcite, accompanied by an abrupt increase in \emph{rEM5}
+percentages. Episodes of high-energy alluvial transport, variations in
+the presence of \emph{A. sculpta} and small fragilarioids, and frequent
+planktonic diatoms reflect changing littoral environments and variable
+lake levels (Figs. 3 and S4). Small fragilarioids ---facultative
+planktonic organisms from lentic and deltaic environments--- and
+\emph{A. granulata} indicate a rise in lake levels, reduced light
+availability, and increased wind or tidal turbulence, consistent with
+high \emph{rEM5} values (90, 91). Woody and shrub phytoliths, along with
+\emph{Poaceae} and \emph{Bambusoideae}, reflect nearby vegetation
+responses to these hydrological and climatic oscillations (Figs. 3).
+
+The \emph{L3c facies} (10.4 and 9.8 cal ka BP) show variable percentages
+of \emph{rEM2} and \emph{rEM3}, accompanied by elevated \emph{rEM4}
+values, which highlight high variability of alternating sedimentary
+processes (littoral, fluvial, aeolian). During deposition of \emph{L3b
+facies} (between ca. 9.8 and 9.0 cal ka BP), changes in the fluvial
+sediment delivery (\emph{rEM3}) suggest some hydroclimatic instability.
+\emph{A. sculpta} increases rapidly in this facies, while small
+fragilarioids practically disappear, indicating a shallow to ephemeral
+and subaerial depositional environment.
+
+The phytolith assemblage remains virtually unchanged. Finally,
+deposition of \emph{L3a facies} (9.0 - 8.6 cal ka BP), characterized by
+a high content of fine sand (\emph{rEM4}), and a decrease in planktonic
+diatom species, culminated in the Early Holocene. Stable lake levels,
+finer sediments (\emph{rEM2} and a minority of \emph{rEM1}), a dominance
+of hygro-hydrophilous communities, and elevated organic productivity
+(\emph{Units 3} and \emph{2}, ca. 8.6 - 6.0 cal ka BP) fostered greater
+diatom diversity and more mesotrophic, alkaline conditions. Finer
+sedimentation and sustained presence of planktonic diatoms
+(\emph{Stephanodiscus meneghinianus}) suggest relatively higher lake
+levels compared to \emph{Unit 4}, and less sediment input from the
+watershed. At the time of deposition of \emph{Unit 3} (8.6 - 6.5 cal ka
+BP), the later occupation of the archaeological site TT-3 occurred.
+
+\section{Early human-ecosystem interactions in ATTL during the late
+Pleistocene/Holocene
+transition}\label{early-human-ecosystem-interactions-in-attl-during-the-late-pleistoceneholocene-transition}
+
+The progressive environmental transformation toward the end of the
+Pleistocene and the onset of the Holocene ---evidenced by rising lake
+levels and the diversification of available resources (22)---
+represented a turning point for human occupation in the ATTL. These
+changes broadened subsistence possibilities for the earliest
+hunter-gatherers, marking the onset of a distinct ecological stage in
+South America (Fig. 7F).
+
+In the ATTL, the transition from the Pleistocene to the Holocene (14.5
+to 11.7 cal ka BP) is characterized by a gradual rise in lake levels
+(Figs. 5D and 7L). An alluvial event between ca. 12.8 and 12.5 cal ka BP
+and the development of beach-like depositional environments in littoral
+areas indicate a return to drier conditions (Figs. 5 and 7). The end of
+this event coincided with the discovery of a combustion feature along
+with megafaunal remains, dated to 12.5--12.4 cal ka BP (22).
+
+Archaeological evidence indicates that human occupation of the ATTL
+began during the Fishtail point horizon (92). The archaeological sites
+in the ATTL (\emph{TT-1}, \emph{TT-2}, and \emph{TT-3}), dated to ca.
+12.6--11.6 cal ka BP, provide unequivocal evidence of direct
+human--megafauna interactions, including gomphotheres, horses, and
+cervids (22, 93--96). These sites also document the consistent
+exploitation of small game (primarily birds and frogs) and the use of
+local plant resources (22, 93--96). Interpreted as logistic or ephemeral
+camps, these settlements were part of a broader and more complex
+mobility system that included at least the Andean range (22, 94).
+Regionally, however, late Pleistocene settlements are conspicuously
+absent, whereas Early Holocene archaeological sites are common in the
+Andes, along the coastal range, and the coastline (42).
+
+Amid these regional cultural developments, paleoclimatic data suggest
+increasing water availability and temperatures, coupled with a reduced
+influence of the SWW near 30°S at the end of the Late Pleistocene (Figs.
+2, 3, 7L-M-N). This was followed by a northward shift of the SWW at the
+beginning of the Holocene, along with large-amplitude REC associated
+with YD and ENSO-like phenomena (33, 40, 97). These
+processes---partially driven by obliquity-induced orbital
+changes---likely governed the variability of both the SWW and the SPSA
+in central Chile between 12.5 and 11 cal ka BP, forming a complex
+interplay not fully captured by other records at this latitude (12, 33,
+73, 75).
+
+Against this dynamic environmental backdrop, the earliest human groups
+present at ATTL adopted logistical settlement patterns under
+increasingly favorable conditions, taking advantage of a wide range of
+lacustrine resources. This strategy persisted until around 11--9 cal ka
+BP (22, 95). The intertwined development of climate, megafauna, and
+human strategies underscores the profound impact that shifting
+environmental regimes had on the cultural trajectories of early
+hunter-gatherer communities.
+
+\section{Early-Middle Holocene: increased environmental variability and
+emerging human settlement
+patterns}\label{early-middle-holocene-increased-environmental-variability-and-emerging-human-settlement-patterns}
+
+Early and Middle Holocene environmental reconstructions in central Chile
+suggest a dynamic interplay among regional teleconnections,
+climate-driven erosive processes, tectonics, volcanism, and the evolving
+impacts of early hunter-gatherers on the ecosystem (10, 44, 98--101).
+The TT19-3A record indicates higher lake levels, enhanced evaporative
+regimes, and the emergence of diverse ecological assemblages during the
+Early Holocene compared to the Late Pleistocene (Figs. 5 and 7). The
+higher abundance of woody dicotyledon phytoliths indicates the
+prevalence of sclerophyll forests, whereas the occurrence of
+\emph{Jubaea chilensis} highlights the abundance of palm trees, likely
+more prevalent due to the absence of megaherbivores, humid climatic
+conditions, and/or human use (84). Phytoliths from \emph{Poaceae} and
+\emph{Pooideae} groups indicate the coexistence of grassland and
+sclerophyll shrubs. An increase in \emph{Bambusoideae} morphotypes
+suggests the expansion of \emph{Chusquea} sp., while the presence of
+\emph{Chloridoid} phytoliths---commonly found in arid or semi-arid
+regions---points to possible drought periods.
+
+Between 11.5 and 11 cal ka BP, the proportion of fluvial deposits
+reached its highest levels (Figs. 5D and 7L), possibly triggered by a
+northward shift of the SWW (33) and weakening of the SPSA (Figs. 7N and
+7G). After this peak fluvial input, the record indicates shifts in
+high-energy sedimentary transport and an increase in diatoms (small
+fragilarioids) associated with turbulent lacustrine environments between
+11 and 8.5 cal ka BP (Figs. 7J-L). It is possible that high ENSO-like
+activity along the Peruvian coast (Fig. 7R) aligns with the changes
+recorded in the ATTL and drought periods at Laguna Aculeo (98, 99). Such
+large-scale events might have triggered a scaling break effect,
+potentially strengthening STJ conditions and contributing to drought
+events (19, 102). Variability in STJ intensity, influenced by ENSO-like
+phenomena and possibly combined with residual effects of
+glacial-interglacial orbital changes (Milankovitch cycles), may have
+contributed to the formation of alluvial and fluvial deposits observed
+during this period in central Chile (15, 17, 103).
+
+During the first half of the Mid Holocene (8.5--6 cal ka BP), central
+Chile experienced a gradual shift toward increased aridity---though less
+extreme than events recorded between 11 and 8.5 cal ka BP (Figs. 5,
+7H-J). This is supported by PMIP4-CMIP6 multi-model ensemble outputs
+(Figs. 6, 11S-13S; Table S2), which indicate a slight increase in zonal
+winds in central Chile under wet conditions compared to pre-industrial
+levels (Fig. 6F). At lower latitudes, negative zonal wind anomalies
+suggest La Niña-like or ENSO-neutral conditions, linked to drier periods
+in central Chile (13, 103). Wet conditions, however, show a slight
+increase in precipitation relative to the pre-industrial period, while
+dry conditions exhibit precipitation and zonal wind patterns similar to
+pre-industrial levels (Figs. 6D and 6H). Although no evidence suggests a
+northward displacement of the SWW during the Mid Holocene, the TT19-3A
+record indicates higher fluvial inputs and elevated lake levels compared
+to other central Chilean lacustrine records from the same period (98,
+104).
+
+The Early Holocene begins with an important change in the
+hunter-gatherer settlement pattern at the ATTL but also in the
+surrounding areas. Late Pleistocene logistical and/or ephemeral bases
+are replaced by more intensive residential camps at ca. 9.0 cal ka BP
+(105, 106). This shift coincided with the second phase of human
+occupation identified at \emph{TT-3} (22) in the lower portion of the
+\emph{L2 facies} (ca. 8.5 cal ka BP). Nevertheless, considering the
+available radiocarbon dates, the Mid Holocene (between ca. 7.2--6.0 ka
+cal BP) was possibly the most intensive period of human occupation of
+the ATTL (22, 105).
+
+Human burials were added into residential areas, forming complex mounds
+characterized by intensive domestic refuse and mixed stratigraphic
+deposits. Some isolated dates suggest that these sites were probably
+occupied less recurrently until the beginning of the Late Holocene (ca.
+4.0 cal ka BP). At least seven of these structures were documented at
+the lake's shore, but only a few were systematically excavated. Thus,
+their synchronicity, anthropological, artefactual, and ecofactual
+particularities, and their possible relations are not yet fully
+understood. The systematic presence of human burials in these sites
+stresses the pivotal role that ATTL played for the hunter-gatherers
+during climatic oscillations, and allows us to hypothesize mobility
+reduction and, possibly, incipient territorialism.
+
+On a regional scale, human concentration in particularly productive
+locations such as the ATTL could explain the scarce record of Mid
+Holocene archaeological sites elsewhere in central Chile. In this
+scenario, the lake acts as a refuge by concentrating abundant resources
+such as water, food, and raw materials, especially during periods of
+prolonged drought (106, 107).
+
+\section{Implications and
+Limitations}\label{implications-and-limitations}
+
+The ATTL basin in central Chile offers a detailed record of climatic and
+human dynamics during the Late Pleistocene and early Holocene. The
+integration of stratigraphic, geochemical, and paleoecological data
+highlights the role of local hydroclimatic changes in guiding early
+human mobility, resource use, and settlement choices. As lake levels
+fluctuated and resource availability shifted, hunters and gatherers
+appear to have adapted by altering subsistence strategies and occupation
+intensity.
+
+Coupling local lacustrine evidence with large-scale climate models
+(PMIP4-CMIP6) reveals that regional drivers (SWW, SPSA, STJ, ENSO-like
+phenomena) manifested in highly localized ways. This underscores the
+importance of linking local data sets to global circulation patterns to
+avoid oversimplification of paleoclimate scenarios. During the Late
+Pleistocene, high-energy fluvial inflows driven by atmospheric shifts
+(STJ intensity, ITCZ, and SWW displacement) occurred, but these changes
+did not significantly impact the lake's water balance, indicating a
+complex hydrological regime needing further study. These shifts coincide
+with global climate phenomena such as the HS1, B/A, and the CAPE and ACR
+events in South America.
+
+The Pleistocene-Holocene transition brought warmer, wetter conditions,
+driving rapid environmental changes and the development of new habitats
+in the lake and its watershed. The clear association of human presence
+with megafaunal remains and Sporormiella spores indicates that shifting
+shoreline habitats, prey distribution, and hunter-gatherer activities
+converged at ATTL. This study provides valuable insights into how
+climate and humans jointly influenced late Pleistocene megafauna
+extinctions and dispersals. Rapid lake-level fluctuations and episodes
+of high-energy deposition during the Pleistocene and Holocene serve as
+analogs for modern climate variability. Historical ecology, including
+the use of refugia and settlement reorganization, offers valuable
+insights into resilience strategies for current and future water
+resource planning.
+
+Evidence from the ATTL basin indicates that, after a humid Early
+Holocene phase, increased depositional variability and shoreline habitat
+changes were driven by ENSO-like shifts. However, during the Mid
+Holocene, the ATTL shows relatively stable lake levels---contrasting
+with other central Chilean sites---thereby providing favorable
+conditions for humans and fauna. This hydrological stability, coupled
+with abundant resources, suggests that the ATTL basin functioned as an
+ecological refuge during drought periods. The intensification of
+occupation, formation of mounds, and emergence of more complex social
+practices (e.g., burials) reflect how favorable local conditions could
+catalyze socio-cultural development.
+
+The TT19-3A sequence underscores the strong interplay between climate
+and human history in central Chile, showing how early hunter-gatherers
+adapted to periods of both abundance and stress. While the
+``ecorefugio'' model derived from this study provides valuable insights,
+caution is warranted when applying it to other South American contexts,
+where variations in geology, topography, and climate may yield distinct
+sedimentological and ecological outcomes. Although robust age-depth
+models have been used, certain stratigraphic units---particularly those
+from the late Pleistocene---remain less densely dated, potentially
+obscuring abrupt environmental fluctuations and complicating the
+correlation of short-lived events with archaeological contexts.
+
+Further analyses---such as SEM-based quartz grain microtexture studies,
+multi-element isotopes, or modern data (e.g., clumped isotope
+(Δ\textsuperscript{47}) carbonate, aDNA, or GDGTs/δD in organic
+biomarkers)---would strengthen hydroclimate interpretations and help
+validate assumed isotope enrichments (δ\textsuperscript{13}C and
+δ\textsuperscript{18}O). Additionally, global climate models, while
+providing important large-scale insights, often lack sufficient temporal
+resolution and fail to capture localized phenomena (e.g., convective
+storms, orographic precipitation) at mid-latitudes, making it difficult
+to align their outputs with high-resolution sedimentary records.
+
+Finally, lake-level changes, erosional reworking, and post-depositional
+processes can skew the archaeological record in shoreline contexts,
+causing certain intervals (e.g., the early Holocene) to appear less
+populated due to sedimentary discontinuities rather than true
+occupational gaps. Broader field surveys and correlating multiple cores
+would help confirm and refine interpretations of human settlement
+intensity throughout the region.
+
+A high-energy depositional phase occurred between 18.5 and 16.5 cal ka
+BP, marked by sandy \emph{L7 facies} (about 70\% - 80\% sand) with low
+TC values, and the lowest δ¹³C\_car and δ¹⁸O\_car values in the record
+(Figs. 2 and 4). The coarse, bimodal grain size distribution
+(\emph{rEM4}; main peak \textasciitilde420 µm, secondary
+\textasciitilde60 µm, see Fig. S3) suggests heavy rainfall/intense
+storms, or rapid melt-driven discharge that delivered coarse sediments
+into the lake's littoral zone (45, 47, 59). The lowest δ¹⁸O\_car values
+likely reflect colder waters, an increase in the amount effect, or a
+different moisture source (51), whereas lower δ¹³C\_car values possibly
+reflect increased CO₂ input from terrestrial respiration or lower
+aquatic productivity.
+
+Later, from 16.5 to 14.5 cal ka BP, a shift to coarser sediments and
+stormier conditions occurred again without increasing lake levels (Figs.
+5a, b, e). This interval corresponds to a period of intense hydrological
+and depositional variability, linking local sedimentary patterns to the
+broader regional climate context.
+
+To understand the atmospheric patterns during this period, we analyzed
+precipitation and zonal wind outputs from the PMIP4-CMIP6 multimodel
+ensemble simulations for the LGM (Figs. 6, 7S--9S; Table S2). The
+multimodel ensemble indicates that during the LGM, dry conditions were
+associated with intensified zonal wind speeds at low and mid-latitudes,
+accompanied by negative anomalies at subtropical and high latitudes
+(Figs. 6a, 6c). In contrast, wet anomalies are linked to weakened
+tropical trade winds, akin to warm ENSO-like conditions, accompanied by
+positive anomalies along extratropical storm tracks (Figs. 6E, 6G).
+Zonal wind speeds at tropical and subtropical latitudes show positive
+anomalies over the southern Pacific, while negative anomalies prevail
+over the central-southern Andes. A similar atmospheric pattern to those
+of the glacial period likely contributed to extreme events between 18.5
+and 14.5 cal ka BP (Figs. 5a, 5b). Sedimentological and limnological
+evidence, however, suggests this was insufficient to maintain elevated
+lake levels.
+
+Between 16.5 and 12.8 cal ka BP, sedimentation reverted to sandy silts
+(Unit 7, \emph{L6a} and \emph{L6b facies}), with varying clay
+percentages and low TS and TC values. Microfossils remained with low
+abundance, except for two samples showing a temporary increase in
+\emph{Poaceae} phytoliths, benthic diatoms, and \emph{Cyperaceae},
+hinting at short-lived stabilization of littoral and riparian
+communities (Figs. 3 and S4). The presence of freshwater algae
+(\emph{Botryococcus} and \emph{Spirogyra}), littoral vegetation such as
+\emph{Typha}, and sporadic fern spores (\emph{Pteris}) indicates
+wetlands and riparian areas adjacent to the basin (Fig. S5). δ¹³C\_car
+and δ¹⁸O\_car values rose relative to Unit 8, indicating changes in
+hydrological balance (precipitation - evaporation balance), seasonality,
+or source area.
+
+From 16.5 to 14.5 cal ka BP (\emph{L6b facies}), grain size
+distributions (\emph{rEM5}) were bimodal (\textasciitilde700 μm and
+\textasciitilde65 μm), more consistent with fluvial or reworked
+fluvial/lacustrine-aeolian processes (47--51, 59). Such distributions
+occur where braided rivers and fluvial processes overlap, mixing coarse
+and fine sediments (49, 60). Proximal aeolian coarse-grained silt
+transport typically shows a unimodal grain-size distribution between 40
+and 90 μm (49, 60). In contrast, GSDs exceeding a \textasciitilde250 μm
+mode suggest high-energy fluvial processes. Moreover, in other
+environments and depositional process simulations, grain sizes ranging
+from 250 to 850 μm have been linked to intense runoff, alluvial fan
+formation, and are also observed in sandy coastal settings as well as
+wind-eroded sediments (61--64).
+
+After 14.5 cal ka BP (\emph{L6a facies}), a shift toward finer particles
+(\emph{rEM1}, \textasciitilde3.8 µm; \emph{rEM2}, \textasciitilde60 µm)
+suggests improved hydrodynamic sorting, potentially linked to rising
+lake levels or greater availability of finer sediments. These conditions
+reflect a dynamic interplay between wind-driven, glacial-mediated, and
+fluvial processes influencing deposition at the ATTL site during glacial
+time. Further analysis of the quartz surface texture is necessary to
+differentiate between aeolian and fluvial processes.
+
+\section{Materials and Methods}\label{materials-and-methods}
+
+In November 2019, we recovered a sedimentary sequence measuring 15 cm in
+length, 10 cm in width, and 280 cm in depth from the exposed profile of
+the eastern wall of a 1×2m excavation, corresponding to \emph{Unit 1} of
+the geoarchaeological test pits at TT-3 site (\emph{TT19-3A-1E}, Fig.
+1). Sediment samples, between 50 and 100g of material, were obtained at
+1-cm intervals along the sequence (see Supplementary Methods for more
+details). The uppermost 8 samples (0 - 0.38 m) were discarded due to
+sediment alteration caused by modern agricultural practices.
+
+Sixty-six samples taken every 2cm were analyzed for total carbon
+(\emph{TC}), total inorganic carbon (\emph{TIC}), total organic carbon
+(\emph{TOC=TC−TIC}), total nitrogen (\emph{TN}), and total sulfur
+(\emph{TS}) using a LECO SCN furnace at the Pyrenean Institute of
+Ecology (\emph{IPE-CSIC}) in Spain. Stable isotope compositions
+(δ¹³C\_car and δ¹⁸O\_car) of the carbonate fraction from these samples
+were determined using a Gas Bench system interfaced with a Delta XP mass
+spectrometer (Thermo Finnigan, Bremen, Germany) at the Andalusian
+Institute of Earth Science (\emph{CSIC}) in Granada, Spain.
+
+The GSDs (from 0.04µm to 2000µm) were measured in triplicate using a
+Malvern Mastersizer 2000 APA2000 with Hydro 2000G AWA2000 at
+\emph{IPE-CSIC}. Bulk sediment samples were pre-treated to remove
+organic matter and carbonates. Forty sediment samples were prepared for
+palynomorph extraction following standard chemical procedures (65, 108).
+Due to taphonomic and preservation issues, terrestrial pollen is highly
+underrepresented; therefore, only pollen from hygro-hydrophytes, fern
+spores, and other NPPs have been analyzed (108--110).
+
+The extraction of phytoliths and diatoms was conducted on twenty
+sediment samples, which were processed at the Archaeobotany and
+Palaeoecology Laboratory of the University of Exeter. A protocol based
+on standard procedures for phytolith extraction was employed, using
+approximately 5 g of sediment. We removed carbonates using 36\% HCl and
+digested organic materials with 70\% HNO₃. Phytoliths and diatoms were
+separated through flotation using ZnBr₂ prepared to a density of 2.3
+g/cm³. We counted phytoliths, analyzing up to 200 specimens per sample,
+or the total number of specimens examined in cases where the slide
+contained fewer than 200. Finally, the phytoliths were classified
+according to the International Code for Phytolith Nomenclature
+(111--113).
+
+Diatom valves on Naphrax-mounted slides were observed using a Zeiss
+Axioscope A1 stereomicroscope with an oil immersion objective of 1000x.
+A minimum of 400 valves were counted when possible, identifying to
+species level with the exception of small fragilarioids that require
+higher magnification (114).
+
+We reconstructed the TT19-3A chronology using fourteenth AMS radiocarbon
+dates on charcoal and bulk sediments (Table S1).
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+Radiocarbon ages were calibrated using the Southern Hemisphere
+calibration curve (115), and age-at-depth assemblage was established
+using the \emph{Bacon} and \emph{Bchron} models implemented in the
+\texttt{geochronR} package (116--118). Robust End-member Mixing Analysis
+(\emph{rEMMA}) was performed using the R package \texttt{EMMAgeo} v0.9.8
+to infer sediment sources, transport, and depositional processes (117,
+118).
+
+Sedimentary facies were characterized based on macroscopic and
+microscopic descriptions (120), and artificial facies clusters were
+identified using machine learning techniques (121). The analysis
+employed an unsupervised classification algorithm, utilizing geochemical
+data (\emph{TOC}, \emph{TIC}, \emph{TN}, \emph{TS}, \emph{GSDs}, and
+stable isotopes) implemented in the \texttt{scikit-learn} library (122)
+in Python v3.9. Stratigraphic diagrams and timeseries were analyzed and
+plotted using \texttt{tidypaleo} v0.1.1, \texttt{actR} v0.2.0,
+\texttt{ggplot} v3.3.5, and \texttt{rioja} v0.9-26 packages in R 4.2.2
+software.
+
+Circulation anomalies for the Mid Holocene and LGM periods were analyzed
+using PMIP4 ensemble simulations from the \emph{MPI-ESM1-2-LR},
+\emph{MIROC-ES2L}, \emph{CESM2-WACCM-FV2}, \emph{AWI-ESM1-2-LR}, and
+\emph{CESM2} models. These analyses focused on global changes in zonal
+wind at 500 hPa and total precipitation relative to the pre-industrial
+period (\emph{piControl}). To define wet and dry events in central Chile
+(75°W--70°W, 32°S--40°S), a Regional Precipitation Index (\emph{RPI})
+was applied, defining wet events as \emph{RPI\textgreater120\%} and dry
+events as \emph{RPI\textless80\%} (see Supplementary Methods).
+
+Using the \texttt{climlab} and \texttt{pyleoclim} libraries in Python
+v3.9, we analyzed past orbital parameters and paleoclimate data through
+wavelet and spectral analysis (Fig. 7Q-R) (123). Human activities were
+assessed at the local scale through the analysis of lithic components
+found at TT-3, and at the regional scale using the \emph{p3k14c}
+database (46) of archaeological radiocarbon dates.
+
+We calculated summed probability distributions (\emph{SPD}) of
+archaeological radiocarbon dates using the \texttt{rcarbon} v1.5.1
+package in R 4.2.2 for South America and central Chile (between 32° and
+37°S). Environmental and orbital changes from paleoclimate records and
+models were summarized using available literature.
+
+\section{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Barnosky, A. D., Koch, P. L., Feranec, R. S., Wing, S. L. \& Shabel,
+  A. B. Assessing the Causes of Late Pleistocene Extinctions on the
+  Continents. Science 306, 70--75 (2004).
+\item
+  Mann, D. H., Groves, P., Gaglioti, B. V. \& Shapiro, B. A.
+  Climate-driven ecological stability as a globally shared cause of Late
+  Quaternary megafaunal extinctions: the Plaids and Stripes Hypothesis.
+  Biol. Rev.~94, 328--352 (2019).
+\item
+  Gutiérrez, E. G. \& Stockli, D. F. Fluvial response to Late
+  Pleistocene--Holocene climate change in the Colorado River drainage,
+  central Texas, USA. Geology 51, 929--934 (2023).
+\item
+  Braje, T. J. \& Erlandson, J. M. Human acceleration of animal and
+  plant extinctions: A Late Pleistocene, Holocene, and Anthropocene
+  continuum. Anthropocene 4, 14--23 (2013).
+\item
+  Mottl, O. et al.~Global acceleration in rates of vegetation change
+  over the past 18,000 years. Science 372, 860--864 (2021).
+\item
+  Andermann, T., Faurby, S., Turvey, S. T., Antonelli, A. \& Silvestro,
+  D. The past and future human impact on mammalian diversity. Sci. Adv.
+  6, eabb2313 (2020).
+\item
+  Malhi, Y. et al.~Megafauna and ecosystem function from the Pleistocene
+  to the Anthropocene. Proc. Natl. Acad. Sci. 113, 838--846 (2016).
+\item
+  Baumann, C. The paleo-synanthropic niche: a first attempt to define
+  animal's adaptation to a human-made micro-environment in the Late
+  Pleistocene. Archaeol. Anthropol. Sci. 15, 63 (2023).
+\item
+  Mayle, F. E. \& Iriarte, J. Integrated palaeoecology and archaeology
+  -- a powerful approach for understanding pre-Columbian Amazonia. J.
+  Archaeol. Sci. 51, 54--64 (2014).
+\item
+  Valero-Garcés, B. L. et al.~Palaeohydrology of Laguna de Tagua Tagua
+  (34° 30′ S) and moisture fluctuations in Central Chile for the last 46
+  000 yr. J. Quat. Sci. 20, 625--641 (2005).
+\item
+  Herrera-Ossandón, M., Easton, G., Antinao, J. L. \& Forman, S. L. Late
+  Quaternary glacier advances in the Andes of Santiago, central Chile,
+  and paleoclimatic implications. Front. Earth Sci. 11, (2023).
+\item
+  Orellana, H., Latorre, C., García, J.-L. \& Lambert, F. Spatial
+  analysis of paleoclimate variations based on proxy records in the
+  south-central Andes (18°- 35° S) from 32 to 4 ka. Quat. Sci. Rev.~313,
+  108174 (2023).
+\item
+  Garreaud, R. D. et al.~The 2010--2015 megadrought in central Chile:
+  impacts on regional hydroclimate and vegetation. Hydrol. Earth Syst.
+  Sci. 21, 6307--6327 (2017).
+\item
+  Garreaud, R. D., Vuille, M., Compagnucci, R. \& Marengo, J.
+  Present-day South American climate. Palaeogeogr. Palaeoclimatol.
+  Palaeoecol. 281, 180--195 (2009).
+\item
+  Gillett, Z. E., Hendon, H. H., Arblaster, J. M. \& Lim, E.-P. Tropical
+  and Extratropical Influences on the Variability of the Southern
+  Hemisphere Wintertime Subtropical Jet. J. Clim. 34, 4009--4022 (2021).
+\item
+  Lu, J., Chen, G. \& Frierson, D. M. W. Response of the Zonal Mean
+  Atmospheric Circulation to El Niño versus Global Warming. J. Clim. 21,
+  5835--5851 (2008).
+\item
+  Garreaud, R. Precipitation and Circulation Covariability in the
+  Extratropics. J. Clim. 20, 4789--4797 (2007).
+\item
+  Campos, D. \& Rondanelli, R. ENSO-Related Precipitation Variability in
+  Central Chile: The Role of Large Scale Moisture Transport. J. Geophys.
+  Res. Atmospheres 128, e2023JD038671 (2023).
+\item
+  Collazo, S., García-Herrera, R. \& Barriopedro, D. Summer upper-level
+  jets modulate the response of South American climate to ENSO. Clim.
+  Dyn. 62, 1031--1054 (2024).
+\item
+  Moreno, P. I. \& León, A. L. Abrupt vegetation changes during the last
+  glacial to Holocene transition in mid-latitude South America. J. Quat.
+  Sci. 18, 787--800 (2003).
+\item
+  Sandweiss, D. H. et al.~Archaeological climate proxies and the
+  complexities of reconstructing Holocene El Niño in coastal Peru. Proc.
+  Natl. Acad. Sci. 117, 8271--8279 (2020).
+\item
+  Labarca, R. et al.~Taguatagua 3: A new late Pleistocene settlement in
+  a highly suitable lacustrine habitat in central Chile (34°S). PLOS ONE
+  19, e0302465 (2024).
+\item
+  Ugalde, P. C. et al.~The first peoples of the Atacama Desert lived
+  among the trees: A 11,600- to 11,200-year-old grove and congregation
+  site. Proc. Natl. Acad. Sci. 121, e2320506121 (2024).
+\item
+  Borrero, L. A. The Prehistoric Exploration and Colonization of
+  Fuego-Patagonia. J. World Prehistory 13, 321--355 (1999).
+\item
+  Moy, C. M., Seltzer, G. O., Rodbell, D. T. \& Anderson, D. M.
+  Variability of El Niño/Southern Oscillation activity at millennial
+  timescales during the Holocene epoch. Nature 420, 162--165 (2002).
+\item
+  Moreno, P. I., Francois, J. P., Moy, C. M. \& Villa-Martínez, R.
+  Covariability of the Southern Westerlies and atmospheric CO2 during
+  the Holocene. Geology 38, 727--730 (2010).
+\item
+  Soteres, R. L. et al.~Glacier fluctuations in the northern Patagonian
+  Andes (44°S) imply wind-modulated interhemispheric in-phase climate
+  shifts during Termination 1. Sci. Rep.~12, 10842 (2022).
+\item
+  Villacís, L. A. et al.~A freshwater diatom perspective on the
+  evolution of the southern westerlies for the past ∼14,000 years in
+  southwestern Patagonia. Quat. Sci. Rev.~301, 107929 (2023).
+\item
+  Lamy, F. et al.~Holocene changes in the position and intensity of the
+  southern westerly wind belt. Nat. Geosci. 3, 695--699 (2010).
+\item
+  Kilian, R. \& Lamy, F. A review of Glacial and Holocene paleoclimate
+  records from southernmost Patagonia (49--55°S). Quat. Sci. Rev.~53,
+  1--23 (2012).
+\item
+  Schneider, T., Bischoff, T. \& Haug, G. H. Migrations and dynamics of
+  the intertropical convergence zone. Nature 513, 45--53 (2014).
+\item
+  Li, S. \& Liu, W. Deciphering the Migration of the Intertropical
+  Convergence Zone During the Last Deglaciation. Geophys. Res. Lett. 49,
+  e2022GL098806 (2022).
+\item
+  Kaiser, J. et al.~Orbital modulation of subtropical versus
+  subantarctic moisture sources in the southeast Pacific mid-latitudes.
+  Nat. Commun. 15, 7512 (2024).
+\item
+  Flores-Aqueveque, V., Rojas, M., Aguirre, C., Arias, P. A. \&
+  González, C. South Pacific Subtropical High from the late Holocene to
+  the end of the 21st century: insights from climate proxies and general
+  circulation models. Clim. Past 16, 79--99 (2020).
+\item
+  Latorre, C., Betancourt, J. L. \& Arroyo, M. T. K. Late Quaternary
+  vegetation and climate history of a perennial river canyon in the Río
+  Salado basin (22°S) of Northern Chile. Quat. Res. 65, 450--466 (2006).
+\item
+  Pedro, J. B. et al.~The spatial extent and dynamics of the Antarctic
+  Cold Reversal. Nat. Geosci. 9, 51--55 (2016).
+\item
+  Martin, L. C. P. et al.~Lake Tauca highstand (Heinrich Stadial 1a)
+  driven by a southward shift of the Bolivian High. Sci. Adv. 4,
+  eaar2514 (2018).
+\item
+  Prates, L. \& Perez, S. I. Late Pleistocene South American megafaunal
+  extinctions associated with rise of Fishtail points and human
+  population. Nat. Commun. 12, 2175 (2021).
+\item
+  Villavicencio, N. A. et al.~Combination of humans, climate, and
+  vegetation change triggered Late Quaternary megafauna extinction in
+  the Última Esperanza region, southern Patagonia, Chile. Ecography 39,
+  125--140 (2016).
+\item
+  Timing and structure of the Younger Dryas event and its underlying
+  climate dynamics \textbar{} PNAS.
+  \url{https://www.pnas.org/doi/abs/10.1073/pnas.2007869117}.
+\item
+  Alley, R. B. The Younger Dryas cold interval as viewed from central
+  Greenland. Quat. Sci. Rev.~19, 213--226 (2000).
+\item
+  Moreno-Mayar, J. V. et al.~Early human dispersals within the Americas.
+  Science 362, (2018).
+\item
+  Liu, Z. et al.~Transient Simulation of Last Deglaciation with a New
+  Mechanism for Bølling-Allerød Warming. Science 325, 310--314 (2009).
+\item
+  Heusser, C. J. Quaternary Pollen Record from Laguna de Tagua Tagua,
+  Chile. Science 219, 1429--1432 (1983).
+\item
+  Varela, J. Geología del Cuaternario de Laguna de Taguatagua (Provincia
+  de O'Higgins). in Congreso Geológico Chileno D81--D114 (1976).
+\item
+  Bird, D. et al.~p3k14c, a synthetic global database of archaeological
+  radiocarbon dates. Sci. Data 9, 27 (2022).
+\item
+  Amann, B., Bertrand, S., Alvarez-Garreton, C. \& Reid, B. Seasonal
+  Variations in Fjord Sediment Grain Size: A Pre-requisite for
+  Hydrological and Climate Reconstructions in Partially Glacierized
+  Watersheds (Baker River, Patagonia). J. Geophys. Res. Earth Surf. 127,
+  e2021JF006391 (2022).
+\item
+  Sun, D. et al.~Grain-size distribution function of polymodal sediments
+  in hydraulic and aeolian environments, and numerical partitioning of
+  the sedimentary components. Sediment. Geol. 152, 263--277 (2002).
+\item
+  Vandenberghe, J., Sun, Y., Wang, X., Abels, H. A. \& Liu, X.
+  Grain-size characterization of reworked fine-grained aeolian deposits.
+  Earth-Sci. Rev.~177, 43--52 (2018).
+\item
+  Vandenberghe, J. Grain size of fine-grained windblown sediment: A
+  powerful proxy for process identification. Earth-Sci. Rev.~121, 18--30
+  (2013).
+\item
+  Dansgaard, W. Stable isotopes in precipitation. Tellus 16, 436--468
+  (1964).
+\item
+  Rozanski, K., Araguás‐Araguás, L. \& Gonfiantini, R. Isotopic patterns
+  in modern global precipitation. Clim. Change Cont. Isot. Rec. 78,
+  1--36 (1993).
+\item
+  Gonfiantini, R., Roche, M.-A., Olivry, J.-C., Fontes, J.-C. \& Zuppi,
+  G. M. The altitude effect on the isotopic composition of tropical
+  rains. Chem. Geol. 181, 147--167 (2001).
+\item
+  Zielhofer, C. et al.~Millennial-scale fluctuations in Saharan dust
+  supply across the decline of the African Humid Period. Quat. Sci.
+  Rev.~171, 119--135 (2017).
+\item
+  Montané, J. Fechado del nivel superior de Tagua Tagua. Not. Mens. Mus.
+  Nac. Hist. Nat. 14, 9--10 (1969).
+\item
+  Fathi-Moghadam, M., Arman, A., Emamgholizadeh, S. \& Alikhani, A.
+  Settling Properties of Cohesive Sediments in Lakes and Reservoirs. J.
+  Waterw. Port Coast. Ocean Eng. 137, 204--209 (2011).
+\item
+  Ciolkosz, E. J. et al.~Genesis of soils and landscapes in the Ridge
+  and Valley province of central Pennsylvania. Geomorphology 3, 245--261
+  (1990).
+\item
+  Beal, E. J., House, C. H. \& Orphan, V. J. Manganese- and
+  Iron-Dependent Marine Methane Oxidation. Science 325, 184--187 (2009).
+\item
+  Wang, X. et al.~Anaerobic microbial manganese oxidation and reduction:
+  A critical review. Sci. Total Environ. 822, 153513 (2022).
+\item
+  Dietze, E. et al.~Sediment transport processes across the Tibetan
+  Plateau inferred from robust grain-size end members in lake sediments.
+  Clim. Past 10, 91--106 (2014).
+\item
+  Zhang, X. et al.~Unmixing grain-size distributions in lake sediments:
+  a new method of endmember modeling using hierarchical clustering.
+  Quat. Res. 89, 365--373 (2018).
+\item
+  Orton, G. J. \& Reading, H. G. Variability of deltaic processes in
+  terms of sediment supply, with particular emphasis on grain size.
+  Sedimentology 40, 475--512 (1993).
+\item
+  van IJzendoorn, C. O., Hallin, C., Reniers, A. J. H. M. \& de Vries,
+  S. Modeling Multi-Fraction Coastal Aeolian Sediment Transport With
+  Horizontal and Vertical Grain-Size Variability. J. Geophys. Res. Earth
+  Surf. 128, e2023JF007155 (2023).
+\item
+  van der Vegt, H. et al.~Grain size fractionation by process-driven
+  sorting in sandy to muddy deltas. Depositional Rec. 6, 217--235
+  (2020).
+\item
+  Heusser, C. J. Pollen and Spores of Chile. Modern Types of the
+  Pteridophyta, Gymnospermae, and Angiospermae. (University of Arizona
+  Press, 1971).
+\item
+  Mathiasen, P., Venegas-González, A., Fresia, P. \& Premoli, A. C. A
+  relic of the past: current genetic patterns of the palaeoendemic tree
+  Nothofagus macrocarpa were shaped by climatic oscillations in central
+  Chile. Ann. Bot. 126, 891--904 (2020).
+\item
+  León-Lobos, P. \& Ellis, R. H. Seed survival in Chilean Nothofagus in
+  response to desiccation and storage. Seed Sci. Res. 15, 113--123
+  (2005).
+\item
+  Reyes-Díaz, M., Alberdi, M., Piper, F., Bravo, L. A. \& Corcuera, L.
+  J. Low temperature responses of Nothofagus dombeyi and Nothofagus
+  nitida, two evergreen species from south central Chile. Tree Physiol.
+  25, 1389--1398 (2005).
+\item
+  Broecker, W. S. The Glacial World According to Wally. (Eldigio Press,
+  1995).
+\item
+  Quade, J. et al.~Paleowetlands and regional climate change in the
+  central Atacama Desert, northern Chile. Quat. Res. 69, 343--360
+  (2008).
+\item
+  Gayo, E. M. et al.~Late Quaternary hydrological and ecological changes
+  in the hyperarid core of the northern Atacama Desert
+  (\textasciitilde{} 21°S). Earth-Sci. Rev.~113, 120--140 (2012).
+\item
+  González-Pinilla, F. J. et al.~High- and low-latitude forcings drive
+  Atacama Desert rainfall variations over the past 16,000 years. Sci.
+  Adv. 7, eabg1333 (2021).
+\item
+  Lamy, F., Hebbeln, D. \& Wefer, G. High-Resolution Marine Record of
+  Climatic Change in Mid-latitude Chile during the Last 28,000 Years
+  Based on Terrigenous Sediment Parameters. Quat. Res. 51, 83--93
+  (1999).
+\item
+  Novello, V. F. et al.~A high-resolution history of the South American
+  Monsoon from Last Glacial Maximum to the Holocene. Sci. Rep.~7, 44267
+  (2017).
+\item
+  Kaiser, J., Schefu\ss, E., Lamy, F., Mohtadi, M. \& Hebbeln, D.
+  Glacial to Holocene changes in sea surface temperature and coastal
+  vegetation in north central Chile: high versus low latitude forcing.
+  Quat. Sci. Rev.~27, 2064--2075 (2008).
+\item
+  Singer, B., Hildreth, W. \& Vincze, Y. 40Ar/39Ar evidence for early
+  deglaciation of the central Chilean Andes. Geophys. Res. Lett. 27,
+  1663--1666 (2000).
+\item
+  Fernández-Navarro, H. et al.~10Be chronology of the Last Glacial
+  Maximum and Termination in the Andes of central Chile: The record of
+  the Universidad Glacier (34° S). Quat. Sci. Rev.~344, 108968 (2024).
+\item
+  Kim, J.-H., Schneider, R. R., Hebbeln, D., Müller, P. J. \& Wefer, G.
+  Last deglacial sea-surface temperature evolution in the Southeast
+  Pacific compared to climate changes on the South American continent.
+  Quat. Sci. Rev.~21, 2085--2097 (2002).
+\item
+  Kaiser, J., Lamy, F. \& Hebbeln, D. A 70-kyr sea surface temperature
+  record off southern Chile (Ocean Drilling Program Site 1233).
+  Paleoceanography 20, (2005).
+\item
+  Fritz, S. C. DIATOM METHODS \textbar{} Salinity and Climate
+  Reconstructions from Continental Lakes. in Encyclopedia of Quaternary
+  Science (Second Edition) (eds.~Elias, S. A. \& Mock, C. J.) 507--515
+  (Elsevier, Amsterdam, 2013).
+  \url{doi:10.1016/B978-0-444-53643-3.00221-1}.
+\item
+  Stenger-Kovács, C. et al.~Diatom community response to inland water
+  salinization: a review. Hydrobiologia 850, 4627--4663 (2023).
+\item
+  Jara-Arancio, P. et al.~Genetic Diversity and Population Structure of
+  Jubaea chilensis, an Endemic and Monotype Gender from Chile, Based on
+  SNP Markers. Plants 11, 1959 (2022).
+\item
+  Trepel, J. et al.~Meta-analysis shows that wild large herbivores shape
+  ecosystem properties and promote spatial heterogeneity. Nat. Ecol.
+  Evol. 8, 705--716 (2024).
+\item
+  Robinson, M. et al.~`Moving South': Late Pleistocene Plant
+  Exploitation and the Importance of Palm in the Colombian Amazon.
+  Quaternary 4, 26 (2021).
+\item
+  McCrea, J. M. On the Isotopic Chemistry of Carbonates and a
+  Paleotemperature Scale. J. Chem. Phys. 18, 849--857 (1950).
+\item
+  Horton, T. W., Defliese, W. F., Tripati, A. K. \& Oze, C. Evaporation
+  induced 18O and 13C enrichment in lake systems: A global perspective
+  on hydrologic balance effects. Quat. Sci. Rev.~131, 365--379 (2016).
+\item
+  McCormack, J., Nehrke, G., Jöns, N., Immenhauser, A. \& Kwiecien, O.
+  Refining the interpretation of lacustrine carbonate isotope records:
+  Implications of a mineralogy-specific Lake Van case study. Chem. Geol.
+  513, 167--183 (2019).
+\item
+  Scott, W. P. et al.~Lake water based isoscape in central-south Chile
+  reflects meteoric water. Sci. Rep.~11, 8725 (2021).
+\item
+  Terzer-Wassmuth, S., Wassenaar, L. I., Welker, J. M. \&
+  Araguás-Araguás, L. J. Improved high-resolution global and
+  regionalized isoscapes of δ18O, δ2H and d-excess in precipitation.
+  Hydrol. Process. 35, e14254 (2021).
+\item
+  Benito, X., Trobajo, R. \& Ibáñez, C. Benthic diatoms in a
+  Mediterranean delta: ecological indicators and a conductivity transfer
+  function for paleoenvironmental studies. J. Paleolimnol. 54, 171--188
+  (2015).
+\item
+  Starratt, S. W., Kirby, M. E. \& Glover, K. Diatom Record of Holocene
+  Moisture Variability in the San Bernardino Mountains, California, USA.
+  in Limnogeology: Progress, Challenges and Opportunities: A Tribute to
+  Elizabeth Gierlowski-Kordesch (eds.~Rosen, M. R., Finkelstein, D. B.,
+  Park Boush, L. \& Pla-Pueyo, S.) 329--365 (Springer International
+  Publishing, Cham, 2021). \url{doi:10.1007/978-3-030-66576-0_11}.
+\item
+  Prates, L., Politis, G. G. \& Perez, S. I. Rapid radiation of humans
+  in South America after the last glacial maximum: A radiocarbon-based
+  study. PLOS ONE 15, e0236023 (2020).
+\item
+  Montané, J. Paleo-Indian Remains from Laguna de Tagua Tagua, Central
+  Chile. Science 161, 1137--1138 (1968).
+\item
+  Méndez, C. \& Jackson, D. Terminal pleistocene lithic technology and
+  use of space in Central Chile. Chungara Rev.~Antropol. Chil. 47,
+  53--65 (2015).
+\item
+  Núñez, L., Varela, J., Casamiquela, R. \& Villagrán, C. Reconstruccion
+  Multidisciplinaria de la Ocupacion Prehistorica de Quereo, Centro de
+  Chile. Lat. Am. Antiq. 5, 99--118 (1994).
+\item
+  Lizama-Catalán, Á. \& Labarca, R. Who eats What: Unravelling a complex
+  taphonomic scenario in the lacustrine deposits of the late Pleistocene
+  archaeological site, Taguatagua 1, central Chile. Quat. Sci. Rev.~300,
+  107831 (2023).
+\item
+  Rein, B. et al.~El Niño variability off Peru during the last 20,000
+  years. Paleoceanography 20, (2005).
+\item
+  Jenny, B. et al.~Early to Mid-Holocene Aridity in Central Chile and
+  the Southern Westerlies: The Laguna Aculeo Record (34°S). Quat. Res.
+  58, 160--170 (2002).
+\item
+  Maldonado, A. et al.~Early Holocene climate change and human
+  occupation along the semiarid coast of north-central Chile. J. Quat.
+  Sci. 25, 985--988 (2010).
+\item
+  Ortega, C., Vargas, G., Rutllant, J. A., Jackson, D. \& Méndez, C.
+  Major hydrological regime change along the semiarid western coast of
+  South America during the early Holocene. Quat. Res. 78, 513--527
+  (2012).
+\item
+  Frugone-Álvarez, M. et al.~Volcanism and climate change as drivers in
+  Holocene depositional dynamic of Laguna del Maule (Andes of central
+  Chile -- 36°S). Clim Past 16, 1097--1125 (2020).
+\item
+  Zhu, F. et al.~Climate models can correctly simulate the continuum of
+  global-average temperature variability. Proc. Natl. Acad. Sci. 116,
+  8728--8733 (2019).
+\item
+  Garreaud, R. D. et al.~The Central Chile Mega Drought (2010--2018): A
+  climate dynamics perspective. Int. J. Climatol. 40, 421--439 (2020).
+\item
+  Jenny, B., Wilhelm, D. \& Valero-Garcés, B. The Southern Westerlies in
+  Central Chile: Holocene precipitation estimates based on a water
+  balance model for Laguna Aculeo (33 50′ S). Clim. Dyn. 20, 269--280
+  (2003).
+\item
+  Tagle, B. \& del Río, C. Informe de prospecciones arqueológicas y
+  excavación de túmulos funerarios en las provincias de Colchagua y
+  Cachapoal. Inf. Al Cons. Monum. Nac. Ms (2005).
+\item
+  Barberena, R., Méndez, C. \& de Porras, M. E. Zooming out from
+  archaeological discontinuities: The meaning of mid-Holocene temporal
+  troughs in South American deserts. J. Anthropol. Archaeol. 46, 68--81
+  (2017).
+\item
+  Núñez, L. \& Grosjean, M. Biodiversity and Human Impact During the
+  Last 11,000 Years in North-Central Chile. in How Landscapes Change:
+  Human Disturbance and Ecosystem Fragmentation in the Americas
+  (eds.~Bradshaw, G. A. \& Marquet, P. A.) 7--17 (Springer, Berlin,
+  Heidelberg, 2003). \url{doi:10.1007/978-3-662-05238-9_2}.
+\item
+  Magri, D. \& Di Rita, F. Archaeopalynological Preparation Techniques.
+  in Plant Microtechniques and Protocols (eds.~Yeung, E. C. T.,
+  Stasolla, C., Sumner, M. J. \& Huang, B. Q.) 495--506 (Springer
+  International Publishing, Cham, 2015).
+  \url{doi:10.1007/978-3-319-19944-3_27}.
+\item
+  Van Geel, B. Non-pollen palynomorphs. in Tracking environmental change
+  using lake sediments: Terrestrial, algal, and siliceous indicators
+  (eds.~Smol, J. P., Birks, H. J. B., Last, W. M., Bradley, R. S. \&
+  Alverson, K.) 99--119 (Springer Netherlands, Dordrecht, 2001).
+  \url{doi:10.1007/0-306-47668-1_6}.
+\item
+  Van Geel, B. et al.~Environmental reconstruction of a Roman Period
+  settlement site in Uitgeest (The Netherlands), with special reference
+  to coprophilous fungi. J. Archaeol. Sci. 30, 873--883 (2003).
+\item
+  Piperno, D. R. Phytolith Analysis. An Archaeological and Geological
+  Perspective. 5 - laboratory techniques. in Phytolith analysis
+  (ed.~Piperno, D. R.) 119--130 (Academic Press, San Diego, 1988).
+  \url{doi:https://doi.org/10.1016/B978-0-12-557175-3.50009-X}.
+\item
+  Piperno, D. R. Phytoliths. In A Comprehensive Guide for Archaeologists
+  and Palaeoecologists. (Altamira Press, USA, New York, 2006).
+\item
+  International Committee for Phytolith Taxonomy (ICPT). International
+  Code for Phytolith Nomenclature (ICPN) 2.0. Ann. Bot. 124, 189--199
+  (2019).
+\item
+  Morales, E. A., Siver, P. A. \& Trainor, F. R. Identification of
+  diatoms (Bacillariophyceae) during ecological assessments: Comparison
+  between Light Microscopy and Scanning Electron Microscopy techniques.
+  Proc. Acad. Nat. Sci. Phila. 151, 95--103 (2001).
+\item
+  Hogg, A. G. et al.~SHCal20 Southern Hemisphere Calibration, 0--55,000
+  Years cal BP. Radiocarbon 62, 759--778 (2020).
+\item
+  McKay, N. P., Emile-Geay, J. \& Khider, D. geoChronR -- an R package
+  to model, analyze, and visualize age-uncertain data. Geochronology 3,
+  149--169 (2021).
+\item
+  Blaauw, M. \& Christen, J. A. Flexible paleoclimate age-depth models
+  using an autoregressive gamma process. Bayesian Anal. 6, 457--474
+  (2011).
+\item
+  Parnell, A. C., Haslett, J., Allen, J. R. M., Buck, C. E. \& Huntley,
+  B. A flexible approach to assessing synchroneity of past events using
+  Bayesian reconstructions of sedimentation history. Quat. Sci. Rev.~27,
+  1872--1885 (2008).
+\item
+  Dietze, E. \& Dietze, M. Grain-size distribution unmixing using the R
+  package EMMAgeo. EG Quat. Sci. J. 68, 29--46 (2019).
+\item
+  Schnurrenberger, D., Russell, J. \& Kelts, K. Classification of
+  lacustrine sediments based on sedimentary components. J. Paleolimnol.
+  29, 141--154 (2003).
+\item
+  Hall, B. Facies classification using machine learning. Lead. Edge 35,
+  906--909 (2016).
+\item
+  Pedregosa, F. et al.~Scikit-learn: Machine Learning in Python. J.
+  Mach. Learn. Res. 12, 2825--2830 (2011).
+\item
+  Khider, D., Emile-Geay, J., Zhu, F., James, A., Landers, J., Ratnakar,
+  V. \& Gil, Y. Pyleoclim: Paleoclimate timeseries analysis and
+  visualization with Python. Paleoceanogr. Paleoclimatol. 37,
+  e2022PA004509 (2022).
+\end{enumerate}
+
+\clearpage
+
+\begin{table}[!hbtp]
+\caption{Sedimentological, compositional characteristics and depositional environment of Tagua-Tagua lacustrine facies.}
+\resizebox*{0.98\textwidth}{!}{
+\begin{tabular}{p{2.5cm} p{5.5cm} p{5.5cm} p{5.2cm}}
+\hline
+\multicolumn{4}{l}{\textbf{1. Reworked diatomaceous mud soils}} \\
+\hline \\
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
+\hline
+\textbf{S1 (0-23 cm)} & Massive brown soil of fine silt (40 $\%$) to coarse clay (10 $\%$) with interbedded gravel clasts & High TOC (3.1 $\%$) and TN (0.5 $\%$) and low TIC (0.01 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-21 \textperthousand}$ and $\textrm{-11 \textperthousand}$, respectively) & Soil with modern edaphic features soil with\\ [0.9ex]
+\hline
+\textbf{S2 (23-38 cm)} & Massive gray-brown to whitish-brown soil of coarse clay (25 $\%$) to coarse silt (40 $\%$). Presence of stratified (fissile) diatomaceous mud with charcoal fragments. & High TOC (2.3 $\%$) and TN (0.5 $\%$) and low TIC (0.04 $\%$) and TS (0.05 $\%$). High $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-15 \textperthousand}$ and $\textrm{-7.8 \textperthousand}$, respectively) & Reworked fluvio-lacustrine sediment with modern edaphic features \\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{2. Banded, diatomaceous, organic-poor silts}}\\  
+\hline \\ 
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.5ex] 
+\hline
+\textbf{L3 (38-79 cm)} & Coarse silt (30-40 $\%$) to fine sand (30 $\%$), with shell fragments of gastropods and bivalve arranged at random. Diatomaceous mud well consolidated fragments of between 0.1 to 0.5 cm and charcoal fragments little abundant & Lower TOC (1.2 $\%$), TN ($0.1$ $\%$) and TS ($0.1$ $\%$) and hight TIC ($> $$4$ $\%$). Lower $\delta^{13}{C}_{CO_{2}}$ and $\delta^{18}{O}_{CO_{2}}$ values ($\textrm{-1.15 \textperthousand}$ and $\textrm{-1.17 \textperthousand}$, respectively) & Littoral environments dominated by inorganic deposition, represent alternation from littoral to deeper environments\\ [0.5ex]
+\hline
+\textbf{D5} & Massive to banded, mm- to cm - thick layers of brown, macrophyte-rich coarse silt.& TS (1.4 $\%$) and presence of calcite (TIC = $0.1$$\%$). Higher TOC/TN. Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr), high Br/Ti, Ca/Ti, and S/Ti. High Mn values, and low Fe/Mn ratios.& \\ [0.5ex]
+\hline
+\multicolumn{4}{l}{\textbf{Laminated diatomaceous organic-rich silts(TOC 2-3.5$\%$; BioSi ca. 20 $\%$)}}\\ [0.7ex] 
+\hline \hline
+\textbf{Facies} & \textbf{Sedimentological properties} & \textbf{Composition and geochemistry} & \textbf{Depositional environment} \\ [0.7ex] 
+\hline
+\textbf{D6} &Laminated, dark brown, organic-rich silt composed of three main laminae type: a) greenish grey, diatomaceous medium to fine silt; b) dark brown, organic-rich fine silt with diffuse upper and lower boundaries and c) brown, macrophyte–rich, coarse silt, with sharp, erosional lower boundaries. Facies D6b contains more frequent endogenic calcite crystals.& High TOC (3.1$\%$), BioSi (19.7$\%$) and TS (1.4$\%$, peaks up to 6$\%$ in D6c) and common presence of calcite (TIC $>=$ 0.1). Moderate but fluctuating silicate-related elements (K, Ti, Rb, Sr and Zr); high Br/Ti, Ca/Ti, and S/Ti. High Mn values and low Fe/Mn ratios.& Distal, frequently oxic environments dominated by organic deposition and higher clastic input. Some periods with endogenic calcite formation\\ [0.5ex]
+\hline
+\end{tabular}}
+\end{table}
+
+\end{document}
