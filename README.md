@@ -1,43 +1,60 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Compendium of research on the Taguatagua 3 geoarchaeological site in central Chile
+# Research Compendium for the research **Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in central Chile**
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh///master?urlpath=rstudio)
+[![DOI](https://zenodo.org/badge/375864177.svg)](https://doi.org/10.5281/zenodo.15354127)
 
 This repository contains the data and code for our paper:
 
-> Matías Frugone-Álvarez<sup>1</sup>, Rafael Labarca<sup>2</sup>, Josu
-> Aranbarri<sup>3</sup>, Matías Briceño<sup>4</sup>, Leonardo A.
-> Villacís<sup>5</sup>, Carolina Godoy-Aguirre<sup>2</sup>, Antonio
-> Delgado-Huertas<sup>6</sup>, José Blanco<sup>7</sup>, Erwin
-> González-Guarda<sup>8</sup>, Natalia Villavicencio<sup>8</sup>, Carlos
-> Tornero<sup>9</sup>, José Iriarte<sup>10</sup>, Claudio
-> Latorre<sup>11</sup>,<sup>12</sup>, Blas Valero-Garcés<sup>13</sup>.,
-> (2025).
+> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías
+> Briceño, Leonardo A. Villacís, Carolina Godoy-Aguirre, Antonio
+> Delgado-Huertas, José Blanco, Erwin González-Guarda, Natalia
+> Villavicencio, Carlos Tornero, José Iriarte, Claudio Latorre, Blas
+> Valero-Garcés., (2025).
 > *`Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`*.
-> Science Advances - Journal <https://doi.org/xxx/xxx>
+> Global and Planetary Change - Journal
+> <https://doi.org/10.1016/j.gloplacha.2025.104876>
 
 Our pre-print is online here:
 
-> Matías Frugone-Álvarez<sup>1</sup>, Rafael Labarca<sup>2</sup>, Josu
-> Aranbarri<sup>3</sup>, Matías Briceño<sup>4</sup>, Leonardo A.
-> Villacís<sup>5</sup>, Carolina Godoy-Aguirre<sup>2</sup>, Antonio
-> Delgado-Huertas<sup>6</sup>, José Blanco<sup>7</sup>, Erwin
-> González-Guarda<sup>8</sup>, Natalia Villavicencio<sup>8</sup>, Carlos
-> Tornero<sup>9</sup>, José Iriarte<sup>10</sup>, Claudio
-> Latorre<sup>11</sup>,<sup>12</sup>, Blas Valero-Garcés<sup>13</sup>.,
-> (2025).
+> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías
+> Briceño, Leonardo A. Villacís, Carolina Godoy-Aguirre, Antonio
+> Delgado-Huertas, José Blanco, Erwin González-Guarda, Natalia
+> Villavicencio, Carlos Tornero, José Iriarte, Claudio Latorre, Blas
+> Valero-Garcés., (2025).
 > *`Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`*.
-> Science Advances - Journal <https://doi.org/xxx/xxx>
+> Zenodo <https://doi.org/10.5281/zenodo.15354127>
 
 ### How to cite
 
 Please cite this compendium as:
 
-> Matías Frugone-Álvarez, (2025). *Compendium of R code and data for
-> `Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`*.
-> Accessed 16 ene 2025. Online at <https://doi.org/xxx/xxx>
+> Matías Frugone-Álvarez, (2025). *Compendium of code and data for
+> Hydroclimatic variability drove human-megafauna-environment
+> interactions during the late Pleistocene/Early Holocene in central
+> Chile*. Accessed 06 Jun 2025. Online at
+> \<<https://doi.org/10.5281/zenodo.15354127>\>
+
+## Abstract
+
+Major environmental changes were occurring when the first modern humans
+arrived in South America during the Pleistocene-Holocene transition. How
+these changes shaped human-environmental interactions across this period
+remain unclear. We analyzed the stratigraphy, biogeochemistry, and
+paleoclimatic models from the Ancient Tagua Tagua Lake (ATTL) in central
+Chile, one of the few continuous records of human and megafauna
+interactions with their environment in South America, to reconstruct the
+ATTL’s ecosystem dynamics over the past 20,000 years. Results reveal
+that the ATTL transitioned from a shallow, cool lake with storm-driven
+alluvial deposition to a warmer, deeper, and more productive lake about
+12,500 years ago, aligning with early human’s arrival. The ATTL became
+wetter but experienced severe droughts between 11,000 and 8500 years
+ago, linked to shifts in Southern Westerly Winds and ENSO-like patterns.
+Fluctuating conditions drove humans and fauna to seek refuge in the
+basin, emphasizing local paleohydrology’s role in shaping early
+human-ecosystem interactions.
 
 ## Contents
 
@@ -55,6 +72,7 @@ The **analysis** directory contains:
   supplementary-materials](/analysis/supplementary-materials):
   Supplementary materials including notes and other documents prepared
   and collected during the analysis.
+- [:file_folder: tables](/analysis/Table): tables.
 
 ## How to run in your broswer or download and run locally
 
