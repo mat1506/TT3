@@ -26,7 +26,7 @@ This repository contains the data and code for our paper:
 
 Our pre-print is online here:
 
-> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías Briceño, Leonardo A. Villacís, Carolina Godoy-Aguirre, Antonio Delgado-Huertas, José Blanco, Erwin González-Guarda, Natalia Villavicencio, Carlos Tornero, José Iriarte, Claudio Latorre, Blas Valero-Garcés., (2025). _`Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`_. Zenodo <https://doi.org/10.5281/zenodo.15474943>
+> Matías Frugone-Álvarez, Rafael Labarca, Josu Aranbarri, Matías Briceño, Leonardo A. Villacís, Carolina Godoy-Aguirre, Antonio Delgado-Huertas, José Blanco, Erwin González-Guarda, Natalia Villavicencio, Carlos Tornero, José Iriarte, Claudio Latorre, Blas Valero-Garcés., (2025). _`Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`_. Zenodo <https://doi.org/10.5281/zenodo.15475236>
 
 
 ### How to cite
@@ -34,7 +34,7 @@ Our pre-print is online here:
 Please cite this compendium as:
 
 > Matías Frugone-Álvarez, (2025). *Compendium of code and data for Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in central Chile*. Accessed 06 Jun 2025. Online at
-> <[https://doi.org/10.5281/zenodo.15474943](https://doi.org/10.5281/zenodo.15474943)>
+> <[https://doi.org/10.5281/zenodo.15475236](https://doi.org/10.5281/zenodo.15474943)>
 
 
 ## Abstract
