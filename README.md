@@ -68,8 +68,7 @@ The **analysis** directory contains:
 - [:file_folder: data](/analysis/data): Data used in the analysis.
 - [:file_folder: figures](/analysis/figures): Plots and other
   illustrations
-- [:file_folder:
-  supplementary-materials](/analysis/supplementary-materials):
+- [:file_folder: supplementary-materials](/analysis/supplement):
   Supplementary materials including notes and other documents prepared
   and collected during the analysis.
 - [:file_folder: tables](/analysis/Table): tables.
