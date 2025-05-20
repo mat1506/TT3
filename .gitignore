@@ -23,5 +23,5 @@ cores_bacon/
 Thumbs.db
 
 # credenciales
-*.pem
+.pem
 .Renviron
