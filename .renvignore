@@ -1,0 +1,18 @@
+# Ignorar la propia biblioteca de renv y el lockfile
+^renv$
+^renv\.lock$
+
+# Ignorar archivos de proyecto de RStudio
+^.*\.Rproj$
+^\.Rproj\.user$
+
+# Ignorar carpetas de datos, salidas y caché
+^data/
+^docs/
+^outputs/
+^cache/
+
+# Ignorar control de versiones
+^\.git/
+^_targets\.R$
+^analysis/

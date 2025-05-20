@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in]{geometry} % Standard margins for an article
+\usepackage{graphicx} % To use \resizebox
+\usepackage{array}    % For improved tables
+\usepackage{caption}  % Better formatting for table and figure captions
+\usepackage{booktabs} % For professional table rules
+
+\captionsetup{labelfont=bf, font=small, labelsep=period} % Caption formatting
+
+\begin{document}
+
+% Force table numbering to "Table 2"
+\setcounter{table}{0}
+
+\begin{table}[!hbtp]
+\centering
+\caption{Radiocarbon dating of the TT19-3A sedimentary sequence from the TT-3 archaeological site.
+The table shows the median age from the Bayesian age-depth model and uncertainties (lower and upper error).
+($\ast$) Denotes previously unpublished AMS radiocarbon dates.}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Lab Code} & \textbf{ID Section} & \textbf{Depth (cm)} & \boldmath{$^{14}$}\textbf{C (a BP)} & \boldmath{$1\sigma$} & \textbf{Median (cal a BP)} & \textbf{Lower (a)} & \textbf{Upper (a)} & \textbf{Material} \\
+\midrule
+DAMS039542 & TT19-3A & 38 & 5345 & 28 & 6086 & 6250 & 5946 & Charcoal \\
+DAMS039543 & TT19-3A & 44 & 5806 & 33 & 6571 & 6668 & 6451 & Charcoal \\
+DAMS039544 & TT19-3A & 67 & 7259 & 32 & 8021 & 8170 & 7957 & Charcoal \\
+DAMS039545 & TT19-3A & 106 & 8657 & 45 & 9591 & 9702 & 9492 & Charcoal \\
+DAMS039546 & TT19-3A & 150 & 9736 & 35 & 11134 & 11223 & 10812 & Bulk sediment\\
+DAMS039547 & TT19-3A  & 161 & 10211 & 63 & 11817 & 12087 & 11346 & Bulk sediment\\
+DAMS039548 & TT19-3A & 162 & 10936 & 41 & 12813 & 12905 & 12746 & Charcoal \\
+DAMS039549 & TT19-3A & 162 & 10747 & 49 & 12709 & 12747 & 12626 & Bulk sediment\\
+DAMS039550 & TT19-3A & 168 & 10590 & 39 & 12549 & 12690 & 12481 & Charcoal\\
+DAMS039551 & TT19-3A & 199 & 11117 & 51 & 13015 & 13152 & 12853 & Bulk sediment\\
+\midrule
+DAMS039552 & TT19-3A & 223 & 9977 ($\ast$) & 45 & 11377 & 11626 & 11236 & Bulk sediment \\
+DAMS039553 & TT19-3A & 254  & 17353 ($\ast$) & 84 & 20890 & 21130 & 20587 & Bulk sediment \\
+DAMS039554 & TT19-3A & 266  & 16558 ($\ast$) & 69 & 19959 & 20190 & 19619 & Bulk sediment \\
+\bottomrule
+\end{tabular}}
+\label{tab:radiocarbon_dates}
+\end{table}
+
+\end{document}

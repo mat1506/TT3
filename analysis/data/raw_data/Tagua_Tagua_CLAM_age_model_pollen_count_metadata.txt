@@ -1,0 +1,81 @@
+/* DATA DESCRIPTION:
+Citation:	ACER project members; Sanchez Goñi, Maria Fernanda; Desprat, Stéphanie; Daniau, Anne-Laure; Heusser, Calvin J (2017): CLAM age model and pollen profile of sediment core Tagua_Tagua [dataset]. PANGAEA, https://doi.org/10.1594/PANGAEA.872914
+Related to:	Heusser, Calvin J (1990): Ice age vegetation and climate of subtropical Chile. Palaeogeography, Palaeoclimatology, Palaeoecology, 80(2), 107-127, https://doi.org/10.1016/0031-0182(90)90124-P
+	Sanchez Goñi, Maria Fernanda; Desprat, Stéphanie; Daniau, Anne-Laure; Bassinot, Franck C; Polanco-Martínez, Josué M; Harrison, Sandy P; Allen, Judy R M; Anderson, R Scott; Behling, Hermann; Bonnefille, Raymonde; Burjachs, Francesc; Carrión, José S; Cheddadi, Rachid; Clark, James S; Combourieu-Nebout, Nathalie; Courtney-Mustaphi, Colin J; DeBusk, Georg H; Dupont, Lydie M; Finch, Jemma M; Fletcher, William J; Giardini, Marco; González, Catalina; Gosling, William D; Grigg, Laurie D; Grimm, Eric C; Hayashi, Ryoma; Helmens, Karin F; Heusser, Linda E; Hill, Trevor R; Hope, Geoffrey; Huntley, Brian; Igarashi, Yaeko; Irino, Tomohisa; Jacobs, Bonnie Fine; Jiménez-Moreno, Gonzalo; Kawai, Sayuri; Kershaw, A Peter; Kumon, Fujio; Lawson, Ian T; Ledru, Marie-Pierre; Lézine, Anne-Marie; Liew, Ping-Mei; Magri, Donatella; Marchant, Robert; Margari, Vasiliki; Mayle, Francis E; McKenzie, G Merna; Moss, Patrick T; Müller, Stefanie; Müller, Ulrich C; Naughton, Filipa; Newnham, Rewi M; Oba, Tadamichi; Pérez-Obiol, Ramon P; Pini, Roberta; Ravazzi, Cesare; Roucoux, Katherine H; Rucina, Stephen M; Scott, Louis; Takahara, Hikaru; Tzedakis, Polychronis C; Urrego, Dunia H; van Geel, Bas; Valencia, Bryan G; Vandergoes, Marcus J; Vincens, Annie; Whitlock, Cathy L; Willard, Debra A; Yamamoto, Masanobu (2017): The ACER pollen and charcoal database: a global resource to document vegetation and fire response to abrupt climate changes during the last glacial period. Earth System Science Data, 9(2), 679-695, https://doi.org/10.5194/essd-9-679-2017
+Project(s):	Abrupt Climate Changes and Environmental Responses (ACER)
+Coverage:	LATITUDE: -34.500000 * LONGITUDE: -71.160000
+	MINIMUM DEPTH, sediment/rock: 0.000 m * MAXIMUM DEPTH, sediment/rock: 10.700 m
+Event(s):	Tagua_Tagua * LATITUDE: -34.500000 * LONGITUDE: -71.160000 * ELEVATION: 200.0 m
+Parameter(s):	DEPTH, sediment/rock [m] (Depth sed) * GEOCODE
+	Calendar age, minimum/young [ka BP] (Cal age min) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche) * METHOD/DEVICE: Classical age-modeling approach, CLAM (Blaauw, 2010) (URI: https://doi.org/10.1594/PANGAEA.873023) * COMMENT: CLAM_min95
+	Calendar age, maximum/old [ka BP] (Cal age max) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche) * METHOD/DEVICE: Classical age-modeling approach, CLAM (Blaauw, 2010) (URI: https://doi.org/10.1594/PANGAEA.873023) * COMMENT: CLAM_max95
+	Calendar age [ka BP] (Cal age) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche) * METHOD/DEVICE: Classical age-modeling approach, CLAM (Blaauw, 2010) (URI: https://doi.org/10.1594/PANGAEA.873023) * COMMENT: CLAM_best
+	Accumulation model [a/cm] (Accu model) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche) * METHOD/DEVICE: Classical age-modeling approach, CLAM (Blaauw, 2010) (URI: https://doi.org/10.1594/PANGAEA.873023)
+	Type of age model (Age model type) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche)
+	Sample ID (Sample ID) * PI: Sanchez Goñi, Maria Fernanda (https://orcid.org/0000-0001-8238-7488, maria.sanchez-goni@u-bordeaux.fr, http://www.epoc.u-bordeaux.fr/index.php?lang=en&page=fiche_permanents&id=mfsanche) * COMMENT: ACER sample ID
+	Acacia caven [#] (A. caven) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Acaena [#] (Acaena) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Amaranthaceae/Chenopodiaceae [#] (Chen/Amar) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Apiaceae [#] (Apiae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Armeria chilensis [#] (A. chilensis) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Asteraceae [#] (Astae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology * COMMENT: Liguliflorae
+	Asteraceae [#] (Astae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology * COMMENT: Tubuliflorae
+	Austrocedrus chilensis-type [#] (A. chilensis-T) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Berberis [#] (Ber) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Brassicaceae [#] (Braae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Calycera [#] (Calycera) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Caryophyllaceae [#] (Cphae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Cyperaceae [#] (Cypae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Drimys winteri [#] (D. winteri) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Elodea [#] (Elo) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Embothrium coccineum [#] (E. coccineum) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Ephedra andina [#] (E. andina) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Ericaceae [#] (Eriae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Gentiana [#] (Gen) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Gentianella [#] (Gea) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Gunnera chilensis [#] (G. chilensis) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Isoetes savatieri [#] (I. savatieri) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Kageneckia [#] (Kageneckia) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Krameria [#] (Krameria) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Lamiaceae [#] (Lamae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Leguminosae [#] (Leg) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Limonium guaicuru [#] (L. guaicuru) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Lithraea caustica [#] (L. caustica) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Lomatia [#] (Lomatia) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Lycopodium paniculatum [#] (L. paniculatum) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Malvaceae [#] (Malvae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Maytenus [#] (Maytenus) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Misodendrum [#] (Misodendrum) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Muehlenbeckia [#] (Muehlenbeckia) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Mutisia [#] (Mutisia) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Myriophyllum [#] (Myo) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Myrtaceae [#] (Mytae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Nertera depressa [#] (N. depressa) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Nothofagus dombeyi-type [#] (N. dombeyi-T) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Nothofagus obliqua-type [#] (N. obliqua-T) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Onagraceae [#] (Onaae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Phrygilanthus [#] (Phrygilanthus) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Plantago [#] (Pla) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Poaceae [#] (Poac) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Podocarpus salignus [#] (P. salignus) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Polypodiaceae [#] (Pocae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Polypodium feuillei [#] (P. feuillei) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Potamogeton [#] (Pot) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Pouteria splendens [#] (P. splendens) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Prumnopitys andina [#] (P. andina) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Pteris chilensis [#] (P. chilensis) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Quinchamalium [#] (Quinchamalium) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Ranunculaceae [#] (Ranae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Rosaceae [#] (Rosae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Rubiaceae [#] (Rubae) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Rumex [#] (Rum) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Schinus [#] (Schinus) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Typha angustifolia [#] (Typ.a) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Utricularia [#] (Utr) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Valeriana [#] (Val) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Viviania [#] (Viviania) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Weinmannia trichosperma [#] (W. trichosperma) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+	Wendtia [#] (Wendtia) * PI: Heusser, Calvin J * METHOD/DEVICE: Counting, palynology
+License:	Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC-BY-NC-ND-3.0) (URI: https://creativecommons.org/licenses/by-nc-nd/3.0/)
+Size:	7206 data points
+*/

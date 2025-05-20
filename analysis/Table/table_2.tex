@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in]{geometry} % Standard margins for an article
+\usepackage{graphicx} % To use \resizebox
+\usepackage{array}    % For improved tables
+\usepackage{caption}  % Better formatting for table and figure captions
+
+\captionsetup{labelfont=bf, font=small, labelsep=period} % Caption formatting
+
+\begin{document}
+
+% Force table numbering to "Table 2"
+\setcounter{table}{1}
+
+\begin{table}[!hbtp]
+\centering
+\caption{Details of the climate models used in the analysis, part of the Paleoclimate Modeling Intercomparison Project phase 4 (PMIP4), integrated within the Coupled Model Intercomparison Project phase 6 (CMIP6).}
+\begin{small} % Reduce font size to 11pt
+\begin{tabular}{llll}
+\hline
+\textbf{Model} & \textbf{Experiment ID} & \textbf{Table ID} & \textbf{Variant} \\
+\hline
+MIROC-ES2L & historical & Amon & r1i1p1f2 \\
+MIROC-ES2L & lgm & Amon & r1i1p1f2 \\
+MIROC-ES2L & midHolocene & Amon & r1i1p1f2 \\
+MIROC-ES2L & piControl & Amon & r1i1p1f2 \\
+CESM2-WACCM-FV2 & historical & Amon & r1i1p1f1 \\
+CESM2-WACCM-FV2 & lgm & Amon & r1i2p2f1 \\
+CESM2-WACCM-FV2 & piControl & Amon & r1i1p1f1 \\
+AWI-ESM-1-1-LR & historical & Amon & r1i1p1f1 \\
+AWI-ESM-1-1-LR & lgm & Amon & r1i1p1f1 \\
+AWI-ESM-1-1-LR & midHolocene & Amon & r1i1p1f1 \\
+AWI-ESM-1-1-LR & piControl & Amon & r1i1p1f1 \\
+MPI-ESM1-2-LR & historical & Amon & r1i1p1f1 \\
+MPI-ESM1-2-LR & lgm & Amon & r1i1p1f1 \\
+MPI-ESM1-2-LR & midHolocene & Amon & r1i1p1f1 \\
+MPI-ESM1-2-LR & piControl & Amon & r1i1p1f1 \\
+CESM2 & historical & Amon & r1i1p1f1 \\
+CESM2 & piControl & Amon & r1i1p1f1 \\
+CESM2 & midHolocene & Amon & r1i1p1f1 \\
+\hline
+\end{tabular}
+\end{small}
+\label{tab:climate_models}
+\end{table}
+
+\end{document}
+
+

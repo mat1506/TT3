@@ -1,0 +1,59 @@
+taxon,ecological_group,9,13,25,33,43,58,66,78,86,98,106,122,130,138,142,150,158,162,170,178,202,230,254,266
+Melosira_aff_varians,Plankton ,1,7,0,8,4,4,4,5,2,6,3,0,3,0,2,0,1,0,0,0,0,0,0,0
+Stephanocyclus_planus,Plankton ,4,10,6,6,23,27,20,8,6,12,33,37,27,8,5,3,10,4,4,0,0,0,0,0
+Discostella_aff_stelligera,Plankton ,2,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aulacoseira_granulata,Aulacoseira,16,13,31,1,22,7,22,6,7,7,3,18,7,6,15,24,4,2,0,0,0,0,0,0
+Aulacoseira_sp2_aff_liucoensis,Aulacoseira,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Aulacoseira_sp3_grande,Aulacoseira,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+small_fragilarioids,Small Fragilarioids,164,156,268,3,47,0,4,0,0,5,74,135,145,214,231,113,13,6,10,0,0,0,0,0
+Fragilaria_sp1,Benthic,5,2,5,14,1,1,0,1,0,5,1,5,8,4,3,0,0,0,0,0,0,0,0,0
+Cymbella_aff_subturgidula,Benthic,13,14,4,12,5,8,28,13,0,13,13,27,35,16,19,32,4,2,4,0,9,0,0,0
+Ulnaria_sp2_thin,Benthic,3,2,0,0,0,2,0,0,17,0,0,2,3,7,6,7,2,1,0,0,0,0,0,0
+Nitzschia_sp1_square,Benthic,32,49,60,228,42,43,33,36,81,11,34,127,105,88,58,52,3,1,9,0,1,0,1,0
+Nitzschia_sp2_aff_frustulum,Benthic,49,39,33,26,7,0,1,11,13,2,12,24,13,16,5,9,3,0,0,0,0,0,0,0
+Nitzschia_sp3_long_without_striae,Benthic,0,7,9,6,0,0,1,2,11,0,6,19,11,4,2,8,0,0,0,0,0,0,0,0
+Eunotia_sp1_large,Benthic,3,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Eunotia_sp2_aff_bilunaris,Benthic,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Epithimia_turgida,Benthic,0,13,13,71,49,84,16,0,41,17,33,81,76,40,53,90,6,5,11,0,0,0,1,0
+Epithemia_gibba,Benthic,0,0,0,0,0,0,0,0,2,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Anomoeoneis_sphaerophora,Benthic,0,0,0,0,142,166,185,102,96,327,214,44,15,0,0,11,343,253,56,1,82,1,1,0
+Anomoeoneis_sp2_smaller,Benthic,0,0,0,0,0,3,14,13,3,4,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+Cymbella_sp1_aff_subturgidula,Benthic,18,18,5,5,0,4,4,9,6,3,6,17,19,15,29,28,12,0,0,0,0,0,0,0
+Cymbella_sp2_aff_fontinalis,Benthic,19,12,1,2,0,0,4,2,0,1,5,9,5,0,0,12,0,0,4,0,0,0,0,0
+Cymbella_sp4_thin,Benthic,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Enyonema_sp1,Benthic,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Encyonema_sp2,Benthic,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Gomphonema_sp1_aff_parvalum,Benthic,7,0,0,12,6,9,10,6,0,1,0,1,5,1,1,0,0,1,0,0,0,0,0,0
+Gomphonema_sp2_aff_celatum_with_stigma,Benthic,33,30,31,19,15,12,88,67,43,4,6,7,6,12,7,28,5,14,13,0,13,0,0,0
+Gomphonema_sp3_aff_spatiosum,Benthic,0,6,5,77,40,58,12,125,88,2,20,19,25,9,21,8,3,0,0,0,0,0,0,0
+Gomphonema_sp4_aff_gracile,Benthic,0,4,0,0,0,0,0,0,0,0,0,0,0,1,0,3,0,1,0,0,0,0,0,0
+Gomphonema_sp5_aff_spatiosum,Benthic,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Gomphonema_aff_anglicum,Benthic,3,1,1,2,1,0,0,0,0,0,0,6,1,1,2,2,1,0,0,0,0,0,0,0
+Gomphonema_lagenula,Benthic,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0
+Diploneis_sp1 ,Benthic,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Pinnularia_nov_sp18,Benthic,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Pinnularia_sp1_large,Benthic,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Pinnularia_aff_gigas,Benthic,1,1,1,1,1,2,10,2,5,1,3,0,0,0,0,1,1,3,2,0,14,0,0,0
+Pinnularia_acrosphaeria,Benthic,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Pinnularia_inconstans,Benthic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cocconeis_sp1_aff_placentula,Benthic,1,2,0,0,0,0,0,0,0,0,0,1,4,3,1,0,0,0,0,0,0,1,0,0
+Sellahora_sp1_aff_nigri,Benthic,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sellaphora_sp2_rostrado,Benthic,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sellaphora_sp3_classic,Benthic,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+Planothidium_sp1_aff_lancelatum,Benthic,0,1,2,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Planothidium_sp2_aff_cross,Benthic,0,0,0,1,0,0,0,0,0,0,0,0,6,4,4,1,0,0,0,0,0,0,0,0
+Planothidium_sp3,Benthic,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Stauroneis_aff_heinii,Benthic,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,2,0,0,3,0,0,0
+Amphora_sp1 ,Benthic,0,0,3,12,18,11,12,22,2,3,1,3,5,0,0,4,1,0,0,0,1,0,0,0
+Amphora_copulata,Benthic,0,0,0,0,0,0,0,1,0,0,0,0,1,9,2,2,0,0,0,0,0,0,0,0
+Craticula_sp1,Benthic,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Craticula_sp2_smaller,Benthic,0,0,0,0,0,5,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cymbopleura_sp1,Benthic,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hanzschia_sp1,Benthic,0,0,0,0,0,2,2,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0
+Navicula_sp1,Benthic,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+Sellaphora_pupula,Benthic,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sellaphora_laevis,Benthic,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Caloneis_sp1,Benthic,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Campylodiscus,Benthic,0,0,0,0,0,0,0,0,3,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
+Adlafia_sp1,Benthic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0
+Achnanthidium_macrocephalum,Benthic,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
