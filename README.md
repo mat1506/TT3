@@ -25,7 +25,7 @@ Our pre-print is online here:
 > Villavicencio, Carlos Tornero, José Iriarte, Claudio Latorre, Blas
 > Valero-Garcés., (2025).
 > *`Hydroclimatic variability drove human-megafauna-environment interactions during the late Pleistocene/Early Holocene in Central Chile`*.
-> Zenodo <https://doi.org/10.5281/zenodo.15354127>
+> Zenodo <https://doi.org/10.5281/zenodo.15474943>
 
 ### How to cite
 
@@ -35,7 +35,7 @@ Please cite this compendium as:
 > Hydroclimatic variability drove human-megafauna-environment
 > interactions during the late Pleistocene/Early Holocene in central
 > Chile*. Accessed 06 Jun 2025. Online at
-> \<<https://doi.org/10.5281/zenodo.15354127>\>
+> \<<https://doi.org/10.5281/zenodo.15474943>\>
 
 ## Abstract
 
